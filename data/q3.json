@@ -1,0 +1,45 @@
+{
+  "observations": [
+    {
+      "type": "body-weight",
+      "data": {
+        "numericValue": 82
+      }
+    }
+  ],
+  "clinicalData": {
+    "problems": [
+      {
+        "coding": {
+          "system": "ICD-10-GM",
+          "value": "I10"
+        }
+      }
+    ]
+  },
+  "therapy": {
+    "medicationFlag": 1
+  },
+  "assessment": {
+    "symptoms": [
+      {
+        "name": "pain",
+        "state": "detected"
+      }
+    ]
+  },
+  "intolerances": {
+    "items": [
+      {
+        "substance": {
+          "display": "Penicillin"
+        }
+      },
+      {
+        "substance": {
+          "display": "Latex"
+        }
+      }
+    ]
+  }
+}
