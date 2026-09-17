@@ -1,0 +1,36 @@
+mappings:
+
+  - id: M1
+    concept: weight
+    dataType: NUMBER
+    target: valueQuantity.value
+    multiple: false
+
+  - id: M2
+    concept: diagnosis
+    dataType: TEXT
+    target: code.coding:ICD-10-GM.code
+    multiple: false
+
+  - id: M3
+    concept: medication
+    dataType: TEXT
+    target: valueCodeableConcept
+    multiple: false
+    transformations:
+      YES: "Medikation liegt vor"
+      ACTIVE: "Medikation liegt vor"
+
+  - id: M4
+    concept: pain
+    dataType: BOOLEAN
+    target: value[x]:valueCodeableConcept
+    multiple: false
+    transformations:
+      "true": "22253000"
+
+  - id: M5
+    concept: allergy
+    dataType: TEXT
+    target: code.text
+    multiple: true
