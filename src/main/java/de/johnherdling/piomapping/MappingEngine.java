@@ -66,7 +66,9 @@ public class MappingEngine {
                                 rule.getTransformations()
                         );
 
-                transformedValues.add(transformedValue);
+                if (transformedValue != null) {
+                        transformedValues.add(transformedValue);
+                        }
                 }
 
             values = transformedValues;

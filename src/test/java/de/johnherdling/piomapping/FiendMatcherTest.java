@@ -9,7 +9,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FieldMatcherTest {
-    //M1
+
+    // M1
     @Test
     void findsWeightInQ1() throws IOException {
 
@@ -28,11 +29,8 @@ class FieldMatcherTest {
         );
 
         assertEquals(1, matches.size());
-
-        JsonField match = matches.get(0);
-
-        assertEquals("weight", match.getPath());
-        assertEquals(82, match.getValue().asInt());
+        assertEquals("weight", matches.get(0).getPath());
+        assertEquals(82, matches.get(0).getValue().asInt());
     }
 
     @Test
@@ -53,15 +51,15 @@ class FieldMatcherTest {
         );
 
         assertEquals(1, matches.size());
-
-        JsonField match = matches.get(0);
-
-        assertEquals("vitals.bodyWeight.value", match.getPath());
-        assertEquals(82, match.getValue().asInt());
+        assertEquals(
+                "vitals.bodyWeight.value",
+                matches.get(0).getPath()
+        );
+        assertEquals(82, matches.get(0).getValue().asInt());
     }
 
     @Test
-    void doesNotFindWeightInQ3() throws IOException {
+    void findsWeightInQ3() throws IOException {
 
         JsonSourceReader reader = new JsonSourceReader();
         JsonNode root = reader.read("data/q3.json");
@@ -77,10 +75,15 @@ class FieldMatcherTest {
                 JsonFieldType.NUMBER
         );
 
-        assertEquals(0, matches.size());
+        assertEquals(1, matches.size());
+        assertEquals(
+                "observations[0].data.numericValue",
+                matches.get(0).getPath()
+        );
+        assertEquals(82, matches.get(0).getValue().asInt());
     }
-    
-    //M2 
+
+    // M2
     @Test
     void findsDiagnosisInQ1() throws IOException {
 
@@ -99,15 +102,11 @@ class FieldMatcherTest {
         );
 
         assertEquals(1, matches.size());
-
-        JsonField match = matches.get(0);
-
         assertEquals(
                 "patient.medical.diagnosis.code",
-                match.getPath()
+                matches.get(0).getPath()
         );
-
-        assertEquals("I10", match.getValue().asText());
+        assertEquals("I10", matches.get(0).getValue().asText());
     }
 
     @Test
@@ -132,7 +131,7 @@ class FieldMatcherTest {
     }
 
     @Test
-    void doesNotFindDiagnosisInQ3() throws IOException {
+    void findsDiagnosisInQ3() throws IOException {
 
         JsonSourceReader reader = new JsonSourceReader();
         JsonNode root = reader.read("data/q3.json");
@@ -148,10 +147,15 @@ class FieldMatcherTest {
                 JsonFieldType.TEXT
         );
 
-        assertEquals(0, matches.size());
+        assertEquals(1, matches.size());
+        assertEquals(
+                "clinicalData.problems[0].coding.value",
+                matches.get(0).getPath()
+        );
+        assertEquals("I10", matches.get(0).getValue().asText());
     }
 
-    //M3
+    // M3
     @Test
     void findsMedicationInQ1() throws IOException {
 
@@ -170,11 +174,11 @@ class FieldMatcherTest {
         );
 
         assertEquals(1, matches.size());
-
-        JsonField match = matches.get(0);
-
-        assertEquals("medicationStatus", match.getPath());
-        assertEquals("YES", match.getValue().asText());
+        assertEquals(
+                "medicationStatus",
+                matches.get(0).getPath()
+        );
+        assertEquals("YES", matches.get(0).getValue().asText());
     }
 
     @Test
@@ -195,15 +199,15 @@ class FieldMatcherTest {
         );
 
         assertEquals(1, matches.size());
-
-        JsonField match = matches.get(0);
-
-        assertEquals("medication.status", match.getPath());
-        assertEquals("ACTIVE", match.getValue().asText());
+        assertEquals(
+                "medication.status",
+                matches.get(0).getPath()
+        );
+        assertEquals("ACTIVE", matches.get(0).getValue().asText());
     }
 
     @Test
-    void doesNotFindMedicationInQ3BecauseOfDifferentType() throws IOException {
+    void findsMedicationFieldInQ3() throws IOException {
 
         JsonSourceReader reader = new JsonSourceReader();
         JsonNode root = reader.read("data/q3.json");
@@ -219,10 +223,15 @@ class FieldMatcherTest {
                 JsonFieldType.TEXT
         );
 
-        assertEquals(0, matches.size());
+        assertEquals(1, matches.size());
+        assertEquals(
+                "therapy.medicationFlag",
+                matches.get(0).getPath()
+        );
+        assertEquals(1, matches.get(0).getValue().asInt());
     }
 
-    //M4
+    // M4
     @Test
     void findsPainInQ1() throws IOException {
 
@@ -241,11 +250,14 @@ class FieldMatcherTest {
         );
 
         assertEquals(1, matches.size());
-
-        JsonField match = matches.get(0);
-
-        assertEquals("pain.present", match.getPath());
-        assertEquals(true, match.getValue().asBoolean());
+        assertEquals(
+                "pain.present",
+                matches.get(0).getPath()
+        );
+        assertEquals(
+                true,
+                matches.get(0).getValue().asBoolean()
+        );
     }
 
     @Test
@@ -266,15 +278,18 @@ class FieldMatcherTest {
         );
 
         assertEquals(1, matches.size());
-
-        JsonField match = matches.get(0);
-
-        assertEquals("symptoms.painStatus", match.getPath());
-        assertEquals("present", match.getValue().asText());
+        assertEquals(
+                "symptoms.painStatus",
+                matches.get(0).getPath()
+        );
+        assertEquals(
+                "present",
+                matches.get(0).getValue().asText()
+        );
     }
 
-   @Test
-    void doesNotFindPainStateInQ3() throws IOException {
+    @Test
+        void findsPainStateInQ3() throws IOException {
 
         JsonSourceReader reader = new JsonSourceReader();
         JsonNode root = reader.read("data/q3.json");
@@ -290,10 +305,21 @@ class FieldMatcherTest {
                 JsonFieldType.TEXT
         );
 
-        assertEquals(0, matches.size());
-    }
+        boolean containsPainState =
+                matches.stream().anyMatch(
+                        match ->
+                                match.getPath().equals(
+                                        "assessment.symptoms[0].state"
+                                )
+                                && match.getValue()
+                                        .asText()
+                                        .equals("detected")
+                );
 
-    //M5
+        assertEquals(true, containsPainState);
+        }
+
+    // M5
     @Test
     void findsAllergiesInQ1() throws IOException {
 
@@ -312,8 +338,14 @@ class FieldMatcherTest {
         );
 
         assertEquals(2, matches.size());
-        assertEquals("Penicillin", matches.get(0).getValue().asText());
-        assertEquals("Latex", matches.get(1).getValue().asText());
+        assertEquals(
+                "Penicillin",
+                matches.get(0).getValue().asText()
+        );
+        assertEquals(
+                "Latex",
+                matches.get(1).getValue().asText()
+        );
     }
 
     @Test
@@ -355,7 +387,7 @@ class FieldMatcherTest {
     }
 
     @Test
-    void doesNotFindAllergiesInQ3() throws IOException {
+    void findsAllergiesInQ3() throws IOException {
 
         JsonSourceReader reader = new JsonSourceReader();
         JsonNode root = reader.read("data/q3.json");
@@ -371,6 +403,24 @@ class FieldMatcherTest {
                 JsonFieldType.TEXT
         );
 
-        assertEquals(0, matches.size());
+        assertEquals(2, matches.size());
+
+        assertEquals(
+                "intolerances.items[0].substance.display",
+                matches.get(0).getPath()
+        );
+        assertEquals(
+                "Penicillin",
+                matches.get(0).getValue().asText()
+        );
+
+        assertEquals(
+                "intolerances.items[1].substance.display",
+                matches.get(1).getPath()
+        );
+        assertEquals(
+                "Latex",
+                matches.get(1).getValue().asText()
+        );
     }
 }

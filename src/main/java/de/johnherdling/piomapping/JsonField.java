@@ -8,14 +8,22 @@ public class JsonField {
     private final String path;
     private final JsonNode value;
     private final JsonFieldType dataType;
+    private final String context;
 
-    public JsonField(String fieldName, String path, JsonNode value, JsonFieldType dataType) {
-    this.fieldName = fieldName;
-    this.path = path;
-    this.value = value;
-    this.dataType = dataType;
-
+    public JsonField(
+            String fieldName,
+            String path,
+            JsonNode value,
+            JsonFieldType dataType,
+            String context
+    ) {
+        this.fieldName = fieldName;
+        this.path = path;
+        this.value = value;
+        this.dataType = dataType;
+        this.context = context;
     }
+
     public String getFieldName() {
         return fieldName;
     }
@@ -30,5 +38,9 @@ public class JsonField {
 
     public JsonFieldType getDataType() {
         return dataType;
+    }
+
+    public String getContext() {
+        return context;
     }
 }

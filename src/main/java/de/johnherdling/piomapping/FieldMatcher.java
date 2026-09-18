@@ -5,8 +5,14 @@ import java.util.List;
 
 public class FieldMatcher {
 
-    private final NameNormalizer normalizer = new NameNormalizer();
-    private final BooleanValueNormalizer booleanNormalizer = new BooleanValueNormalizer();
+    private final NameNormalizer normalizer =
+            new NameNormalizer();
+
+    private final ConceptNormalizer conceptNormalizer =
+            new ConceptNormalizer();
+
+    private final BooleanValueNormalizer booleanNormalizer =
+            new BooleanValueNormalizer();
 
     public List<JsonField> findMatches(
             List<JsonField> fields,
@@ -14,28 +20,53 @@ public class FieldMatcher {
             JsonFieldType expectedType
     ) {
 
-        List<JsonField> matches = new ArrayList<>();
+        List<JsonField> matches =
+                new ArrayList<>();
 
-        String normalizedSearchTerm = normalizer.normalize(searchTerm);
+        String normalizedSearchTerm =
+                normalize(searchTerm);
 
         for (JsonField field : fields) {
 
+                if (field.getFieldName().equalsIgnoreCase("system")) {
+                        continue;
+                }
+
             String normalizedFieldName =
-                    normalizer.normalize(field.getFieldName());
+                    normalize(field.getFieldName());
 
             String normalizedPath =
-                    normalizer.normalize(field.getPath());
+                    normalize(field.getPath());
+
+            String normalizedContext =
+                    normalize(field.getContext());
 
             boolean typeMatches =
-                        matchesExpectedType(field, expectedType);
+                    matchesExpectedType(
+                            field,
+                            expectedType
+                    );
 
             boolean nameMatches =
-                    normalizedFieldName.contains(normalizedSearchTerm);
+                    normalizedFieldName.contains(
+                            normalizedSearchTerm
+                    );
 
             boolean pathMatches =
-                    normalizedPath.contains(normalizedSearchTerm);
+                    normalizedPath.contains(
+                            normalizedSearchTerm
+                    );
 
-            if (typeMatches && (nameMatches || pathMatches)) {
+            boolean contextMatches =
+                    normalizedContext.contains(
+                            normalizedSearchTerm
+                    );
+
+            if (typeMatches
+                    && (nameMatches
+                    || pathMatches
+                    || contextMatches)) {
+
                 matches.add(field);
             }
         }
@@ -43,26 +74,46 @@ public class FieldMatcher {
         return matches;
     }
 
+    private String normalize(String text) {
+
+        String normalized =
+                normalizer.normalize(text);
+
+        return conceptNormalizer.normalize(
+                normalized
+        );
+    }
+
     private boolean matchesExpectedType(
-        JsonField field,
-        JsonFieldType expectedType
-        ) {
+            JsonField field,
+            JsonFieldType expectedType
+    ) {
 
         if (field.getDataType() == expectedType) {
-                return true;
+            return true;
         }
 
-        if (expectedType == JsonFieldType.BOOLEAN
-                && field.getDataType() == JsonFieldType.TEXT) {
+        if (expectedType == JsonFieldType.BOOLEAN) {
 
-                Boolean normalizedValue =
-                        booleanNormalizer.normalize(
-                                field.getValue().asText()
-                        );
+            Boolean normalizedValue =
+                    booleanNormalizer.normalize(
+                            field.getValue().asText()
+                    );
 
-                return normalizedValue != null;
+            return normalizedValue != null;
+        }
+
+        if (expectedType == JsonFieldType.TEXT
+                && field.getDataType() == JsonFieldType.NUMBER) {
+
+            Boolean normalizedValue =
+                    booleanNormalizer.normalize(
+                            field.getValue().asText()
+                    );
+
+            return normalizedValue != null;
         }
 
         return false;
-        }
+    }
 }

@@ -13,13 +13,17 @@ public class BooleanValueNormalizer {
 
         if (normalized.equals("true")
                 || normalized.equals("yes")
-                || normalized.equals("present")) {
+                || normalized.equals("present")
+                || normalized.equals("detected")
+                || normalized.equals("1")) {
             return true;
         }
 
         if (normalized.equals("false")
                 || normalized.equals("no")
-                || normalized.equals("absent")) {
+                || normalized.equals("absent")
+                || normalized.equals("not detected")
+                || normalized.equals("0")) {
             return false;
         }
 
