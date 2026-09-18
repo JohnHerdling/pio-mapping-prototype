@@ -6,6 +6,7 @@ import java.util.List;
 public class FieldMatcher {
 
     private final NameNormalizer normalizer = new NameNormalizer();
+    private final BooleanValueNormalizer booleanNormalizer = new BooleanValueNormalizer();
 
     public List<JsonField> findMatches(
             List<JsonField> fields,
@@ -26,7 +27,7 @@ public class FieldMatcher {
                     normalizer.normalize(field.getPath());
 
             boolean typeMatches =
-                    field.getDataType() == expectedType;
+                        matchesExpectedType(field, expectedType);
 
             boolean nameMatches =
                     normalizedFieldName.contains(normalizedSearchTerm);
@@ -41,4 +42,27 @@ public class FieldMatcher {
 
         return matches;
     }
+
+    private boolean matchesExpectedType(
+        JsonField field,
+        JsonFieldType expectedType
+        ) {
+
+        if (field.getDataType() == expectedType) {
+                return true;
+        }
+
+        if (expectedType == JsonFieldType.BOOLEAN
+                && field.getDataType() == JsonFieldType.TEXT) {
+
+                Boolean normalizedValue =
+                        booleanNormalizer.normalize(
+                                field.getValue().asText()
+                        );
+
+                return normalizedValue != null;
+        }
+
+        return false;
+        }
 }

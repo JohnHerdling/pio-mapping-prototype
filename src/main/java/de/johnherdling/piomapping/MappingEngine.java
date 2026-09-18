@@ -7,21 +7,24 @@ import java.util.List;
 
 public class MappingEngine {
 
-    private final JsonFieldCollector collector =
-            new JsonFieldCollector();
+        private final JsonFieldCollector collector =
+                        new JsonFieldCollector();
 
-    private final FieldMatcher matcher =
-            new FieldMatcher();
+        private final FieldMatcher matcher =
+                        new FieldMatcher();
 
-    private final FieldValueExtractor extractor =
-            new FieldValueExtractor();
+        private final FieldValueExtractor extractor =
+                        new FieldValueExtractor();
 
-    private final ValueTransformer transformer =
-            new ValueTransformer();
+        private final ValueTransformer transformer =
+                        new ValueTransformer();
 
-    public MappingResult execute(
-            JsonNode source,
-            MappingRule rule
+        private final BooleanValueNormalizer booleanNormalizer =
+                                new BooleanValueNormalizer();
+
+        public MappingResult execute(
+                        JsonNode source,
+                        MappingRule rule
     ) {
 
         List<JsonField> fields =
@@ -44,14 +47,27 @@ public class MappingEngine {
 
             for (String value : values) {
 
+                String valueForTransformation = value;
+
+                if (rule.getDataType() == JsonFieldType.BOOLEAN) {
+
+                        Boolean normalizedValue =
+                                booleanNormalizer.normalize(value);
+
+                        if (normalizedValue != null) {
+                        valueForTransformation =
+                                normalizedValue.toString();
+                        }
+                }
+
                 String transformedValue =
                         transformer.transform(
-                                value,
+                                valueForTransformation,
                                 rule.getTransformations()
                         );
 
                 transformedValues.add(transformedValue);
-            }
+                }
 
             values = transformedValues;
         }
