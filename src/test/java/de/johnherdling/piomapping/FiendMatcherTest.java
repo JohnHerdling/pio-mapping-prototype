@@ -111,7 +111,7 @@ class FieldMatcherTest {
     }
 
     @Test
-    void doesNotFindDiagnosisInQ2() throws IOException {
+    void findsDiagnosisInQ2() throws IOException {
 
         JsonSourceReader reader = new JsonSourceReader();
         JsonNode root = reader.read("data/q2.json");
@@ -127,7 +127,8 @@ class FieldMatcherTest {
                 JsonFieldType.TEXT
         );
 
-        assertEquals(0, matches.size());
+        assertEquals(1, matches.size());
+        assertEquals("I10", matches.get(0).getValue().asText());
     }
 
     @Test
@@ -294,7 +295,7 @@ class FieldMatcherTest {
 
     //M5
     @Test
-    void doesNotFindAllergiesInQ1() throws IOException {
+    void findsAllergiesInQ1() throws IOException {
 
         JsonSourceReader reader = new JsonSourceReader();
         JsonNode root = reader.read("data/q1.json");
@@ -310,7 +311,9 @@ class FieldMatcherTest {
                 JsonFieldType.TEXT
         );
 
-        assertEquals(0, matches.size());
+        assertEquals(2, matches.size());
+        assertEquals("Penicillin", matches.get(0).getValue().asText());
+        assertEquals("Latex", matches.get(1).getValue().asText());
     }
 
     @Test

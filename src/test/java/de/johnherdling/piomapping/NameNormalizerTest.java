@@ -15,5 +15,7 @@ class NameNormalizerTest {
         assertEquals("body weight", normalizer.normalize("body-weight"));
         assertEquals("body weight", normalizer.normalize("body_weight"));
         assertEquals("medication status", normalizer.normalize("medicationStatus"));
+        assertEquals("diagnosis", normalizer.normalize("diagnoses"));
+        assertEquals("allergy", normalizer.normalize("allergies"));
     }
 }

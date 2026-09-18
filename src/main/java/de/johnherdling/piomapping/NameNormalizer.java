@@ -1,8 +1,8 @@
 package de.johnherdling.piomapping;
 
-public class NameNormalizer {
+    public class NameNormalizer {
 
-    public String normalize(String text) {
+        public String normalize(String text) {
 
         String normalized = text.replaceAll(
                 "([a-z])([A-Z])",
@@ -14,8 +14,18 @@ public class NameNormalizer {
 
         normalized = normalized.toLowerCase();
 
+        normalized = normalizeWordForms(normalized);
+
         normalized = normalized.replaceAll("\\s+", " ").trim();
 
         return normalized;
     }
+
+    private String normalizeWordForms(String text) {
+
+        text = text.replace("diagnoses", "diagnosis");
+        text = text.replace("allergies", "allergy");
+
+        return text;
+}
 }
