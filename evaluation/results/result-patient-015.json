@@ -1,0 +1,32 @@
+{
+  "input" : "patient-015.json",
+  "mappings" : {
+    "M1" : {
+      "target" : "valueQuantity.value",
+      "expectedValue" : 73.4,
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M2" : {
+      "status" : "NOT_EVALUABLE"
+    },
+    "M3" : {
+      "target" : "valueCodeableConcept",
+      "expectedValue" : "Medikation liegt vor",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M4" : {
+      "target" : "value[x]:valueCodeableConcept",
+      "expectedValue" : null,
+      "actualValues" : [ ],
+      "correct" : true
+    },
+    "M5" : {
+      "target" : "code.text",
+      "expectedValue" : [ "Mold (organism)", "House dust mite (organism)", "Animal dander (substance)", "Grass pollen (substance)", "Tree pollen (substance)", "Lisinopril", "Aspirin" ],
+      "actualValues" : [ "2002-02-07", "", "9c26986a-d81d-62f0-ee7a-ab8bb6377434", "9c26986a-d81d-62f0-7f4f-20589bb87ae1", "609328004", "Allergic disposition (finding)", "allergy", "environment", "", "", "", "", "", "", "2002-02-07", "", "9c26986a-d81d-62f0-ee7a-ab8bb6377434", "9c26986a-d81d-62f0-7f4f-20589bb87ae1", "84489001", "Mold (organism)", "allergy", "environment", "21626009", "Cutaneous hypersensitivity (disorder)", "MILD", "", "", "", "2002-02-07", "", "9c26986a-d81d-62f0-ee7a-ab8bb6377434", "9c26986a-d81d-62f0-7f4f-20589bb87ae1", "260147004", "House dust mite (organism)", "allergy", "environment", "", "", "", "", "", "", "2002-02-07", "", "9c26986a-d81d-62f0-ee7a-ab8bb6377434", "9c26986a-d81d-62f0-7f4f-20589bb87ae1", "264287008", "Animal dander (substance)", "allergy", "environment", "878820003", "Rhinoconjunctivitis (disorder)", "MODERATE", "271807003", "Eruption of skin (disorder)", "MILD", "2002-02-07", "", "9c26986a-d81d-62f0-ee7a-ab8bb6377434", "9c26986a-d81d-62f0-7f4f-20589bb87ae1", "256277009", "Grass pollen (substance)", "allergy", "environment", "", "", "", "", "", "", "2002-02-07", "", "9c26986a-d81d-62f0-ee7a-ab8bb6377434", "9c26986a-d81d-62f0-7f4f-20589bb87ae1", "782576004", "Tree pollen (substance)", "allergy", "environment", "", "", "", "", "", "", "2002-02-07", "", "9c26986a-d81d-62f0-ee7a-ab8bb6377434", "9c26986a-d81d-62f0-7f4f-20589bb87ae1", "29046", "Lisinopril", "intolerance", "medication", "267036007", "Dyspnea (finding)", "MODERATE", "49727002", "Cough (finding)", "MODERATE", "2002-02-07", "", "9c26986a-d81d-62f0-ee7a-ab8bb6377434", "9c26986a-d81d-62f0-7f4f-20589bb87ae1", "1191", "Aspirin", "allergy", "medication", "", "", "", "", "", "" ],
+      "correct" : false
+    }
+  }
+}

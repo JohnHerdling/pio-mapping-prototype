@@ -1,0 +1,32 @@
+{
+  "input" : "patient-002.json",
+  "mappings" : {
+    "M1" : {
+      "target" : "valueQuantity.value",
+      "expectedValue" : 11.7,
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M2" : {
+      "status" : "NOT_EVALUABLE"
+    },
+    "M3" : {
+      "target" : "valueCodeableConcept",
+      "expectedValue" : "Medikation liegt vor",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M4" : {
+      "target" : "value[x]:valueCodeableConcept",
+      "expectedValue" : "22253000",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M5" : {
+      "target" : "code.text",
+      "expectedValue" : [ "Latex (substance)", "Bee venom (substance)", "Mold (organism)", "House dust mite (organism)", "Animal dander (substance)", "Tree pollen (substance)", "Cow's milk (substance)", "Glycine max (substance)", "Eggs (edible) (substance)" ],
+      "actualValues" : [ "2023-11-03", "", "3a9c6df2-621a-6239-0760-e58544d252f6", "3a9c6df2-621a-6239-1778-331bfa6f27fa", "609328004", "Allergic disposition (finding)", "allergy", "environment", "", "", "", "", "", "", "2023-11-03", "", "3a9c6df2-621a-6239-0760-e58544d252f6", "3a9c6df2-621a-6239-1778-331bfa6f27fa", "111088007", "Latex (substance)", "allergy", "environment", "247472004", "Wheal (finding)", "MILD", "878820003", "Rhinoconjunctivitis (disorder)", "MILD", "2023-11-03", "", "3a9c6df2-621a-6239-0760-e58544d252f6", "3a9c6df2-621a-6239-1778-331bfa6f27fa", "288328004", "Bee venom (substance)", "allergy", "environment", "", "", "", "", "", "", "2023-11-03", "", "3a9c6df2-621a-6239-0760-e58544d252f6", "3a9c6df2-621a-6239-1778-331bfa6f27fa", "84489001", "Mold (organism)", "allergy", "environment", "21626009", "Cutaneous hypersensitivity (disorder)", "MILD", "267101005", "Nasal discharge present (situation)", "MILD", "2023-11-03", "", "3a9c6df2-621a-6239-0760-e58544d252f6", "3a9c6df2-621a-6239-1778-331bfa6f27fa", "260147004", "House dust mite (organism)", "allergy", "environment", "", "", "", "", "", "", "2023-11-03", "", "3a9c6df2-621a-6239-0760-e58544d252f6", "3a9c6df2-621a-6239-1778-331bfa6f27fa", "264287008", "Animal dander (substance)", "allergy", "environment", "49727002", "Cough (finding)", "MODERATE", "878820003", "Rhinoconjunctivitis (disorder)", "MODERATE", "2023-11-03", "", "3a9c6df2-621a-6239-0760-e58544d252f6", "3a9c6df2-621a-6239-1778-331bfa6f27fa", "782576004", "Tree pollen (substance)", "allergy", "environment", "", "", "", "", "", "", "2023-11-03", "", "3a9c6df2-621a-6239-0760-e58544d252f6", "3a9c6df2-621a-6239-1778-331bfa6f27fa", "3718001", "Cow's milk (substance)", "allergy", "food", "402387002", "Allergic angioedema (disorder)", "MODERATE", "247472004", "Wheal (finding)", "MILD", "2023-11-03", "", "3a9c6df2-621a-6239-0760-e58544d252f6", "3a9c6df2-621a-6239-1778-331bfa6f27fa", "256355007", "Glycine max (substance)", "allergy", "food", "", "", "", "", "", "", "2023-11-03", "", "3a9c6df2-621a-6239-0760-e58544d252f6", "3a9c6df2-621a-6239-1778-331bfa6f27fa", "102263004", "Eggs (edible) (substance)", "allergy", "food", "", "", "", "", "", "" ],
+      "correct" : false
+    }
+  }
+}

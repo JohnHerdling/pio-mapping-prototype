@@ -1,0 +1,32 @@
+{
+  "input" : "patient-011.json",
+  "mappings" : {
+    "M1" : {
+      "target" : "valueQuantity.value",
+      "expectedValue" : 75.0,
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M2" : {
+      "status" : "NOT_EVALUABLE"
+    },
+    "M3" : {
+      "target" : "valueCodeableConcept",
+      "expectedValue" : "Medikation liegt vor",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M4" : {
+      "target" : "value[x]:valueCodeableConcept",
+      "expectedValue" : "22253000",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M5" : {
+      "target" : "code.text",
+      "expectedValue" : [ "Shellfish (substance)" ],
+      "actualValues" : [ "1986-05-25", "", "97e39468-6488-ca8f-fac2-235a80b4dcf7", "97e39468-6488-ca8f-7b33-d33c04781ee2", "609328004", "Allergic disposition (finding)", "allergy", "environment", "", "", "", "", "", "", "1986-05-25", "", "97e39468-6488-ca8f-fac2-235a80b4dcf7", "97e39468-6488-ca8f-7b33-d33c04781ee2", "735029006", "Shellfish (substance)", "allergy", "food", "271807003", "Eruption of skin (disorder)", "MODERATE", "402387002", "Allergic angioedema (disorder)", "MODERATE" ],
+      "correct" : false
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "input" : "patient-008.json",
+  "mappings" : {
+    "M1" : {
+      "target" : "valueQuantity.value",
+      "expectedValue" : 57.7,
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M2" : {
+      "status" : "NOT_EVALUABLE"
+    },
+    "M3" : {
+      "target" : "valueCodeableConcept",
+      "expectedValue" : "Medikation liegt vor",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M4" : {
+      "target" : "value[x]:valueCodeableConcept",
+      "expectedValue" : "22253000",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M5" : {
+      "target" : "code.text",
+      "expectedValue" : [ "Mold (organism)", "Animal dander (substance)", "Grass pollen (substance)", "Tree pollen (substance)", "Aspirin", "Penicillin V", "Eggs (edible) (substance)", "Tree nut (substance)", "Peanut (substance)" ],
+      "actualValues" : [ "2001-01-03", "", "82623afe-e51c-e02e-1dd7-15a4394d0e92", "82623afe-e51c-e02e-9fa0-5b2cd8d72efe", "609328004", "Allergic disposition (finding)", "allergy", "environment", "", "", "", "", "", "", "2001-01-03", "", "82623afe-e51c-e02e-1dd7-15a4394d0e92", "82623afe-e51c-e02e-9fa0-5b2cd8d72efe", "84489001", "Mold (organism)", "allergy", "environment", "", "", "", "", "", "", "2001-01-03", "", "82623afe-e51c-e02e-1dd7-15a4394d0e92", "82623afe-e51c-e02e-9fa0-5b2cd8d72efe", "264287008", "Animal dander (substance)", "allergy", "environment", "878820003", "Rhinoconjunctivitis (disorder)", "MODERATE", "267036007", "Dyspnea (finding)", "MILD", "2001-01-03", "", "82623afe-e51c-e02e-1dd7-15a4394d0e92", "82623afe-e51c-e02e-9fa0-5b2cd8d72efe", "256277009", "Grass pollen (substance)", "allergy", "environment", "", "", "", "", "", "", "2001-01-03", "", "82623afe-e51c-e02e-1dd7-15a4394d0e92", "82623afe-e51c-e02e-9fa0-5b2cd8d72efe", "782576004", "Tree pollen (substance)", "allergy", "environment", "", "", "", "", "", "", "2001-01-03", "", "82623afe-e51c-e02e-1dd7-15a4394d0e92", "82623afe-e51c-e02e-9fa0-5b2cd8d72efe", "1191", "Aspirin", "allergy", "medication", "", "", "", "", "", "", "2001-01-03", "", "82623afe-e51c-e02e-1dd7-15a4394d0e92", "82623afe-e51c-e02e-9fa0-5b2cd8d72efe", "7984", "Penicillin V", "allergy", "medication", "271807003", "Eruption of skin (disorder)", "MILD", "", "", "", "2001-01-03", "", "82623afe-e51c-e02e-1dd7-15a4394d0e92", "82623afe-e51c-e02e-9fa0-5b2cd8d72efe", "102263004", "Eggs (edible) (substance)", "allergy", "food", "247472004", "Wheal (finding)", "MODERATE", "", "", "", "2001-01-03", "", "82623afe-e51c-e02e-1dd7-15a4394d0e92", "82623afe-e51c-e02e-9fa0-5b2cd8d72efe", "442571000124108", "Tree nut (substance)", "allergy", "food", "39579001", "Anaphylaxis (disorder)", "SEVERE", "267036007", "Dyspnea (finding)", "MODERATE", "2001-01-03", "", "82623afe-e51c-e02e-1dd7-15a4394d0e92", "82623afe-e51c-e02e-9fa0-5b2cd8d72efe", "762952008", "Peanut (substance)", "allergy", "food", "247472004", "Wheal (finding)", "MODERATE", "402387002", "Allergic angioedema (disorder)", "MODERATE" ],
+      "correct" : false
+    }
+  }
+}

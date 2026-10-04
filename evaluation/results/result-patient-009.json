@@ -1,0 +1,32 @@
+{
+  "input" : "patient-009.json",
+  "mappings" : {
+    "M1" : {
+      "target" : "valueQuantity.value",
+      "expectedValue" : 23.2,
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M2" : {
+      "status" : "NOT_EVALUABLE"
+    },
+    "M3" : {
+      "target" : "valueCodeableConcept",
+      "expectedValue" : "Medikation liegt vor",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M4" : {
+      "target" : "value[x]:valueCodeableConcept",
+      "expectedValue" : "22253000",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M5" : {
+      "target" : "code.text",
+      "expectedValue" : [ "Mold (organism)", "House dust mite (organism)", "Animal dander (substance)", "Grass pollen (substance)", "Tree pollen (substance)" ],
+      "actualValues" : [ "2020-03-07", "", "765bd034-e8d7-f102-eb1c-4b7792fc5684", "765bd034-e8d7-f102-0bd6-75e434c71255", "609328004", "Allergic disposition (finding)", "allergy", "environment", "", "", "", "", "", "", "2020-03-07", "", "765bd034-e8d7-f102-eb1c-4b7792fc5684", "765bd034-e8d7-f102-0bd6-75e434c71255", "84489001", "Mold (organism)", "allergy", "environment", "", "", "", "", "", "", "2020-03-07", "", "765bd034-e8d7-f102-eb1c-4b7792fc5684", "765bd034-e8d7-f102-0bd6-75e434c71255", "260147004", "House dust mite (organism)", "allergy", "environment", "", "", "", "", "", "", "2020-03-07", "", "765bd034-e8d7-f102-eb1c-4b7792fc5684", "765bd034-e8d7-f102-0bd6-75e434c71255", "264287008", "Animal dander (substance)", "allergy", "environment", "878820003", "Rhinoconjunctivitis (disorder)", "MODERATE", "271807003", "Eruption of skin (disorder)", "MILD", "2020-03-07", "", "765bd034-e8d7-f102-eb1c-4b7792fc5684", "765bd034-e8d7-f102-0bd6-75e434c71255", "256277009", "Grass pollen (substance)", "allergy", "environment", "", "", "", "", "", "", "2020-03-07", "", "765bd034-e8d7-f102-eb1c-4b7792fc5684", "765bd034-e8d7-f102-0bd6-75e434c71255", "782576004", "Tree pollen (substance)", "allergy", "environment", "", "", "", "", "", "" ],
+      "correct" : false
+    }
+  }
+}

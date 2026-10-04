@@ -1,0 +1,32 @@
+{
+  "input" : "patient-006.json",
+  "mappings" : {
+    "M1" : {
+      "target" : "valueQuantity.value",
+      "expectedValue" : 51.6,
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M2" : {
+      "status" : "NOT_EVALUABLE"
+    },
+    "M3" : {
+      "target" : "valueCodeableConcept",
+      "expectedValue" : "Medikation liegt vor",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M4" : {
+      "target" : "value[x]:valueCodeableConcept",
+      "expectedValue" : null,
+      "actualValues" : [ ],
+      "correct" : true
+    },
+    "M5" : {
+      "target" : "code.text",
+      "expectedValue" : [ "Bee venom (substance)", "Mold (organism)", "House dust mite (organism)", "Animal dander (substance)", "Grass pollen (substance)", "Tree pollen (substance)", "Cow's milk (substance)" ],
+      "actualValues" : [ "2005-11-11", "", "ccaa0537-4e7f-99d8-8b79-c7c94c749579", "ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c", "609328004", "Allergic disposition (finding)", "allergy", "environment", "", "", "", "", "", "", "2005-11-11", "", "ccaa0537-4e7f-99d8-8b79-c7c94c749579", "ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c", "288328004", "Bee venom (substance)", "allergy", "environment", "271807003", "Eruption of skin (disorder)", "MODERATE", "", "", "", "2005-11-11", "", "ccaa0537-4e7f-99d8-8b79-c7c94c749579", "ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c", "84489001", "Mold (organism)", "allergy", "environment", "21626009", "Cutaneous hypersensitivity (disorder)", "MILD", "", "", "", "2005-11-11", "", "ccaa0537-4e7f-99d8-8b79-c7c94c749579", "ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c", "260147004", "House dust mite (organism)", "allergy", "environment", "", "", "", "", "", "", "2005-11-11", "", "ccaa0537-4e7f-99d8-8b79-c7c94c749579", "ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c", "264287008", "Animal dander (substance)", "allergy", "environment", "878820003", "Rhinoconjunctivitis (disorder)", "MODERATE", "247472004", "Wheal (finding)", "MILD", "2005-11-11", "", "ccaa0537-4e7f-99d8-8b79-c7c94c749579", "ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c", "256277009", "Grass pollen (substance)", "allergy", "environment", "", "", "", "", "", "", "2005-11-11", "", "ccaa0537-4e7f-99d8-8b79-c7c94c749579", "ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c", "782576004", "Tree pollen (substance)", "allergy", "environment", "", "", "", "", "", "", "2005-11-11", "", "ccaa0537-4e7f-99d8-8b79-c7c94c749579", "ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c", "3718001", "Cow's milk (substance)", "allergy", "food", "", "", "", "", "", "" ],
+      "correct" : false
+    }
+  }
+}

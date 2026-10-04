@@ -1,0 +1,32 @@
+{
+  "input" : "patient-013.json",
+  "mappings" : {
+    "M1" : {
+      "target" : "valueQuantity.value",
+      "expectedValue" : 75.5,
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M2" : {
+      "status" : "NOT_EVALUABLE"
+    },
+    "M3" : {
+      "target" : "valueCodeableConcept",
+      "expectedValue" : "Medikation liegt vor",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M4" : {
+      "target" : "value[x]:valueCodeableConcept",
+      "expectedValue" : "22253000",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M5" : {
+      "target" : "code.text",
+      "expectedValue" : [ "Mold (organism)", "Penicillin V" ],
+      "actualValues" : [ "2001-08-16", "", "96de62ae-1b00-58d8-77f9-cd25414e16be", "96de62ae-1b00-58d8-8fd6-6d160d9dcd1e", "609328004", "Allergic disposition (finding)", "allergy", "environment", "", "", "", "", "", "", "2001-08-16", "", "96de62ae-1b00-58d8-77f9-cd25414e16be", "96de62ae-1b00-58d8-8fd6-6d160d9dcd1e", "84489001", "Mold (organism)", "allergy", "environment", "267101005", "Nasal discharge present (situation)", "MILD", "", "", "", "2001-08-16", "", "96de62ae-1b00-58d8-77f9-cd25414e16be", "96de62ae-1b00-58d8-8fd6-6d160d9dcd1e", "7984", "Penicillin V", "allergy", "medication", "247472004", "Wheal (finding)", "MILD", "", "", "" ],
+      "correct" : false
+    }
+  }
+}

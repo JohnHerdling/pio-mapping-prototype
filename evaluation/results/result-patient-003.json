@@ -1,0 +1,32 @@
+{
+  "input" : "patient-003.json",
+  "mappings" : {
+    "M1" : {
+      "target" : "valueQuantity.value",
+      "expectedValue" : 23.2,
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M2" : {
+      "status" : "NOT_EVALUABLE"
+    },
+    "M3" : {
+      "target" : "valueCodeableConcept",
+      "expectedValue" : "Medikation liegt vor",
+      "actualValues" : [ ],
+      "correct" : false
+    },
+    "M4" : {
+      "target" : "value[x]:valueCodeableConcept",
+      "expectedValue" : null,
+      "actualValues" : [ ],
+      "correct" : true
+    },
+    "M5" : {
+      "target" : "code.text",
+      "expectedValue" : [ "Mold (organism)", "Aspirin", "Penicillin V", "Shellfish (substance)" ],
+      "actualValues" : [ "2020-04-21", "", "45f3a7b6-d706-f174-d043-16814aa127ed", "45f3a7b6-d706-f174-13ee-73516a1139ab", "609328004", "Allergic disposition (finding)", "allergy", "environment", "", "", "", "", "", "", "2020-04-21", "", "45f3a7b6-d706-f174-d043-16814aa127ed", "45f3a7b6-d706-f174-13ee-73516a1139ab", "84489001", "Mold (organism)", "allergy", "environment", "21626009", "Cutaneous hypersensitivity (disorder)", "MILD", "76067001", "Sneezing (finding)", "MILD", "2020-04-21", "", "45f3a7b6-d706-f174-d043-16814aa127ed", "45f3a7b6-d706-f174-13ee-73516a1139ab", "1191", "Aspirin", "allergy", "medication", "", "", "", "", "", "", "2020-04-21", "", "45f3a7b6-d706-f174-d043-16814aa127ed", "45f3a7b6-d706-f174-13ee-73516a1139ab", "7984", "Penicillin V", "allergy", "medication", "", "", "", "", "", "", "2020-04-21", "", "45f3a7b6-d706-f174-d043-16814aa127ed", "45f3a7b6-d706-f174-13ee-73516a1139ab", "735029006", "Shellfish (substance)", "allergy", "food", "39579001", "Anaphylaxis (disorder)", "SEVERE", "271807003", "Eruption of skin (disorder)", "MODERATE" ],
+      "correct" : false
+    }
+  }
+}
