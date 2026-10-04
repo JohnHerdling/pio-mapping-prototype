@@ -1,0 +1,28 @@
+{
+  "M1" : {
+    "pioElement" : "2.11.1.6.2 Wert",
+    "target" : "valueQuantity.value",
+    "expectedValue" : 57.7
+  },
+  "M2" : {
+    "pioElement" : "2.1.2.2.1.1.1 Diagnosecode",
+    "target" : "code.coding:ICD-10-GM.code",
+    "status" : "NOT_EVALUABLE",
+    "reason" : "Externes Diagnosencodesystem stimmt nicht mit dem im Prototyp festgelegten Zielcodesystem ICD-10-GM überein."
+  },
+  "M3" : {
+    "pioElement" : "2.9.1 Information zur Einnahme von Medikamenten",
+    "target" : "valueCodeableConcept",
+    "expectedValue" : "Medikation liegt vor"
+  },
+  "M4" : {
+    "pioElement" : "2.3.1 Vorliegen einer Schmerzsymptomatik",
+    "target" : "value[x]:valueCodeableConcept",
+    "expectedValue" : "22253000"
+  },
+  "M5" : {
+    "pioElement" : "2.8.2.2.2.2 Freitext Anzeigename",
+    "target" : "code.text",
+    "expectedValue" : [ "Mold (organism)", "Animal dander (substance)", "Grass pollen (substance)", "Tree pollen (substance)", "Aspirin", "Penicillin V", "Eggs (edible) (substance)", "Tree nut (substance)", "Peanut (substance)" ]
+  }
+}

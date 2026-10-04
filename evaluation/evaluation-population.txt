@@ -1,0 +1,79 @@
+Externe Evaluationspopulation – Synthea
+
+Datenquelle:
+Synthea – 100 Sample Synthetic Patient Records, CSV
+Originaldatei:
+synthea_sample_data_csv_latest.zip
+
+Einschlusskriterien:
+
+M1 – Körpergewicht
+Mindestens eine Beobachtung mit:
+DESCRIPTION = Body Weight
+UNITS = kg
+TYPE = numeric
+und vorhandenem VALUE.
+
+M2 – Diagnose
+Mindestens ein Eintrag in conditions.csv mit vorhandenem
+PATIENT, CODE und DESCRIPTION.
+
+M3 – Medikationsinformation
+Mindestens ein Eintrag in medications.csv mit vorhandenem
+PATIENT, START, CODE und DESCRIPTION.
+
+Hinweis:
+Dieses Einschlusskriterium legt noch nicht fest, dass fachlich
+„Medikation liegt vor“ gilt. Es stellt lediglich sicher, dass für
+M3 externe Quelldaten zur Evaluation vorhanden sind.
+
+M4 – Schmerzsymptomatik
+Mindestens eine Beobachtung mit vorhandenem VALUE und einer
+der folgenden DESCRIPTION-Ausprägungen:
+
+- Pain severity - 0-10 verbal numeric rating [Score] - Reported
+- Pain severity - Reported
+- Pain severity in the past week - 0-10 numeric rating [Reported]
+
+M5 – Allergien
+Mindestens ein Eintrag in allergies.csv mit vorhandenem
+PATIENT, CODE und DESCRIPTION.
+
+Ergebnis:
+M1: 108 Patient:innen
+M2: 108 Patient:innen
+M3: 105 Patient:innen
+M4: 108 Patient:innen
+M5: 21 Patient:innen
+
+Schnittmenge M1–M5:
+21 Patient:innen
+
+Für die externe Evaluation werden alle 21 Patient:innen verwendet.
+Es erfolgt keine weitere Auswahl anhand der Ergebnisse der Mapping-Engine.
+
+Die Evaluationspopulation wurde ohne Verwendung der Ergebnisse
+der Mapping-Engine bestimmt.
+
+Patienten-IDs:
+06476266-59b1-ded7-4138-3c7543fd4981
+1426480f-ccc7-2393-40bd-f92ccf2b74b2
+239b0c86-371a-3080-fcd9-8379b296bc9a
+3099d813-4f5c-fc43-31d8-7bba5dc84bed
+31f368d9-3fdc-a15f-ccdc-fafa74a860e9
+37549f60-b5a3-69cd-dea6-5a71c4bc23cf
+3a9c6df2-621a-6239-0760-e58544d252f6
+45f3a7b6-d706-f174-d043-16814aa127ed
+46fcc34a-97a1-f038-9bb1-4ae87116ae61
+57efda89-b582-bb08-8a2d-e06b2c184bfc
+765bd034-e8d7-f102-eb1c-4b7792fc5684
+82623afe-e51c-e02e-1dd7-15a4394d0e92
+887e4b4e-a3e1-b573-4a16-38386d3e0b88
+96de62ae-1b00-58d8-77f9-cd25414e16be
+97e39468-6488-ca8f-fac2-235a80b4dcf7
+9a3814bb-f5b0-05f3-928e-fe6640d5aa2a
+9c26986a-d81d-62f0-ee7a-ab8bb6377434
+a406f356-c8b4-54ad-e79c-54a5e15ffc19
+a5816bea-ad10-431f-1281-47baa2cf249b
+ccaa0537-4e7f-99d8-8b79-c7c94c749579
+f6745f8a-8107-443e-8946-3e6329d20408
