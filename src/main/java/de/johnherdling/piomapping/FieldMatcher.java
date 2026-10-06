@@ -28,9 +28,9 @@ public class FieldMatcher {
 
         for (JsonField field : fields) {
 
-                if (field.getFieldName().equalsIgnoreCase("system")) {
-                        continue;
-                }
+            if (field.getFieldName().equalsIgnoreCase("system")) {
+                continue;
+            }
 
             String normalizedFieldName =
                     normalize(field.getFieldName());
@@ -48,17 +48,20 @@ public class FieldMatcher {
                     );
 
             boolean nameMatches =
-                    normalizedFieldName.contains(
+                    containsConcept(
+                            normalizedFieldName,
                             normalizedSearchTerm
                     );
 
             boolean pathMatches =
-                    normalizedPath.contains(
+                    containsConcept(
+                            normalizedPath,
                             normalizedSearchTerm
                     );
 
             boolean contextMatches =
-                    normalizedContext.contains(
+                    containsConcept(
+                            normalizedContext,
                             normalizedSearchTerm
                     );
 
@@ -67,11 +70,66 @@ public class FieldMatcher {
                     || pathMatches
                     || contextMatches)) {
 
+                if (normalizedSearchTerm.equals("weight")
+                        && isDerivedWeightMeasure(
+                                normalizedContext
+                        )) {
+                    continue;
+                }
+
+                if (normalizedSearchTerm.equals("allergy")
+                        && !isAllergyValueField(field)) {
+                    continue;
+                }
+
                 matches.add(field);
             }
         }
 
         return matches;
+    }
+
+    private boolean isAllergyValueField(
+            JsonField field
+    ) {
+
+        String fieldName =
+                normalize(field.getFieldName());
+
+        return fieldName.equals("description")
+                || fieldName.equals("name")
+                || fieldName.equals("display")
+                || fieldName.equals("allergen")
+                || fieldName.equals("allergy");
+    }
+
+    private boolean containsConcept(
+            String text,
+            String concept
+    ) {
+
+        if (text == null
+                || concept == null
+                || text.isBlank()
+                || concept.isBlank()) {
+
+            return false;
+        }
+
+        return text.contains(concept);
+    }
+
+    private boolean isDerivedWeightMeasure(
+            String context
+    ) {
+
+        if (context == null) {
+            return false;
+        }
+
+        return context.contains("weight for length")
+                || context.contains("weight for age")
+                || context.contains("weight percentile");
     }
 
     private String normalize(String text) {
@@ -93,6 +151,15 @@ public class FieldMatcher {
             return true;
         }
 
+        if (expectedType == JsonFieldType.NUMBER
+                && field.getDataType()
+                == JsonFieldType.TEXT) {
+
+            return isNumeric(
+                    field.getValue().asText()
+            );
+        }
+
         if (expectedType == JsonFieldType.BOOLEAN) {
 
             Boolean normalizedValue =
@@ -103,8 +170,15 @@ public class FieldMatcher {
             return normalizedValue != null;
         }
 
+        /*
+         * Logische Zustände können in heterogenen
+         * Quelldaten auch numerisch repräsentiert sein.
+         * Beispielsweise kann 1 einem positiven Zustand
+         * entsprechen.
+         */
         if (expectedType == JsonFieldType.TEXT
-                && field.getDataType() == JsonFieldType.NUMBER) {
+                && field.getDataType()
+                == JsonFieldType.NUMBER) {
 
             Boolean normalizedValue =
                     booleanNormalizer.normalize(
@@ -115,5 +189,19 @@ public class FieldMatcher {
         }
 
         return false;
+    }
+
+    private boolean isNumeric(String value) {
+
+        if (value == null || value.isBlank()) {
+            return false;
+        }
+
+        try {
+            Double.parseDouble(value.trim());
+            return true;
+        } catch (NumberFormatException exception) {
+            return false;
+        }
     }
 }

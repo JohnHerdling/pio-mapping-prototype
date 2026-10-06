@@ -1,0 +1,301 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< de.johnherdling:pio-mapping-prototype >----------------
+[INFO] Building pio-mapping-prototype 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.6.4:java (default-cli) @ pio-mapping-prototype ---
+Externe Synthea-Evaluation
+========================================
+
+----------------------------------------
+patient-001.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 31.5
+  Tatsächlich: [31.5]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Tree nut (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Mold (organism), House dust mite (organism), Animal dander (substance), Grass pollen (substance), Tree pollen (substance), Tree nut (substance)]
+
+----------------------------------------
+patient-002.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 11.7
+  Tatsächlich: [11.7]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Latex (substance)","Bee venom (substance)","Mold (organism)","House dust mite (organism)","Animal dander (substance)","Tree pollen (substance)","Cow's milk (substance)","Glycine max (substance)","Eggs (edible) (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Latex (substance), Bee venom (substance), Mold (organism), House dust mite (organism), Animal dander (substance), Tree pollen (substance), Cow's milk (substance), Glycine max (substance), Eggs (edible) (substance)]
+
+----------------------------------------
+patient-003.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 23.2
+  Tatsächlich: [23.2]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: null
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","Aspirin","Penicillin V","Shellfish (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Mold (organism), Aspirin, Penicillin V, Shellfish (substance)]
+
+----------------------------------------
+patient-004.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 89.8
+  Tatsächlich: [89.8]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Eggs (edible) (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Mold (organism), House dust mite (organism), Animal dander (substance), Grass pollen (substance), Tree pollen (substance), Eggs (edible) (substance)]
+
+----------------------------------------
+patient-005.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 77.9
+  Tatsächlich: [77.9]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","Sulfamethoxazole / Trimethoprim"]
+  Tatsächlich: [Allergic disposition (finding), Mold (organism), Sulfamethoxazole / Trimethoprim]
+
+----------------------------------------
+patient-006.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 51.6
+  Tatsächlich: [51.6]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: null
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Bee venom (substance)","Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Cow's milk (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Bee venom (substance), Mold (organism), House dust mite (organism), Animal dander (substance), Grass pollen (substance), Tree pollen (substance), Cow's milk (substance)]
+
+----------------------------------------
+patient-007.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 66.5
+  Tatsächlich: [66.5]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Eggs (edible) (substance)","Wheat (substance)","Shellfish (substance)","Tree nut (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Mold (organism), House dust mite (organism), Animal dander (substance), Grass pollen (substance), Tree pollen (substance), Eggs (edible) (substance), Wheat (substance), Shellfish (substance), Tree nut (substance)]
+
+----------------------------------------
+patient-008.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 57.7
+  Tatsächlich: [57.7]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Aspirin","Penicillin V","Eggs (edible) (substance)","Tree nut (substance)","Peanut (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Mold (organism), Animal dander (substance), Grass pollen (substance), Tree pollen (substance), Aspirin, Penicillin V, Eggs (edible) (substance), Tree nut (substance), Peanut (substance)]
+
+----------------------------------------
+patient-009.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 23.2
+  Tatsächlich: [23.2]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Mold (organism), House dust mite (organism), Animal dander (substance), Grass pollen (substance), Tree pollen (substance)]
+
+----------------------------------------
+patient-010.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 83.6
+  Tatsächlich: [83.6]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Latex (substance)","Bee venom (substance)","Mold (organism)","Animal dander (substance)","Grass pollen (substance)","Wheat (substance)","Shellfish (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Latex (substance), Bee venom (substance), Mold (organism), Animal dander (substance), Grass pollen (substance), Wheat (substance), Shellfish (substance)]
+
+----------------------------------------
+patient-011.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 75.0
+  Tatsächlich: [75.0]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Shellfish (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Shellfish (substance)]
+
+----------------------------------------
+patient-012.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 86.0
+  Tatsächlich: [86.0]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Tree pollen (substance)","Aspirin","Shellfish (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Tree pollen (substance), Aspirin, Shellfish (substance)]
+
+----------------------------------------
+patient-013.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 75.5
+  Tatsächlich: [75.5]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","Penicillin V"]
+  Tatsächlich: [Allergic disposition (finding), Mold (organism), Penicillin V]
+
+----------------------------------------
+patient-014.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 80.5
+  Tatsächlich: [80.5]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Mold (organism), House dust mite (organism), Animal dander (substance), Grass pollen (substance), Tree pollen (substance)]
+
+----------------------------------------
+patient-015.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 73.4
+  Tatsächlich: [73.4]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: null
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Lisinopril","Aspirin"]
+  Tatsächlich: [Allergic disposition (finding), Mold (organism), House dust mite (organism), Animal dander (substance), Grass pollen (substance), Tree pollen (substance), Lisinopril, Aspirin]
+
+----------------------------------------
+patient-016.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 18.8
+  Tatsächlich: [18.8]
+M2: NOT_EVALUABLE
+M3: KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: [Medikation liegt vor]
+M4: KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: [22253000]
+M5: NICHT KORREKT
+  Erwartet: ["Penicillin V","Shellfish (substance)"]
+  Tatsächlich: [Allergic disposition (finding), Penicillin V, Shellfish (substance)]
+
+========================================
+Zusammenfassung
+========================================
+M1 Körpergewicht:         16 / 16
+M2 Diagnose:             NOT_EVALUABLE
+M3 Medikation:            16 / 16
+M4 Schmerzsymptomatik:    16 / 16
+M5 Allergien:             0 / 16
+----------------------------------------
+Korrekt:                 48 / 64
+Mapping-Korrektheit:      75,0%
+========================================
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.984 s
+[INFO] Finished at: 2026-10-06T11:19:34+02:00
+[INFO] ------------------------------------------------------------------------

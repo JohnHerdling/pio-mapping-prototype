@@ -4,28 +4,57 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class MappingEngine {
 
-        private final JsonFieldCollector collector =
-                        new JsonFieldCollector();
+    private final JsonFieldCollector collector =
+            new JsonFieldCollector();
 
-        private final FieldMatcher matcher =
-                        new FieldMatcher();
+    private final FieldMatcher matcher =
+            new FieldMatcher();
 
-        private final FieldValueExtractor extractor =
-                        new FieldValueExtractor();
+    private final FieldValueExtractor extractor =
+            new FieldValueExtractor();
 
-        private final ValueTransformer transformer =
-                        new ValueTransformer();
+    private final ValueTransformer transformer =
+            new ValueTransformer();
 
-        private final BooleanValueNormalizer booleanNormalizer =
-                                new BooleanValueNormalizer();
+    private final BooleanValueNormalizer booleanNormalizer =
+            new BooleanValueNormalizer();
 
-        public MappingResult execute(
-                        JsonNode source,
-                        MappingRule rule
+    private final ConceptNormalizer conceptNormalizer =
+            new ConceptNormalizer();
+
+    public MappingResult execute(
+            JsonNode source,
+            MappingRule rule
     ) {
+
+        String structuralState =
+                detectStructuralState(
+                        source,
+                        rule
+                );
+
+        if (structuralState != null
+                && rule.getTransformations() != null) {
+
+            String transformed =
+                    transformer.transform(
+                            structuralState,
+                            rule.getTransformations()
+                    );
+
+            if (transformed != null) {
+
+                return new MappingResult(
+                        rule.getId(),
+                        rule.getTarget(),
+                        List.of(transformed)
+                );
+            }
+        }
 
         List<JsonField> fields =
                 collector.collect(source);
@@ -37,8 +66,30 @@ public class MappingEngine {
                         rule.getDataType()
                 );
 
+        if (!rule.isMultiple()
+                && matches.size() > 1) {
+
+            JsonField lastMatch =
+                    matches.get(
+                            matches.size() - 1
+                    );
+
+            matches =
+                    new ArrayList<>(
+                            List.of(lastMatch)
+                    );
+        }
+
         List<String> values =
                 extractor.extractValues(matches);
+
+        if (rule.isMultiple()
+                && isAllergyRule(rule)) {
+
+            values.removeIf(
+                    this::isAllergyDisposition
+            );
+        }
 
         if (rule.getTransformations() != null) {
 
@@ -47,17 +98,61 @@ public class MappingEngine {
 
             for (String value : values) {
 
-                String valueForTransformation = value;
+                String valueForTransformation =
+                        value;
 
-                if (rule.getDataType() == JsonFieldType.BOOLEAN) {
+                /*
+                 * Unterschiedliche Repräsentationen
+                 * logischer Zustände werden vor der
+                 * Werttransformation vereinheitlicht.
+                 */
+                Boolean normalizedValue =
+                        booleanNormalizer.normalize(
+                                value
+                        );
 
-                        Boolean normalizedValue =
-                                booleanNormalizer.normalize(value);
+                if (normalizedValue != null) {
 
-                        if (normalizedValue != null) {
-                        valueForTransformation =
-                                normalizedValue.toString();
+                    if (normalizedValue) {
+
+                        if (rule.getTransformations()
+                                .containsKey("YES")) {
+
+                            valueForTransformation =
+                                    "YES";
+
+                        } else if (rule.getTransformations()
+                                .containsKey("ACTIVE")) {
+
+                            valueForTransformation =
+                                    "ACTIVE";
+
+                        } else {
+
+                            valueForTransformation =
+                                    "true";
                         }
+
+                    } else {
+
+                        if (rule.getTransformations()
+                                .containsKey("NO")) {
+
+                            valueForTransformation =
+                                    "NO";
+
+                        } else if (rule.getTransformations()
+                                .containsKey("INACTIVE")) {
+
+                            valueForTransformation =
+                                    "INACTIVE";
+
+                        } else {
+
+                            valueForTransformation =
+                                    "false";
+                        }
+                    }
                 }
 
                 String transformedValue =
@@ -67,9 +162,12 @@ public class MappingEngine {
                         );
 
                 if (transformedValue != null) {
-                        transformedValues.add(transformedValue);
-                        }
+
+                    transformedValues.add(
+                            transformedValue
+                    );
                 }
+            }
 
             values = transformedValues;
         }
@@ -79,5 +177,106 @@ public class MappingEngine {
                 rule.getTarget(),
                 values
         );
+    }
+
+    private boolean isAllergyRule(
+            MappingRule rule
+    ) {
+
+        String concept =
+                conceptNormalizer.normalize(
+                        rule.getConcept()
+                );
+
+        return concept.contains("allergy");
+    }
+
+    private boolean isAllergyDisposition(
+            String value
+    ) {
+
+        if (value == null) {
+            return false;
+        }
+
+        String normalized =
+                value.trim().toLowerCase();
+
+        return normalized.equals(
+                "allergic disposition (finding)"
+        );
+    }
+
+    private String detectStructuralState(
+            JsonNode source,
+            MappingRule rule
+    ) {
+
+        if (source == null
+                || !source.isObject()
+                || rule.getTransformations() == null) {
+
+            return null;
+        }
+
+        String normalizedConcept =
+                conceptNormalizer.normalize(
+                        rule.getConcept()
+                );
+
+        for (Map.Entry<String, JsonNode> entry
+                : source.properties()) {
+
+            String normalizedFieldName =
+                    conceptNormalizer.normalize(
+                            entry.getKey()
+                    );
+
+            JsonNode value =
+                    entry.getValue();
+
+            boolean conceptMatches =
+                    normalizedFieldName.contains(
+                            normalizedConcept
+                    );
+
+            if (!conceptMatches) {
+                continue;
+            }
+
+            if (value.isArray()
+                    && !value.isEmpty()) {
+
+                if (rule.getTransformations()
+                        .containsKey("ACTIVE")) {
+
+                    return "ACTIVE";
+                }
+
+                if (rule.getTransformations()
+                        .containsKey("YES")) {
+
+                    return "YES";
+                }
+            }
+
+            if (value.isObject()
+                    && !value.isEmpty()) {
+
+                if (rule.getTransformations()
+                        .containsKey("ACTIVE")) {
+
+                    return "ACTIVE";
+                }
+
+                if (rule.getTransformations()
+                        .containsKey("YES")) {
+
+                    return "YES";
+                }
+            }
+        }
+
+        return null;
     }
 }

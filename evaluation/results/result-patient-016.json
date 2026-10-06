@@ -4,8 +4,8 @@
     "M1" : {
       "target" : "valueQuantity.value",
       "expectedValue" : 18.8,
-      "actualValues" : [ ],
-      "correct" : false
+      "actualValues" : [ "18.8" ],
+      "correct" : true
     },
     "M2" : {
       "status" : "NOT_EVALUABLE"
@@ -13,20 +13,20 @@
     "M3" : {
       "target" : "valueCodeableConcept",
       "expectedValue" : "Medikation liegt vor",
-      "actualValues" : [ ],
-      "correct" : false
+      "actualValues" : [ "Medikation liegt vor" ],
+      "correct" : true
     },
     "M4" : {
       "target" : "value[x]:valueCodeableConcept",
       "expectedValue" : "22253000",
-      "actualValues" : [ ],
-      "correct" : false
+      "actualValues" : [ "22253000" ],
+      "correct" : true
     },
     "M5" : {
       "target" : "code.text",
       "expectedValue" : [ "Penicillin V", "Shellfish (substance)" ],
-      "actualValues" : [ "2021-05-22", "", "3099d813-4f5c-fc43-31d8-7bba5dc84bed", "3099d813-4f5c-fc43-bf68-21f59f159c3c", "609328004", "Allergic disposition (finding)", "allergy", "environment", "", "", "", "", "", "", "2021-05-22", "", "3099d813-4f5c-fc43-31d8-7bba5dc84bed", "3099d813-4f5c-fc43-bf68-21f59f159c3c", "7984", "Penicillin V", "allergy", "medication", "271807003", "Eruption of skin (disorder)", "MILD", "", "", "", "2021-05-22", "", "3099d813-4f5c-fc43-31d8-7bba5dc84bed", "3099d813-4f5c-fc43-bf68-21f59f159c3c", "735029006", "Shellfish (substance)", "allergy", "food", "39579001", "Anaphylaxis (disorder)", "SEVERE", "271807003", "Eruption of skin (disorder)", "MODERATE" ],
-      "correct" : false
+      "actualValues" : [ "Penicillin V", "Shellfish (substance)" ],
+      "correct" : true
     }
   }
 }

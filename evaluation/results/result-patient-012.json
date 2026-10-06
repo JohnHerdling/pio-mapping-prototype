@@ -4,8 +4,8 @@
     "M1" : {
       "target" : "valueQuantity.value",
       "expectedValue" : 86.0,
-      "actualValues" : [ ],
-      "correct" : false
+      "actualValues" : [ "86.0" ],
+      "correct" : true
     },
     "M2" : {
       "status" : "NOT_EVALUABLE"
@@ -13,20 +13,20 @@
     "M3" : {
       "target" : "valueCodeableConcept",
       "expectedValue" : "Medikation liegt vor",
-      "actualValues" : [ ],
-      "correct" : false
+      "actualValues" : [ "Medikation liegt vor" ],
+      "correct" : true
     },
     "M4" : {
       "target" : "value[x]:valueCodeableConcept",
       "expectedValue" : "22253000",
-      "actualValues" : [ ],
-      "correct" : false
+      "actualValues" : [ "22253000" ],
+      "correct" : true
     },
     "M5" : {
       "target" : "code.text",
       "expectedValue" : [ "Tree pollen (substance)", "Aspirin", "Shellfish (substance)" ],
-      "actualValues" : [ "1981-12-02", "", "31f368d9-3fdc-a15f-ccdc-fafa74a860e9", "31f368d9-3fdc-a15f-3b69-efb1c562bd7d", "609328004", "Allergic disposition (finding)", "allergy", "environment", "", "", "", "", "", "", "1981-12-02", "", "31f368d9-3fdc-a15f-ccdc-fafa74a860e9", "31f368d9-3fdc-a15f-3b69-efb1c562bd7d", "782576004", "Tree pollen (substance)", "allergy", "environment", "", "", "", "", "", "", "1981-12-02", "", "31f368d9-3fdc-a15f-ccdc-fafa74a860e9", "31f368d9-3fdc-a15f-3b69-efb1c562bd7d", "1191", "Aspirin", "allergy", "medication", "", "", "", "", "", "", "1981-12-02", "", "31f368d9-3fdc-a15f-ccdc-fafa74a860e9", "31f368d9-3fdc-a15f-3b69-efb1c562bd7d", "735029006", "Shellfish (substance)", "allergy", "food", "271807003", "Eruption of skin (disorder)", "MODERATE", "267036007", "Dyspnea (finding)", "MILD" ],
-      "correct" : false
+      "actualValues" : [ "Tree pollen (substance)", "Aspirin", "Shellfish (substance)" ],
+      "correct" : true
     }
   }
 }

@@ -14,19 +14,26 @@ public class BooleanValueNormalizer {
         if (normalized.equals("true")
                 || normalized.equals("yes")
                 || normalized.equals("present")
-                || normalized.equals("detected")
-                || normalized.equals("1")) {
+                || normalized.equals("detected")) {
             return true;
         }
 
         if (normalized.equals("false")
                 || normalized.equals("no")
                 || normalized.equals("absent")
-                || normalized.equals("not detected")
-                || normalized.equals("0")) {
+                || normalized.equals("not detected")) {
             return false;
         }
 
-        return null;
+        try {
+
+            double numericValue =
+                    Double.parseDouble(normalized);
+
+            return numericValue > 0;
+
+        } catch (NumberFormatException ignored) {
+            return null;
+        }
     }
 }

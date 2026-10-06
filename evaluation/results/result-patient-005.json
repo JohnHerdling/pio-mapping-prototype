@@ -4,8 +4,8 @@
     "M1" : {
       "target" : "valueQuantity.value",
       "expectedValue" : 77.9,
-      "actualValues" : [ ],
-      "correct" : false
+      "actualValues" : [ "77.9" ],
+      "correct" : true
     },
     "M2" : {
       "status" : "NOT_EVALUABLE"
@@ -13,20 +13,20 @@
     "M3" : {
       "target" : "valueCodeableConcept",
       "expectedValue" : "Medikation liegt vor",
-      "actualValues" : [ ],
-      "correct" : false
+      "actualValues" : [ "Medikation liegt vor" ],
+      "correct" : true
     },
     "M4" : {
       "target" : "value[x]:valueCodeableConcept",
       "expectedValue" : "22253000",
-      "actualValues" : [ ],
-      "correct" : false
+      "actualValues" : [ "22253000" ],
+      "correct" : true
     },
     "M5" : {
       "target" : "code.text",
       "expectedValue" : [ "Mold (organism)", "Sulfamethoxazole / Trimethoprim" ],
-      "actualValues" : [ "1955-12-11", "", "f6745f8a-8107-443e-8946-3e6329d20408", "f6745f8a-8107-443e-2249-0b4b49af0630", "609328004", "Allergic disposition (finding)", "allergy", "environment", "", "", "", "", "", "", "1955-12-11", "", "f6745f8a-8107-443e-8946-3e6329d20408", "f6745f8a-8107-443e-2249-0b4b49af0630", "84489001", "Mold (organism)", "allergy", "environment", "", "", "", "", "", "", "1955-12-11", "", "f6745f8a-8107-443e-8946-3e6329d20408", "f6745f8a-8107-443e-2249-0b4b49af0630", "10831", "Sulfamethoxazole / Trimethoprim", "allergy", "medication", "247472004", "Wheal (finding)", "MODERATE", "271807003", "Eruption of skin (disorder)", "MODERATE" ],
-      "correct" : false
+      "actualValues" : [ "Mold (organism)", "Sulfamethoxazole / Trimethoprim" ],
+      "correct" : true
     }
   }
 }

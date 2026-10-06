@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 class MappingEvaluationTest {
 
     @Test
@@ -36,6 +38,9 @@ class MappingEvaluationTest {
                 "data/q3.json"
         };
 
+        int total = 0;
+        int correctCount = 0;
+
         for (String sourceFile : sourceFiles) {
 
             JsonNode source =
@@ -60,6 +65,12 @@ class MappingEvaluationTest {
                                 expectedValue
                         );
 
+                total++;
+
+                if (correct) {
+                    correctCount++;
+                }
+
                 System.out.println(
                         rule.getId()
                                 + " -> "
@@ -69,8 +80,28 @@ class MappingEvaluationTest {
                                 + " | korrekt: "
                                 + correct
                 );
+
+                assertTrue(
+                        correct,
+                        "Fehler bei "
+                                + sourceFile
+                                + " / "
+                                + rule.getId()
+                                + ": Ist="
+                                + result.getValues()
+                                + ", Soll="
+                                + expectedValue
+                );
             }
         }
+
+        System.out.println();
+        System.out.println(
+                "Gesamtergebnis: "
+                        + correctCount
+                        + " / "
+                        + total
+        );
     }
 
     private boolean matchesExpectedValue(

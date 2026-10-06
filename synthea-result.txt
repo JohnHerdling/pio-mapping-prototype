@@ -1,0 +1,301 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< de.johnherdling:pio-mapping-prototype >----------------
+[INFO] Building pio-mapping-prototype 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.6.4:java (default-cli) @ pio-mapping-prototype ---
+Externe Synthea-Evaluation
+========================================
+
+----------------------------------------
+patient-001.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 31.5
+  Tatsächlich: [31.5]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Tree nut (substance)"]
+  Tatsächlich: [2016-04-13, , 9a3814bb-f5b0-05f3-928e-fe6640d5aa2a, 9a3814bb-f5b0-05f3-7f8d-c24687b1fda7, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 2016-04-13, , 9a3814bb-f5b0-05f3-928e-fe6640d5aa2a, 9a3814bb-f5b0-05f3-7f8d-c24687b1fda7, 84489001, Mold (organism), allergy, environment, 267101005, Nasal discharge present (situation), MILD, , , , 2016-04-13, , 9a3814bb-f5b0-05f3-928e-fe6640d5aa2a, 9a3814bb-f5b0-05f3-7f8d-c24687b1fda7, 260147004, House dust mite (organism), allergy, environment, , , , , , , 2016-04-13, , 9a3814bb-f5b0-05f3-928e-fe6640d5aa2a, 9a3814bb-f5b0-05f3-7f8d-c24687b1fda7, 264287008, Animal dander (substance), allergy, environment, 49727002, Cough (finding), MODERATE, 271807003, Eruption of skin (disorder), MILD, 2016-04-13, , 9a3814bb-f5b0-05f3-928e-fe6640d5aa2a, 9a3814bb-f5b0-05f3-7f8d-c24687b1fda7, 256277009, Grass pollen (substance), allergy, environment, , , , , , , 2016-04-13, , 9a3814bb-f5b0-05f3-928e-fe6640d5aa2a, 9a3814bb-f5b0-05f3-7f8d-c24687b1fda7, 782576004, Tree pollen (substance), allergy, environment, , , , , , , 2016-04-13, , 9a3814bb-f5b0-05f3-928e-fe6640d5aa2a, 9a3814bb-f5b0-05f3-7f8d-c24687b1fda7, 442571000124108, Tree nut (substance), allergy, food, 39579001, Anaphylaxis (disorder), SEVERE, 247472004, Wheal (finding), MODERATE]
+
+----------------------------------------
+patient-002.json
+----------------------------------------
+M1: NICHT KORREKT
+  Erwartet: 11.7
+  Tatsächlich: [27.2]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Latex (substance)","Bee venom (substance)","Mold (organism)","House dust mite (organism)","Animal dander (substance)","Tree pollen (substance)","Cow's milk (substance)","Glycine max (substance)","Eggs (edible) (substance)"]
+  Tatsächlich: [2023-11-03, , 3a9c6df2-621a-6239-0760-e58544d252f6, 3a9c6df2-621a-6239-1778-331bfa6f27fa, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 2023-11-03, , 3a9c6df2-621a-6239-0760-e58544d252f6, 3a9c6df2-621a-6239-1778-331bfa6f27fa, 111088007, Latex (substance), allergy, environment, 247472004, Wheal (finding), MILD, 878820003, Rhinoconjunctivitis (disorder), MILD, 2023-11-03, , 3a9c6df2-621a-6239-0760-e58544d252f6, 3a9c6df2-621a-6239-1778-331bfa6f27fa, 288328004, Bee venom (substance), allergy, environment, , , , , , , 2023-11-03, , 3a9c6df2-621a-6239-0760-e58544d252f6, 3a9c6df2-621a-6239-1778-331bfa6f27fa, 84489001, Mold (organism), allergy, environment, 21626009, Cutaneous hypersensitivity (disorder), MILD, 267101005, Nasal discharge present (situation), MILD, 2023-11-03, , 3a9c6df2-621a-6239-0760-e58544d252f6, 3a9c6df2-621a-6239-1778-331bfa6f27fa, 260147004, House dust mite (organism), allergy, environment, , , , , , , 2023-11-03, , 3a9c6df2-621a-6239-0760-e58544d252f6, 3a9c6df2-621a-6239-1778-331bfa6f27fa, 264287008, Animal dander (substance), allergy, environment, 49727002, Cough (finding), MODERATE, 878820003, Rhinoconjunctivitis (disorder), MODERATE, 2023-11-03, , 3a9c6df2-621a-6239-0760-e58544d252f6, 3a9c6df2-621a-6239-1778-331bfa6f27fa, 782576004, Tree pollen (substance), allergy, environment, , , , , , , 2023-11-03, , 3a9c6df2-621a-6239-0760-e58544d252f6, 3a9c6df2-621a-6239-1778-331bfa6f27fa, 3718001, Cow's milk (substance), allergy, food, 402387002, Allergic angioedema (disorder), MODERATE, 247472004, Wheal (finding), MILD, 2023-11-03, , 3a9c6df2-621a-6239-0760-e58544d252f6, 3a9c6df2-621a-6239-1778-331bfa6f27fa, 256355007, Glycine max (substance), allergy, food, , , , , , , 2023-11-03, , 3a9c6df2-621a-6239-0760-e58544d252f6, 3a9c6df2-621a-6239-1778-331bfa6f27fa, 102263004, Eggs (edible) (substance), allergy, food, , , , , , ]
+
+----------------------------------------
+patient-003.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 23.2
+  Tatsächlich: [23.2]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: KORREKT
+  Erwartet: null
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","Aspirin","Penicillin V","Shellfish (substance)"]
+  Tatsächlich: [2020-04-21, , 45f3a7b6-d706-f174-d043-16814aa127ed, 45f3a7b6-d706-f174-13ee-73516a1139ab, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 2020-04-21, , 45f3a7b6-d706-f174-d043-16814aa127ed, 45f3a7b6-d706-f174-13ee-73516a1139ab, 84489001, Mold (organism), allergy, environment, 21626009, Cutaneous hypersensitivity (disorder), MILD, 76067001, Sneezing (finding), MILD, 2020-04-21, , 45f3a7b6-d706-f174-d043-16814aa127ed, 45f3a7b6-d706-f174-13ee-73516a1139ab, 1191, Aspirin, allergy, medication, , , , , , , 2020-04-21, , 45f3a7b6-d706-f174-d043-16814aa127ed, 45f3a7b6-d706-f174-13ee-73516a1139ab, 7984, Penicillin V, allergy, medication, , , , , , , 2020-04-21, , 45f3a7b6-d706-f174-d043-16814aa127ed, 45f3a7b6-d706-f174-13ee-73516a1139ab, 735029006, Shellfish (substance), allergy, food, 39579001, Anaphylaxis (disorder), SEVERE, 271807003, Eruption of skin (disorder), MODERATE]
+
+----------------------------------------
+patient-004.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 89.8
+  Tatsächlich: [89.8]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Eggs (edible) (substance)"]
+  Tatsächlich: [1993-05-03, , a406f356-c8b4-54ad-e79c-54a5e15ffc19, a406f356-c8b4-54ad-560a-98ba116ad8d0, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 1993-05-03, , a406f356-c8b4-54ad-e79c-54a5e15ffc19, a406f356-c8b4-54ad-560a-98ba116ad8d0, 84489001, Mold (organism), allergy, environment, 267101005, Nasal discharge present (situation), MILD, , , , 1993-05-03, , a406f356-c8b4-54ad-e79c-54a5e15ffc19, a406f356-c8b4-54ad-560a-98ba116ad8d0, 260147004, House dust mite (organism), allergy, environment, , , , , , , 1993-05-03, , a406f356-c8b4-54ad-e79c-54a5e15ffc19, a406f356-c8b4-54ad-560a-98ba116ad8d0, 264287008, Animal dander (substance), allergy, environment, 49727002, Cough (finding), MODERATE, 878820003, Rhinoconjunctivitis (disorder), MODERATE, 1993-05-03, , a406f356-c8b4-54ad-e79c-54a5e15ffc19, a406f356-c8b4-54ad-560a-98ba116ad8d0, 256277009, Grass pollen (substance), allergy, environment, , , , , , , 1993-05-03, , a406f356-c8b4-54ad-e79c-54a5e15ffc19, a406f356-c8b4-54ad-560a-98ba116ad8d0, 782576004, Tree pollen (substance), allergy, environment, , , , , , , 1993-05-03, , a406f356-c8b4-54ad-e79c-54a5e15ffc19, a406f356-c8b4-54ad-560a-98ba116ad8d0, 102263004, Eggs (edible) (substance), allergy, food, 300359004, Finding of vomiting (finding), MODERATE, , , ]
+
+----------------------------------------
+patient-005.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 77.9
+  Tatsächlich: [77.9]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","Sulfamethoxazole / Trimethoprim"]
+  Tatsächlich: [1955-12-11, , f6745f8a-8107-443e-8946-3e6329d20408, f6745f8a-8107-443e-2249-0b4b49af0630, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 1955-12-11, , f6745f8a-8107-443e-8946-3e6329d20408, f6745f8a-8107-443e-2249-0b4b49af0630, 84489001, Mold (organism), allergy, environment, , , , , , , 1955-12-11, , f6745f8a-8107-443e-8946-3e6329d20408, f6745f8a-8107-443e-2249-0b4b49af0630, 10831, Sulfamethoxazole / Trimethoprim, allergy, medication, 247472004, Wheal (finding), MODERATE, 271807003, Eruption of skin (disorder), MODERATE]
+
+----------------------------------------
+patient-006.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 51.6
+  Tatsächlich: [51.6]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: KORREKT
+  Erwartet: null
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Bee venom (substance)","Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Cow's milk (substance)"]
+  Tatsächlich: [2005-11-11, , ccaa0537-4e7f-99d8-8b79-c7c94c749579, ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 2005-11-11, , ccaa0537-4e7f-99d8-8b79-c7c94c749579, ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c, 288328004, Bee venom (substance), allergy, environment, 271807003, Eruption of skin (disorder), MODERATE, , , , 2005-11-11, , ccaa0537-4e7f-99d8-8b79-c7c94c749579, ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c, 84489001, Mold (organism), allergy, environment, 21626009, Cutaneous hypersensitivity (disorder), MILD, , , , 2005-11-11, , ccaa0537-4e7f-99d8-8b79-c7c94c749579, ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c, 260147004, House dust mite (organism), allergy, environment, , , , , , , 2005-11-11, , ccaa0537-4e7f-99d8-8b79-c7c94c749579, ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c, 264287008, Animal dander (substance), allergy, environment, 878820003, Rhinoconjunctivitis (disorder), MODERATE, 247472004, Wheal (finding), MILD, 2005-11-11, , ccaa0537-4e7f-99d8-8b79-c7c94c749579, ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c, 256277009, Grass pollen (substance), allergy, environment, , , , , , , 2005-11-11, , ccaa0537-4e7f-99d8-8b79-c7c94c749579, ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c, 782576004, Tree pollen (substance), allergy, environment, , , , , , , 2005-11-11, , ccaa0537-4e7f-99d8-8b79-c7c94c749579, ccaa0537-4e7f-99d8-5b00-ea8836fb3d5c, 3718001, Cow's milk (substance), allergy, food, , , , , , ]
+
+----------------------------------------
+patient-007.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 66.5
+  Tatsächlich: [66.5]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Eggs (edible) (substance)","Wheat (substance)","Shellfish (substance)","Tree nut (substance)"]
+  Tatsächlich: [2010-02-19, , a5816bea-ad10-431f-1281-47baa2cf249b, a5816bea-ad10-431f-6cd4-9e367b41a769, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 2010-02-19, , a5816bea-ad10-431f-1281-47baa2cf249b, a5816bea-ad10-431f-6cd4-9e367b41a769, 84489001, Mold (organism), allergy, environment, , , , , , , 2010-02-19, , a5816bea-ad10-431f-1281-47baa2cf249b, a5816bea-ad10-431f-6cd4-9e367b41a769, 260147004, House dust mite (organism), allergy, environment, , , , , , , 2010-02-19, , a5816bea-ad10-431f-1281-47baa2cf249b, a5816bea-ad10-431f-6cd4-9e367b41a769, 264287008, Animal dander (substance), allergy, environment, 49727002, Cough (finding), MODERATE, 878820003, Rhinoconjunctivitis (disorder), MODERATE, 2010-02-19, , a5816bea-ad10-431f-1281-47baa2cf249b, a5816bea-ad10-431f-6cd4-9e367b41a769, 256277009, Grass pollen (substance), allergy, environment, , , , , , , 2010-02-19, , a5816bea-ad10-431f-1281-47baa2cf249b, a5816bea-ad10-431f-6cd4-9e367b41a769, 782576004, Tree pollen (substance), allergy, environment, , , , , , , 2010-02-19, , a5816bea-ad10-431f-1281-47baa2cf249b, a5816bea-ad10-431f-6cd4-9e367b41a769, 102263004, Eggs (edible) (substance), allergy, food, , , , , , , 2010-02-19, , a5816bea-ad10-431f-1281-47baa2cf249b, a5816bea-ad10-431f-6cd4-9e367b41a769, 412071004, Wheat (substance), allergy, food, 271807003, Eruption of skin (disorder), MODERATE, , , , 2010-02-19, , a5816bea-ad10-431f-1281-47baa2cf249b, a5816bea-ad10-431f-6cd4-9e367b41a769, 735029006, Shellfish (substance), allergy, food, 271807003, Eruption of skin (disorder), MODERATE, 402387002, Allergic angioedema (disorder), MODERATE, 2010-02-19, , a5816bea-ad10-431f-1281-47baa2cf249b, a5816bea-ad10-431f-6cd4-9e367b41a769, 442571000124108, Tree nut (substance), allergy, food, 271807003, Eruption of skin (disorder), MODERATE, 402387002, Allergic angioedema (disorder), MODERATE]
+
+----------------------------------------
+patient-008.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 57.7
+  Tatsächlich: [57.7]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Aspirin","Penicillin V","Eggs (edible) (substance)","Tree nut (substance)","Peanut (substance)"]
+  Tatsächlich: [2001-01-03, , 82623afe-e51c-e02e-1dd7-15a4394d0e92, 82623afe-e51c-e02e-9fa0-5b2cd8d72efe, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 2001-01-03, , 82623afe-e51c-e02e-1dd7-15a4394d0e92, 82623afe-e51c-e02e-9fa0-5b2cd8d72efe, 84489001, Mold (organism), allergy, environment, , , , , , , 2001-01-03, , 82623afe-e51c-e02e-1dd7-15a4394d0e92, 82623afe-e51c-e02e-9fa0-5b2cd8d72efe, 264287008, Animal dander (substance), allergy, environment, 878820003, Rhinoconjunctivitis (disorder), MODERATE, 267036007, Dyspnea (finding), MILD, 2001-01-03, , 82623afe-e51c-e02e-1dd7-15a4394d0e92, 82623afe-e51c-e02e-9fa0-5b2cd8d72efe, 256277009, Grass pollen (substance), allergy, environment, , , , , , , 2001-01-03, , 82623afe-e51c-e02e-1dd7-15a4394d0e92, 82623afe-e51c-e02e-9fa0-5b2cd8d72efe, 782576004, Tree pollen (substance), allergy, environment, , , , , , , 2001-01-03, , 82623afe-e51c-e02e-1dd7-15a4394d0e92, 82623afe-e51c-e02e-9fa0-5b2cd8d72efe, 1191, Aspirin, allergy, medication, , , , , , , 2001-01-03, , 82623afe-e51c-e02e-1dd7-15a4394d0e92, 82623afe-e51c-e02e-9fa0-5b2cd8d72efe, 7984, Penicillin V, allergy, medication, 271807003, Eruption of skin (disorder), MILD, , , , 2001-01-03, , 82623afe-e51c-e02e-1dd7-15a4394d0e92, 82623afe-e51c-e02e-9fa0-5b2cd8d72efe, 102263004, Eggs (edible) (substance), allergy, food, 247472004, Wheal (finding), MODERATE, , , , 2001-01-03, , 82623afe-e51c-e02e-1dd7-15a4394d0e92, 82623afe-e51c-e02e-9fa0-5b2cd8d72efe, 442571000124108, Tree nut (substance), allergy, food, 39579001, Anaphylaxis (disorder), SEVERE, 267036007, Dyspnea (finding), MODERATE, 2001-01-03, , 82623afe-e51c-e02e-1dd7-15a4394d0e92, 82623afe-e51c-e02e-9fa0-5b2cd8d72efe, 762952008, Peanut (substance), allergy, food, 247472004, Wheal (finding), MODERATE, 402387002, Allergic angioedema (disorder), MODERATE]
+
+----------------------------------------
+patient-009.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 23.2
+  Tatsächlich: [23.2]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)"]
+  Tatsächlich: [2020-03-07, , 765bd034-e8d7-f102-eb1c-4b7792fc5684, 765bd034-e8d7-f102-0bd6-75e434c71255, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 2020-03-07, , 765bd034-e8d7-f102-eb1c-4b7792fc5684, 765bd034-e8d7-f102-0bd6-75e434c71255, 84489001, Mold (organism), allergy, environment, , , , , , , 2020-03-07, , 765bd034-e8d7-f102-eb1c-4b7792fc5684, 765bd034-e8d7-f102-0bd6-75e434c71255, 260147004, House dust mite (organism), allergy, environment, , , , , , , 2020-03-07, , 765bd034-e8d7-f102-eb1c-4b7792fc5684, 765bd034-e8d7-f102-0bd6-75e434c71255, 264287008, Animal dander (substance), allergy, environment, 878820003, Rhinoconjunctivitis (disorder), MODERATE, 271807003, Eruption of skin (disorder), MILD, 2020-03-07, , 765bd034-e8d7-f102-eb1c-4b7792fc5684, 765bd034-e8d7-f102-0bd6-75e434c71255, 256277009, Grass pollen (substance), allergy, environment, , , , , , , 2020-03-07, , 765bd034-e8d7-f102-eb1c-4b7792fc5684, 765bd034-e8d7-f102-0bd6-75e434c71255, 782576004, Tree pollen (substance), allergy, environment, , , , , , ]
+
+----------------------------------------
+patient-010.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 83.6
+  Tatsächlich: [83.6]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Latex (substance)","Bee venom (substance)","Mold (organism)","Animal dander (substance)","Grass pollen (substance)","Wheat (substance)","Shellfish (substance)"]
+  Tatsächlich: [2006-04-09, , 887e4b4e-a3e1-b573-4a16-38386d3e0b88, 887e4b4e-a3e1-b573-4c25-13bee5319da7, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 2006-04-09, , 887e4b4e-a3e1-b573-4a16-38386d3e0b88, 887e4b4e-a3e1-b573-4c25-13bee5319da7, 111088007, Latex (substance), allergy, environment, 402387002, Allergic angioedema (disorder), MODERATE, , , , 2006-04-09, , 887e4b4e-a3e1-b573-4a16-38386d3e0b88, 887e4b4e-a3e1-b573-4c25-13bee5319da7, 288328004, Bee venom (substance), allergy, environment, , , , , , , 2006-04-09, , 887e4b4e-a3e1-b573-4a16-38386d3e0b88, 887e4b4e-a3e1-b573-4c25-13bee5319da7, 84489001, Mold (organism), allergy, environment, 267101005, Nasal discharge present (situation), MILD, , , , 2006-04-09, , 887e4b4e-a3e1-b573-4a16-38386d3e0b88, 887e4b4e-a3e1-b573-4c25-13bee5319da7, 264287008, Animal dander (substance), allergy, environment, 49727002, Cough (finding), MODERATE, 878820003, Rhinoconjunctivitis (disorder), MODERATE, 2006-04-09, , 887e4b4e-a3e1-b573-4a16-38386d3e0b88, 887e4b4e-a3e1-b573-4c25-13bee5319da7, 256277009, Grass pollen (substance), allergy, environment, , , , , , , 2006-04-09, , 887e4b4e-a3e1-b573-4a16-38386d3e0b88, 887e4b4e-a3e1-b573-4c25-13bee5319da7, 412071004, Wheat (substance), allergy, food, 271807003, Eruption of skin (disorder), MODERATE, 267036007, Dyspnea (finding), MILD, 2006-04-09, , 887e4b4e-a3e1-b573-4a16-38386d3e0b88, 887e4b4e-a3e1-b573-4c25-13bee5319da7, 735029006, Shellfish (substance), allergy, food, 271807003, Eruption of skin (disorder), MODERATE, 402387002, Allergic angioedema (disorder), MODERATE]
+
+----------------------------------------
+patient-011.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 75.0
+  Tatsächlich: [75.0]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Shellfish (substance)"]
+  Tatsächlich: [1986-05-25, , 97e39468-6488-ca8f-fac2-235a80b4dcf7, 97e39468-6488-ca8f-7b33-d33c04781ee2, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 1986-05-25, , 97e39468-6488-ca8f-fac2-235a80b4dcf7, 97e39468-6488-ca8f-7b33-d33c04781ee2, 735029006, Shellfish (substance), allergy, food, 271807003, Eruption of skin (disorder), MODERATE, 402387002, Allergic angioedema (disorder), MODERATE]
+
+----------------------------------------
+patient-012.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 86.0
+  Tatsächlich: [86.0]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Tree pollen (substance)","Aspirin","Shellfish (substance)"]
+  Tatsächlich: [1981-12-02, , 31f368d9-3fdc-a15f-ccdc-fafa74a860e9, 31f368d9-3fdc-a15f-3b69-efb1c562bd7d, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 1981-12-02, , 31f368d9-3fdc-a15f-ccdc-fafa74a860e9, 31f368d9-3fdc-a15f-3b69-efb1c562bd7d, 782576004, Tree pollen (substance), allergy, environment, , , , , , , 1981-12-02, , 31f368d9-3fdc-a15f-ccdc-fafa74a860e9, 31f368d9-3fdc-a15f-3b69-efb1c562bd7d, 1191, Aspirin, allergy, medication, , , , , , , 1981-12-02, , 31f368d9-3fdc-a15f-ccdc-fafa74a860e9, 31f368d9-3fdc-a15f-3b69-efb1c562bd7d, 735029006, Shellfish (substance), allergy, food, 271807003, Eruption of skin (disorder), MODERATE, 267036007, Dyspnea (finding), MILD]
+
+----------------------------------------
+patient-013.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 75.5
+  Tatsächlich: [75.5]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","Penicillin V"]
+  Tatsächlich: [2001-08-16, , 96de62ae-1b00-58d8-77f9-cd25414e16be, 96de62ae-1b00-58d8-8fd6-6d160d9dcd1e, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 2001-08-16, , 96de62ae-1b00-58d8-77f9-cd25414e16be, 96de62ae-1b00-58d8-8fd6-6d160d9dcd1e, 84489001, Mold (organism), allergy, environment, 267101005, Nasal discharge present (situation), MILD, , , , 2001-08-16, , 96de62ae-1b00-58d8-77f9-cd25414e16be, 96de62ae-1b00-58d8-8fd6-6d160d9dcd1e, 7984, Penicillin V, allergy, medication, 247472004, Wheal (finding), MILD, , , ]
+
+----------------------------------------
+patient-014.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 80.5
+  Tatsächlich: [80.5]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)"]
+  Tatsächlich: [1990-04-16, , 46fcc34a-97a1-f038-9bb1-4ae87116ae61, 46fcc34a-97a1-f038-dbf2-fa76c7f7110b, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 1990-04-16, , 46fcc34a-97a1-f038-9bb1-4ae87116ae61, 46fcc34a-97a1-f038-dbf2-fa76c7f7110b, 84489001, Mold (organism), allergy, environment, , , , , , , 1990-04-16, , 46fcc34a-97a1-f038-9bb1-4ae87116ae61, 46fcc34a-97a1-f038-dbf2-fa76c7f7110b, 260147004, House dust mite (organism), allergy, environment, , , , , , , 1990-04-16, , 46fcc34a-97a1-f038-9bb1-4ae87116ae61, 46fcc34a-97a1-f038-dbf2-fa76c7f7110b, 264287008, Animal dander (substance), allergy, environment, 878820003, Rhinoconjunctivitis (disorder), MODERATE, 271807003, Eruption of skin (disorder), MILD, 1990-04-16, , 46fcc34a-97a1-f038-9bb1-4ae87116ae61, 46fcc34a-97a1-f038-dbf2-fa76c7f7110b, 256277009, Grass pollen (substance), allergy, environment, , , , , , , 1990-04-16, , 46fcc34a-97a1-f038-9bb1-4ae87116ae61, 46fcc34a-97a1-f038-dbf2-fa76c7f7110b, 782576004, Tree pollen (substance), allergy, environment, , , , , , ]
+
+----------------------------------------
+patient-015.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 73.4
+  Tatsächlich: [73.4]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: KORREKT
+  Erwartet: null
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Mold (organism)","House dust mite (organism)","Animal dander (substance)","Grass pollen (substance)","Tree pollen (substance)","Lisinopril","Aspirin"]
+  Tatsächlich: [2002-02-07, , 9c26986a-d81d-62f0-ee7a-ab8bb6377434, 9c26986a-d81d-62f0-7f4f-20589bb87ae1, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 2002-02-07, , 9c26986a-d81d-62f0-ee7a-ab8bb6377434, 9c26986a-d81d-62f0-7f4f-20589bb87ae1, 84489001, Mold (organism), allergy, environment, 21626009, Cutaneous hypersensitivity (disorder), MILD, , , , 2002-02-07, , 9c26986a-d81d-62f0-ee7a-ab8bb6377434, 9c26986a-d81d-62f0-7f4f-20589bb87ae1, 260147004, House dust mite (organism), allergy, environment, , , , , , , 2002-02-07, , 9c26986a-d81d-62f0-ee7a-ab8bb6377434, 9c26986a-d81d-62f0-7f4f-20589bb87ae1, 264287008, Animal dander (substance), allergy, environment, 878820003, Rhinoconjunctivitis (disorder), MODERATE, 271807003, Eruption of skin (disorder), MILD, 2002-02-07, , 9c26986a-d81d-62f0-ee7a-ab8bb6377434, 9c26986a-d81d-62f0-7f4f-20589bb87ae1, 256277009, Grass pollen (substance), allergy, environment, , , , , , , 2002-02-07, , 9c26986a-d81d-62f0-ee7a-ab8bb6377434, 9c26986a-d81d-62f0-7f4f-20589bb87ae1, 782576004, Tree pollen (substance), allergy, environment, , , , , , , 2002-02-07, , 9c26986a-d81d-62f0-ee7a-ab8bb6377434, 9c26986a-d81d-62f0-7f4f-20589bb87ae1, 29046, Lisinopril, intolerance, medication, 267036007, Dyspnea (finding), MODERATE, 49727002, Cough (finding), MODERATE, 2002-02-07, , 9c26986a-d81d-62f0-ee7a-ab8bb6377434, 9c26986a-d81d-62f0-7f4f-20589bb87ae1, 1191, Aspirin, allergy, medication, , , , , , ]
+
+----------------------------------------
+patient-016.json
+----------------------------------------
+M1: KORREKT
+  Erwartet: 18.8
+  Tatsächlich: [18.8]
+M2: NOT_EVALUABLE
+M3: NICHT KORREKT
+  Erwartet: "Medikation liegt vor"
+  Tatsächlich: []
+M4: NICHT KORREKT
+  Erwartet: "22253000"
+  Tatsächlich: []
+M5: NICHT KORREKT
+  Erwartet: ["Penicillin V","Shellfish (substance)"]
+  Tatsächlich: [2021-05-22, , 3099d813-4f5c-fc43-31d8-7bba5dc84bed, 3099d813-4f5c-fc43-bf68-21f59f159c3c, 609328004, Allergic disposition (finding), allergy, environment, , , , , , , 2021-05-22, , 3099d813-4f5c-fc43-31d8-7bba5dc84bed, 3099d813-4f5c-fc43-bf68-21f59f159c3c, 7984, Penicillin V, allergy, medication, 271807003, Eruption of skin (disorder), MILD, , , , 2021-05-22, , 3099d813-4f5c-fc43-31d8-7bba5dc84bed, 3099d813-4f5c-fc43-bf68-21f59f159c3c, 735029006, Shellfish (substance), allergy, food, 39579001, Anaphylaxis (disorder), SEVERE, 271807003, Eruption of skin (disorder), MODERATE]
+
+========================================
+Zusammenfassung
+========================================
+M1 Körpergewicht:         15 / 16
+M2 Diagnose:             NOT_EVALUABLE
+M3 Medikation:            0 / 16
+M4 Schmerzsymptomatik:    3 / 16
+M5 Allergien:             0 / 16
+----------------------------------------
+Korrekt:                 18 / 64
+Mapping-Korrektheit:      28,1%
+========================================
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.369 s
+[INFO] Finished at: 2026-10-06T11:07:59+02:00
+[INFO] ------------------------------------------------------------------------
