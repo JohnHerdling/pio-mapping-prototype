@@ -96,11 +96,22 @@ public class FieldMatcher {
         String fieldName =
                 normalize(field.getFieldName());
 
-        return fieldName.equals("description")
-                || fieldName.equals("name")
-                || fieldName.equals("display")
-                || fieldName.equals("allergen")
-                || fieldName.equals("allergy");
+        boolean directValueName =
+                fieldName.equals("description")
+                        || fieldName.equals("name")
+                        || fieldName.equals("display")
+                        || fieldName.equals("allergen")
+                        || fieldName.equals("allergy");
+
+        boolean compoundValueName =
+                fieldName.contains("allergy")
+                        && (fieldName.contains("name")
+                        || fieldName.contains("description")
+                        || fieldName.contains("display")
+                        || fieldName.contains("allergen"));
+
+        return directValueName
+                || compoundValueName;
     }
 
     private boolean containsConcept(
@@ -170,12 +181,6 @@ public class FieldMatcher {
             return normalizedValue != null;
         }
 
-        /*
-         * Logische Zustände können in heterogenen
-         * Quelldaten auch numerisch repräsentiert sein.
-         * Beispielsweise kann 1 einem positiven Zustand
-         * entsprechen.
-         */
         if (expectedType == JsonFieldType.TEXT
                 && field.getDataType()
                 == JsonFieldType.NUMBER) {

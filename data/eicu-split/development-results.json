@@ -12,13 +12,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "ERYTHROMYCIN", "LEVAQUIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "ERYTHROMYCIN", "LEVAQUIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1059340",
@@ -34,13 +34,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "Morphine" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "Morphine" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1059936",
@@ -61,8 +61,8 @@
   },
   "M5" : {
     "expected" : [ "latex" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "latex", "latex" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1060144",
@@ -78,13 +78,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "Morphine" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "Morphine" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1063659",
@@ -105,8 +105,8 @@
   },
   "M5" : {
     "expected" : [ "DILANTIN", "PCN", "CEFOTAXIME SODIUM" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "DILANTIN", "PCN", "CEFOTAXIME SODIUM" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1066190",
@@ -122,13 +122,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "Macrodantin", "erythromycin", "ibuprofen", "compazine", "Augmentin", "ampicillin" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "Macrodantin", "erythromycin", "ibuprofen", "compazine", "Augmentin", "ampicillin" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1066202",
@@ -149,8 +149,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN G BENZATHINE", "CEPHALEXIN", "LISINOPRIL", "PREDNISONE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G BENZATHINE", "CEPHALEXIN", "LISINOPRIL", "PREDNISONE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1070390",
@@ -171,8 +171,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN G SODIUM", "ASPIRIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G SODIUM", "ASPIRIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1070882",
@@ -188,13 +188,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "Codeine" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "Codeine" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1071450",
@@ -210,13 +210,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "ZIAC", "TEKTURNA", "NORVASC", "ACE INHIBITORS", "METOPROLOL", "TETRACYCLINE", "BENICAR", "ELAVIL", "CODEINE", "HYDRALAZINE", "CIPROFLOXACIN", "DILTIAZEM", "CLONIDINE", "BACTRIM", "SPIRONOLACTONE", "NITROGLYCERINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "ZIAC", "TEKTURNA", "NORVASC", "ACE INHIBITORS", "METOPROLOL", "TETRACYCLINE", "BENICAR", "ELAVIL", "CODEINE", "HYDRALAZINE", "CIPROFLOXACIN", "DILTIAZEM", "CLONIDINE", "BACTRIM", "SPIRONOLACTONE", "NITROGLYCERINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1072171",
@@ -237,8 +237,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1073984",
@@ -259,8 +259,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLINS" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLINS" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1332638",
@@ -281,8 +281,8 @@
   },
   "M5" : {
     "expected" : [ "CODEINE PHOSPHATE", "ASPIRIN", "CAFFEINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CODEINE PHOSPHATE", "ASPIRIN", "CAFFEINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1338010",
@@ -298,13 +298,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "PENICILLIN G POTASSIUM", "LATEX GLOVES" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G POTASSIUM", "LATEX GLOVES" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1363755",
@@ -320,13 +320,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "SULFAMETHOXAZOLE-TRIMETHOPRIM", "TRAMADOL HCL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "SULFAMETHOXAZOLE-TRIMETHOPRIM", "TRAMADOL HCL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1437505",
@@ -347,8 +347,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLINS" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLINS" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1447123",
@@ -369,8 +369,8 @@
   },
   "M5" : {
     "expected" : [ "AMPICILLIN SODIUM" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "AMPICILLIN SODIUM", "AMPICILLIN SODIUM" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1450141",
@@ -386,13 +386,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "morphine and related" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "morphine and related" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1453811",
@@ -408,13 +408,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "CRESTOR", "CODEINE PHOSPHATE", "CELECOXIB", "AZOR", "METOCLOPRAMIDE HCL", "HYDROCOD-CPM-PSEUDOEPHEDRINE", "LISINOPRIL", "FLUTICASONE FUROATE", "SULFONAMIDE", "LEVOFLOXACIN", "SERTRALINE HCL", "STATINS", "PHENERGAN", "NIACIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CRESTOR", "CODEINE PHOSPHATE", "CELECOXIB", "AZOR", "METOCLOPRAMIDE HCL", "HYDROCOD-CPM-PSEUDOEPHEDRINE", "LISINOPRIL", "FLUTICASONE FUROATE", "SULFONAMIDE", "LEVOFLOXACIN", "SERTRALINE HCL", "STATINS", "PHENERGAN", "NIACIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1457949",
@@ -435,8 +435,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN G BENZATHINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G BENZATHINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1488633",
@@ -457,8 +457,8 @@
   },
   "M5" : {
     "expected" : [ "PCN, SULFA" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PCN, SULFA " ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1514653",
@@ -479,8 +479,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN G POTASSIUM", "SHELLFISH" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G POTASSIUM", "SHELLFISH" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1516341",
@@ -496,13 +496,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "MORPHINE SULFATE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "MORPHINE SULFATE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1516976",
@@ -523,8 +523,8 @@
   },
   "M5" : {
     "expected" : [ "morphine and related" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "morphine and related" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1540035",
@@ -545,8 +545,8 @@
   },
   "M5" : {
     "expected" : [ "MORPHINE SULFATE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "MORPHINE SULFATE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1544756",
@@ -562,13 +562,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "soma", "septra", "macrodantin" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "soma", "septra", "macrodantin" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1558170",
@@ -589,8 +589,8 @@
   },
   "M5" : {
     "expected" : [ "latex" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "latex" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1563281",
@@ -611,8 +611,8 @@
   },
   "M5" : {
     "expected" : [ "TRIMETHOPRIM-POLYMYXIN B SULF", "METRONIDAZOLE", "AUGMENTIN", "quinolones", "NITROFURANTOIN", "CIPROFLOXACIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "TRIMETHOPRIM-POLYMYXIN B SULF", "METRONIDAZOLE", "AUGMENTIN", "quinolones", "NITROFURANTOIN", "CIPROFLOXACIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1568247",
@@ -628,13 +628,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "CYMBALTA", "IMDUR" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CYMBALTA", "IMDUR" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1573546",
@@ -655,8 +655,8 @@
   },
   "M5" : {
     "expected" : [ "ALLOPURINOL", "MEROPENEM", "COZAAR", "LISINOPRIL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "ALLOPURINOL", "MEROPENEM", "COZAAR", "LISINOPRIL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1574603",
@@ -672,13 +672,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "IVP Dye" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "IVP Dye" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1582555",
@@ -694,13 +694,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "TRAMADOL HCL", "Diagnostic Xray Dye", "Tape" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "TRAMADOL HCL", "Diagnostic Xray Dye", "Diagnostic Xray Dye", "TRAMADOL HCL", "Tape", "Tape" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1585807",
@@ -721,8 +721,8 @@
   },
   "M5" : {
     "expected" : [ "lisinopril" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "lisinopril" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1588177",
@@ -743,8 +743,8 @@
   },
   "M5" : {
     "expected" : [ "Sulfa" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "Sulfa" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1588896",
@@ -765,8 +765,8 @@
   },
   "M5" : {
     "expected" : [ "aspirin" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "aspirin" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1590842",
@@ -782,13 +782,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "MORPHINE SULFATE", "BENADRYL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "MORPHINE SULFATE", "BENADRYL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1979528",
@@ -804,13 +804,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "LISINOPRIL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "LISINOPRIL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "1998890",
@@ -826,13 +826,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "LISINOPRIL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "LISINOPRIL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2011360",
@@ -853,8 +853,8 @@
   },
   "M5" : {
     "expected" : [ "SULFA", "SULFAMETHOXAZOLE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "SULFA", "SULFAMETHOXAZOLE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2032312",
@@ -870,13 +870,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "CODEINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CODEINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2056365",
@@ -897,8 +897,8 @@
   },
   "M5" : {
     "expected" : [ "ASPIRIN", "PENICILLIN G BENZATHINE", "VANCOMYCIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "ASPIRIN", "PENICILLIN G BENZATHINE", "VANCOMYCIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2065738",
@@ -914,13 +914,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "morphine", "adhesive tape" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "morphine", "adhesive tape" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2075529",
@@ -936,13 +936,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "Lactose" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "Lactose" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2085134",
@@ -963,8 +963,8 @@
   },
   "M5" : {
     "expected" : [ "CLINDAMYCIN HCL", "HYDRALAZINE HCL", "KEFLEX", "CARDIZEM" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CLINDAMYCIN HCL", "HYDRALAZINE HCL", "KEFLEX", "CARDIZEM" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2095984",
@@ -985,8 +985,8 @@
   },
   "M5" : {
     "expected" : [ "shellfish", "LISINOPRIL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "shellfish", "LISINOPRIL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2108150",
@@ -1002,13 +1002,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "SULFAMIDE", "CODEINE PHOSPHATE", "CELEBREX" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "SULFAMIDE", "CODEINE PHOSPHATE", "CELEBREX" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2133477",
@@ -1029,8 +1029,8 @@
   },
   "M5" : {
     "expected" : [ "SYMBICORT", "ISOSORBIDE", "PIROXICAM", "METHADONE HCL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "SYMBICORT", "ISOSORBIDE", "PIROXICAM", "METHADONE HCL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2134224",
@@ -1051,8 +1051,8 @@
   },
   "M5" : {
     "expected" : [ "BACTRIM" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "BACTRIM" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2143474",
@@ -1073,8 +1073,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLAMINE", "ASPIRIN", "VANCOMYCIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLAMINE", "ASPIRIN", "VANCOMYCIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2145788",
@@ -1090,13 +1090,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "LEVAQUIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "LEVAQUIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2161221",
@@ -1112,13 +1112,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "TYLENOL", "LORTAB" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "TYLENOL", "LORTAB" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2164616",
@@ -1139,8 +1139,8 @@
   },
   "M5" : {
     "expected" : [ "Lisinopril", "Shellfish" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "Lisinopril", "Shellfish" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2189631",
@@ -1161,8 +1161,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN G POTASSIUM" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G POTASSIUM" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2193649",
@@ -1183,8 +1183,8 @@
   },
   "M5" : {
     "expected" : [ "NEURONTIN", "KEFLEX" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "NEURONTIN", "KEFLEX" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2215634",
@@ -1205,8 +1205,8 @@
   },
   "M5" : {
     "expected" : [ "ASPIRIN", "VANCOMYCIN", "PENICILLIN G BENZATHINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "ASPIRIN", "VANCOMYCIN", "PENICILLIN G BENZATHINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2220764",
@@ -1227,8 +1227,8 @@
   },
   "M5" : {
     "expected" : [ "IV DYE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "IV DYE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2220765",
@@ -1249,8 +1249,8 @@
   },
   "M5" : {
     "expected" : [ "IVP dye" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "IVP dye" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2230341",
@@ -1266,13 +1266,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "TETANUS AND DIPHTHERIA TOXOIDS, ADSORBED, ADULT/PF" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "TETANUS AND DIPHTHERIA TOXOIDS, ADSORBED, ADULT/PF " ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2233403",
@@ -1293,8 +1293,8 @@
   },
   "M5" : {
     "expected" : [ "KEFLEX", "NEURONTIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "KEFLEX", "NEURONTIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2240562",
@@ -1315,8 +1315,8 @@
   },
   "M5" : {
     "expected" : [ "BACTRIM" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "BACTRIM" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2245791",
@@ -1332,13 +1332,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "LISINOPRIL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "LISINOPRIL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2308573",
@@ -1354,13 +1354,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "cephalosporins", "penicillins" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "cephalosporins", "penicillins" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2330077",
@@ -1381,8 +1381,8 @@
   },
   "M5" : {
     "expected" : [ "CODEINE PHOSPHATE", "adhesive", "TETANUS AND DIPHTHERIA TOXOIDS, ADSORBED, ADULT/PF", "darvocet" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CODEINE PHOSPHATE", "adhesive", "TETANUS AND DIPHTHERIA TOXOIDS, ADSORBED, ADULT/PF ", "darvocet", "darvocet", "CODEINE PHOSPHATE", "adhesive", "TETANUS AND DIPHTHERIA TOXOIDS, ADSORBED, ADULT/PF " ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2334053",
@@ -1398,13 +1398,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "PROTONIX", "FELDENE", "ZITHROMAX", "DALIRESP", "MOXIFLOXACIN HCL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PROTONIX", "FELDENE", "ZITHROMAX", "DALIRESP", "MOXIFLOXACIN HCL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2340803",
@@ -1420,13 +1420,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "penicillin G" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "penicillin G" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2347487",
@@ -1442,13 +1442,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "SINGULAIR", "HYDROCODONE BIT/ACETAMINOPHEN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "SINGULAIR", "HYDROCODONE BIT/ACETAMINOPHEN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2358786",
@@ -1469,8 +1469,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN G BENZATHINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G BENZATHINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2360939",
@@ -1486,13 +1486,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "EGG" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "EGG", "EGG" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2361839",
@@ -1513,8 +1513,8 @@
   },
   "M5" : {
     "expected" : [ "LODOSYN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "LODOSYN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2372698",
@@ -1535,8 +1535,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN G BENZATHINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G BENZATHINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2386143",
@@ -1552,13 +1552,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "sulfa", "WELLBUTRIN", "SULFACETAMIDE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "sulfa", "WELLBUTRIN", "SULFACETAMIDE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2396285",
@@ -1579,8 +1579,8 @@
   },
   "M5" : {
     "expected" : [ "shellfish", "LOSARTAN POTASSIUM", "QUININE HCL", "ACE inhibitors" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "shellfish", "LOSARTAN POTASSIUM", "QUININE HCL", "ACE inhibitors" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2396286",
@@ -1596,13 +1596,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "shellfish", "ACE inhibitors", "QUININE HCL", "LOSARTAN POTASSIUM" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "shellfish", "ACE inhibitors", "QUININE HCL", "LOSARTAN POTASSIUM" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2396287",
@@ -1618,13 +1618,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "shellfish", "QUININE HCL", "ACE inhibitors", "LOSARTAN POTASSIUM" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "shellfish", "QUININE HCL", "ACE inhibitors", "LOSARTAN POTASSIUM" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2399222",
@@ -1645,8 +1645,8 @@
   },
   "M5" : {
     "expected" : [ "sulfa drugs", "PENICILLIN G POTASSIUM", "ceclor", "hydrodiurel" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "sulfa drugs", "PENICILLIN G POTASSIUM", "ceclor", "hydrodiurel" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2408961",
@@ -1662,13 +1662,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "PCNs", "ADHESIVE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PCNs", "ADHESIVE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2415731",
@@ -1684,13 +1684,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "CODEINE PHOSPHATE", "LIDOCAINE", "PENICILLIN G BENZATHINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CODEINE PHOSPHATE", "LIDOCAINE", "PENICILLIN G BENZATHINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2420527",
@@ -1706,13 +1706,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "KEFLEX" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "KEFLEX" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2440723",
@@ -1728,13 +1728,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "BACTRIM", "LATEX EXTENSION TUBING", "DIMETAPP" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "BACTRIM", "LATEX EXTENSION TUBING", "DIMETAPP" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2462225",
@@ -1755,8 +1755,8 @@
   },
   "M5" : {
     "expected" : [ "HYDROCHLOROTHIAZIDE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "HYDROCHLOROTHIAZIDE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2466952",
@@ -1772,13 +1772,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "VENLAFAXINE HCL", "CODEINE PHOSPHATE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "VENLAFAXINE HCL", "CODEINE PHOSPHATE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2469796",
@@ -1794,13 +1794,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "PROTONIX", "ROFLUMILAST", "AVELOX", "FELDENE", "ZITHROMAX" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PROTONIX", "ROFLUMILAST", "AVELOX", "FELDENE", "ZITHROMAX" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2473922",
@@ -1816,13 +1816,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "SULFACETAMIDE", "MOBIC" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "SULFACETAMIDE", "MOBIC" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2476524",
@@ -1838,13 +1838,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "codeine" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "codeine" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2492731",
@@ -1860,13 +1860,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "PCNs" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PCNs" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2492812",
@@ -1882,13 +1882,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "DALIRESP", "AVELOX", "ZITHROMAX", "PROTONIX", "FELDENE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "DALIRESP", "AVELOX", "ZITHROMAX", "PROTONIX", "FELDENE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2493040",
@@ -1909,8 +1909,8 @@
   },
   "M5" : {
     "expected" : [ "OXYCONTIN", "CODEINE PHOSPHATE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "OXYCONTIN", "CODEINE PHOSPHATE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2499670",
@@ -1926,13 +1926,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "IBUPROFEN", "ASPIRIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "IBUPROFEN", "ASPIRIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2512314",
@@ -1953,8 +1953,8 @@
   },
   "M5" : {
     "expected" : [ "HYDROCHLOROTHIAZIDE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "HYDROCHLOROTHIAZIDE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2523738",
@@ -1975,8 +1975,8 @@
   },
   "M5" : {
     "expected" : [ "TENORMIN", "SYNTHROID", "VASOTEC", "NORVASC", "novocain", "Amide type anestheti", "ADALAT CC", "sulfa", "MACROBID", "blue dye" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "TENORMIN", "SYNTHROID", "VASOTEC", "NORVASC", "novocain", "Amide type anestheti", "ADALAT CC", "sulfa", "MACROBID", "blue dye" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "2525696",
@@ -1997,8 +1997,8 @@
   },
   "M5" : {
     "expected" : [ "CODEINE PHOSPHATE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CODEINE PHOSPHATE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3001552",
@@ -2014,13 +2014,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "MORPHINE SULFATE", "LIPITOR" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "MORPHINE SULFATE", "LIPITOR" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3027284",
@@ -2041,8 +2041,8 @@
   },
   "M5" : {
     "expected" : [ "LASIX", "SULFACETAMIDE SOD MONOHYDRATE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "LASIX", "SULFACETAMIDE SOD MONOHYDRATE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3027681",
@@ -2058,13 +2058,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "CODEINE PHOSPHATE", "OPIUM/BELLADONNA ALKALOIDS", "VICODIN", "MORPHINE SULFATE", "PENICILLAMINE", "ERYTHROMYCIN", "TETRACYCLINE", "LIPITOR", "ADHESIVE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CODEINE PHOSPHATE", "OPIUM/BELLADONNA ALKALOIDS", "VICODIN", "MORPHINE SULFATE", "PENICILLAMINE", "ERYTHROMYCIN", "TETRACYCLINE", "LIPITOR", "ADHESIVE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3031944",
@@ -2085,8 +2085,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN G BENZATHINE", "ASPIRIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G BENZATHINE", "ASPIRIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3033795",
@@ -2102,13 +2102,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "shellfish", "IODINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "shellfish", "IODINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3057805",
@@ -2129,8 +2129,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN G BENZATHINE", "AMOXICILLIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G BENZATHINE", "AMOXICILLIN", "AMOXICILLIN", "PENICILLIN G BENZATHINE", "PENICILLIN G BENZATHINE", "PENICILLIN G BENZATHINE", "AMOXICILLIN", "AMOXICILLIN", "AMOXICILLIN", "PENICILLIN G BENZATHINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3066852",
@@ -2151,8 +2151,8 @@
   },
   "M5" : {
     "expected" : [ "Sulfa Drugs" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "Sulfa Drugs", "Sulfa Drugs", "Sulfa Drugs", "Sulfa Drugs" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3072205",
@@ -2173,8 +2173,8 @@
   },
   "M5" : {
     "expected" : [ "ASPIR 81", "PENICILLAMINE", "LISINOPRIL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "ASPIR 81", "PENICILLAMINE", "ASPIR 81", "ASPIR 81", "LISINOPRIL", "LISINOPRIL", "LISINOPRIL", "PENICILLAMINE", "PENICILLAMINE", "LISINOPRIL", "ASPIR 81", "PENICILLAMINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3097587",
@@ -2195,8 +2195,8 @@
   },
   "M5" : {
     "expected" : [ "CODEINE PHOSPHATE", "SULFAMETHOXAZOLE/TRIMETHOPRIM", "LIPITOR", "MORPHINE SULFATE", "BACTRIM" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CODEINE PHOSPHATE", "SULFAMETHOXAZOLE/TRIMETHOPRIM", "LIPITOR", "SULFAMETHOXAZOLE/TRIMETHOPRIM", "MORPHINE SULFATE", "LIPITOR", "SULFAMETHOXAZOLE/TRIMETHOPRIM", "BACTRIM", "BACTRIM", "CODEINE PHOSPHATE", "MORPHINE SULFATE", "BACTRIM", "LIPITOR", "MORPHINE SULFATE", "CODEINE PHOSPHATE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3112232",
@@ -2217,8 +2217,8 @@
   },
   "M5" : {
     "expected" : [ "BACTRIM" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "BACTRIM" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3207237",
@@ -2234,13 +2234,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "PENICILLINS", "ATORVASTATIN CALCIUM", "ADHESIVES", "CODEINE PHOSPHATE", "CODEINES", "SILICONES" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLINS", "ATORVASTATIN CALCIUM", "ADHESIVES", "CODEINE PHOSPHATE", "CODEINES", "SILICONES" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3207238",
@@ -2261,8 +2261,8 @@
   },
   "M5" : {
     "expected" : [ "SILICONES", "PENICILLINS", "CODEINES", "ATORVASTATIN CALCIUM", "ADHESIVES", "CODEINE PHOSPHATE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "SILICONES", "PENICILLINS", "CODEINES", "ATORVASTATIN CALCIUM", "ADHESIVES", "CODEINE PHOSPHATE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3214193",
@@ -2283,8 +2283,8 @@
   },
   "M5" : {
     "expected" : [ "AZITHROMYCIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "AZITHROMYCIN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3223634",
@@ -2300,13 +2300,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "LISINOPRIL", "CLARITHROMYCIN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "LISINOPRIL", "CLARITHROMYCIN", "CLARITHROMYCIN", "LISINOPRIL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3225620",
@@ -2327,8 +2327,8 @@
   },
   "M5" : {
     "expected" : [ "QUINAPRIL HCL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "QUINAPRIL HCL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3230480",
@@ -2349,8 +2349,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN G BENZATHINE", "Bee venom", "MORPHINE SULFATE", "LASIX", "THIORIDAZINE HCL", "IODINE", "SULFACETAMIDE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G BENZATHINE", "Bee venom", "MORPHINE SULFATE", "Bee venom", "LASIX", "MORPHINE SULFATE", "THIORIDAZINE HCL", "THIORIDAZINE HCL", "IODINE", "IODINE", "SULFACETAMIDE", "SULFACETAMIDE", "PENICILLIN G BENZATHINE", "LASIX" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3237226",
@@ -2371,8 +2371,8 @@
   },
   "M5" : {
     "expected" : [ "erythromycin base", "THIMEROSAL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "erythromycin base", "THIMEROSAL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "3237558",
@@ -2388,13 +2388,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "TAMSULOSIN HCL", "gluten meal", "pollen extract" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "TAMSULOSIN HCL", "gluten meal", "TAMSULOSIN HCL", "pollen extract", "gluten meal", "pollen extract" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "469890",
@@ -2415,8 +2415,8 @@
   },
   "M5" : {
     "expected" : [ "MORPHINE SULFATE", "PHENERGAN", "VALIUM" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "MORPHINE SULFATE", "PHENERGAN", "VALIUM" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "485952",
@@ -2437,8 +2437,8 @@
   },
   "M5" : {
     "expected" : [ "IODINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "IODINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "529415",
@@ -2459,8 +2459,8 @@
   },
   "M5" : {
     "expected" : [ "Sulfa" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "Sulfa", "Sulfa" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "960943",
@@ -2481,8 +2481,8 @@
   },
   "M5" : {
     "expected" : [ "FOSAMAX", "VANCOMYCIN", "CODEINE SULFATE", "Contrast dye", "POVIDONE", "PENICILLIN G BENZATHINE", "mushrooms", "SOMA", "seafood" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "FOSAMAX", "VANCOMYCIN", "CODEINE SULFATE", "Contrast dye", "POVIDONE", "PENICILLIN G BENZATHINE", "mushrooms", "SOMA", "seafood" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "963941",
@@ -2503,8 +2503,8 @@
   },
   "M5" : {
     "expected" : [ "see beacon" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "see beacon" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "965856",
@@ -2525,8 +2525,8 @@
   },
   "M5" : {
     "expected" : [ "SHELLFISH, SHRIMP" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "SHELLFISH, SHRIMP ", "SHELLFISH, SHRIMP ", "SHELLFISH, SHRIMP " ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "968228",
@@ -2547,8 +2547,8 @@
   },
   "M5" : {
     "expected" : [ "ZOCOR", "HYDROCHLOROTHIAZIDE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "ZOCOR", "HYDROCHLOROTHIAZIDE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "968367",
@@ -2564,13 +2564,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "SULFADIAZINE", "MORPHINE SULFATE", "LISINOPRIL", "tape" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "SULFADIAZINE", "MORPHINE SULFATE", "LISINOPRIL", "tape", "LISINOPRIL", "MORPHINE SULFATE", "SULFADIAZINE", "MORPHINE SULFATE", "LISINOPRIL", "tape", "SULFADIAZINE", "tape" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "968599",
@@ -2586,13 +2586,13 @@
   },
   "M4" : {
     "expected" : "22253000",
-    "actual" : null,
-    "correct" : false
+    "actual" : "22253000",
+    "correct" : true
   },
   "M5" : {
     "expected" : [ "codeine" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "codeine" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "969334",
@@ -2613,8 +2613,8 @@
   },
   "M5" : {
     "expected" : [ "BENADRYL", "IBUPROFEN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "BENADRYL", "IBUPROFEN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "969631",
@@ -2635,8 +2635,8 @@
   },
   "M5" : {
     "expected" : [ "NIASPAN", "ZOLOFT", "IVP dye", "COREG", "MOTRIN", "penicillin", "AMIODARONE HCL", "MEXILETINE HCL" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "NIASPAN", "ZOLOFT", "IVP dye", "COREG", "MOTRIN", "penicillin", "AMIODARONE HCL", "MEXILETINE HCL" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "970239",
@@ -2657,8 +2657,8 @@
   },
   "M5" : {
     "expected" : [ "CHLOROSEPTIC SPRAY" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CHLOROSEPTIC SPRAY" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "970328",
@@ -2679,8 +2679,8 @@
   },
   "M5" : {
     "expected" : [ "Bee Stings", "PENICILLIN G BENZATHINE", "TETANUS TOXOID ADSORBED", "Horse Sera" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "Bee Stings", "PENICILLIN G BENZATHINE", "TETANUS TOXOID ADSORBED", "Horse Sera", "Horse Sera", "TETANUS TOXOID ADSORBED", "PENICILLIN G BENZATHINE", "Bee Stings" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "971247",
@@ -2701,8 +2701,8 @@
   },
   "M5" : {
     "expected" : [ "penicillin", "mango" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "penicillin", "penicillin", "mango", "mango" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "971871",
@@ -2723,8 +2723,8 @@
   },
   "M5" : {
     "expected" : [ "PRINIVIL", "SULFA DRUGS", "TALWIN", "TAPE", "MORPHINE SULFATE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PRINIVIL", "SULFA DRUGS", "TALWIN", "TAPE", "MORPHINE SULFATE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "974986",
@@ -2745,8 +2745,8 @@
   },
   "M5" : {
     "expected" : [ "lactose", "PCN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "lactose", "PCN" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "975298",
@@ -2762,13 +2762,13 @@
   },
   "M4" : {
     "expected" : null,
-    "actual" : null,
-    "correct" : true
+    "actual" : "22253000",
+    "correct" : false
   },
   "M5" : {
     "expected" : [ "CODEINE PHOSPHATE", "contrast dye" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "CODEINE PHOSPHATE", "contrast dye" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "976505",
@@ -2789,8 +2789,8 @@
   },
   "M5" : {
     "expected" : [ "PENICILLIN G BENZATHINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PENICILLIN G BENZATHINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "977269",
@@ -2811,8 +2811,8 @@
   },
   "M5" : {
     "expected" : [ "SULFACETAMIDE", "ANTIHISTAMINE" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "SULFACETAMIDE", "ANTIHISTAMINE" ],
+    "correct" : true
   }
 }, {
   "patientUnitStayID" : "979122",
@@ -2833,7 +2833,7 @@
   },
   "M5" : {
     "expected" : [ "PCN" ],
-    "actual" : null,
-    "correct" : false
+    "actual" : [ "PCN" ],
+    "correct" : true
   }
 } ]

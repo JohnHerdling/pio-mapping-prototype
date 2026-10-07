@@ -63,7 +63,8 @@ public class JsonFieldCollector {
 
                 JsonNode childNode = node.get(i);
 
-                String childPath = path + "[" + i + "]";
+                String childPath =
+                        path + "[" + i + "]";
 
                 collect(
                         childNode,
@@ -75,17 +76,20 @@ public class JsonFieldCollector {
 
         } else {
 
-            String fieldName = getFieldNameFromPath(path);
+            String fieldName =
+                    getFieldNameFromPath(path);
 
-            JsonFieldType dataType = determineDataType(node);
+            JsonFieldType dataType =
+                    determineDataType(node);
 
-            JsonField field = new JsonField(
-                    fieldName,
-                    path,
-                    node,
-                    dataType,
-                    context
-            );
+            JsonField field =
+                    new JsonField(
+                            fieldName,
+                            path,
+                            node,
+                            dataType,
+                            context
+                    );
 
             fields.add(field);
         }
@@ -93,16 +97,16 @@ public class JsonFieldCollector {
 
     private String buildContext(JsonNode node) {
 
-        StringBuilder context = new StringBuilder();
+        StringBuilder context =
+                new StringBuilder();
 
-        for (Map.Entry<String, JsonNode> field : node.properties()) {
+        for (Map.Entry<String, JsonNode> field
+                : node.properties()) {
 
-            String fieldName = field.getKey();
+            String fieldName =
+                    field.getKey();
 
-            if (fieldName.equalsIgnoreCase("type")
-                    || fieldName.equalsIgnoreCase("name")
-                    || fieldName.equalsIgnoreCase("description")
-                    || fieldName.equalsIgnoreCase("label")) {
+            if (isContextField(fieldName)) {
 
                 appendTextValue(
                         context,
@@ -115,17 +119,40 @@ public class JsonFieldCollector {
         return context.toString().trim();
     }
 
+    private boolean isContextField(
+            String fieldName
+    ) {
+
+        if (fieldName == null) {
+            return false;
+        }
+
+        String normalized =
+                fieldName.toLowerCase();
+
+        return normalized.equals("type")
+                || normalized.equals("name")
+                || normalized.equals("description")
+                || normalized.equals("label")
+                || normalized.endsWith("type")
+                || normalized.endsWith("name")
+                || normalized.endsWith("description")
+                || normalized.endsWith("label");
+    }
+
     private void appendTextValue(
             StringBuilder context,
             String fieldName,
             JsonNode value
     ) {
 
-        if (value == null || !value.isTextual()) {
+        if (value == null
+                || !value.isTextual()) {
             return;
         }
 
-        String text = value.asText().trim();
+        String text =
+                value.asText().trim();
 
         if (text.isEmpty()) {
             return;
@@ -140,28 +167,39 @@ public class JsonFieldCollector {
                 .append(text);
     }
 
-    private String getFieldNameFromPath(String path) {
+    private String getFieldNameFromPath(
+            String path
+    ) {
 
-        int lastDot = path.lastIndexOf(".");
+        int lastDot =
+                path.lastIndexOf(".");
 
         String fieldName;
 
         if (lastDot == -1) {
             fieldName = path;
         } else {
-            fieldName = path.substring(lastDot + 1);
+            fieldName =
+                    path.substring(lastDot + 1);
         }
 
-        int arrayStart = fieldName.indexOf("[");
+        int arrayStart =
+                fieldName.indexOf("[");
 
         if (arrayStart != -1) {
-            fieldName = fieldName.substring(0, arrayStart);
+            fieldName =
+                    fieldName.substring(
+                            0,
+                            arrayStart
+                    );
         }
 
         return fieldName;
     }
 
-    private JsonFieldType determineDataType(JsonNode node) {
+    private JsonFieldType determineDataType(
+            JsonNode node
+    ) {
 
         if (node.isTextual()) {
             return JsonFieldType.TEXT;
