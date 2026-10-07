@@ -82,6 +82,19 @@ public class FieldMatcher {
                     continue;
                 }
 
+                /*
+                 * Bei Schmerz werden Ziel-/Sollwerte
+                 * ausgeschlossen. Ein "goal" beschreibt
+                 * keinen tatsächlich beobachteten
+                 * Schmerzwert.
+                 */
+                if (normalizedSearchTerm.equals("pain")
+                        && isPainGoal(
+                                normalizedContext
+                        )) {
+                    continue;
+                }
+
                 matches.add(field);
             }
         }
@@ -112,6 +125,19 @@ public class FieldMatcher {
 
         return directValueName
                 || compoundValueName;
+    }
+
+    private boolean isPainGoal(
+            String context
+    ) {
+
+        if (context == null
+                || context.isBlank()) {
+            return false;
+        }
+
+        return context.contains("pain goal")
+                && !context.contains("pain score");
     }
 
     private boolean containsConcept(
@@ -198,14 +224,21 @@ public class FieldMatcher {
 
     private boolean isNumeric(String value) {
 
-        if (value == null || value.isBlank()) {
+        if (value == null
+                || value.isBlank()) {
             return false;
         }
 
         try {
-            Double.parseDouble(value.trim());
+
+            Double.parseDouble(
+                    value.trim()
+            );
+
             return true;
+
         } catch (NumberFormatException exception) {
+
             return false;
         }
     }

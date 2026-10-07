@@ -66,18 +66,82 @@ public class MappingEngine {
                         rule.getDataType()
                 );
 
+        /*
+         * Für das fachliche Konzept "pain" werden nur
+         * gültige numerische Schmerzwerte von 0 bis 10
+         * berücksichtigt.
+         *
+         * Die Prüfung erfolgt vor der zeitlichen Auswahl,
+         * damit ungültige spätere Werte einen vorherigen
+         * gültigen Messwert nicht verdrängen.
+         */
+        if (isPainRule(rule)) {
+
+            matches =
+                    matches.stream()
+                            .filter(
+                                    this::isValidPainMatch
+                            )
+                            .toList();
+        }
+
         if (!rule.isMultiple()
                 && matches.size() > 1) {
 
-            JsonField lastMatch =
-                    matches.get(
-                            matches.size() - 1
-                    );
+            List<JsonField> temporalMatches =
+                    matches.stream()
+                            .filter(field ->
+                                    field.getTemporalOrder()
+                                            != null)
+                            .toList();
 
-            matches =
-                    new ArrayList<>(
-                            List.of(lastMatch)
-                    );
+            if (!temporalMatches.isEmpty()) {
+
+                long latestOrder =
+                        temporalMatches.stream()
+                                .mapToLong(
+                                        JsonField::getTemporalOrder
+                                )
+                                .max()
+                                .orElseThrow();
+
+                List<JsonField> latestMatches =
+                        temporalMatches.stream()
+                                .filter(field ->
+                                        field.getTemporalOrder()
+                                                == latestOrder)
+                                .toList();
+
+                JsonField selected =
+                        latestMatches.stream()
+                                .filter(field ->
+                                        field.getFieldName()
+                                                .toLowerCase()
+                                                .endsWith("value"))
+                                .findFirst()
+                                .orElse(
+                                        latestMatches.get(
+                                                latestMatches.size() - 1
+                                        )
+                                );
+
+                matches =
+                        new ArrayList<>(
+                                List.of(selected)
+                        );
+
+            } else {
+
+                JsonField lastMatch =
+                        matches.get(
+                                matches.size() - 1
+                        );
+
+                matches =
+                        new ArrayList<>(
+                                List.of(lastMatch)
+                        );
+            }
         }
 
         List<String> values =
@@ -101,11 +165,6 @@ public class MappingEngine {
                 String valueForTransformation =
                         value;
 
-                /*
-                 * Unterschiedliche Repräsentationen
-                 * logischer Zustände werden vor der
-                 * Werttransformation vereinheitlicht.
-                 */
                 Boolean normalizedValue =
                         booleanNormalizer.normalize(
                                 value
@@ -177,6 +236,54 @@ public class MappingEngine {
                 rule.getTarget(),
                 values
         );
+    }
+
+    private boolean isPainRule(
+            MappingRule rule
+    ) {
+
+        String concept =
+                conceptNormalizer.normalize(
+                        rule.getConcept()
+                );
+
+        return concept.equals("pain");
+    }
+
+    private boolean isValidPainMatch(
+            JsonField field
+    ) {
+
+        String fieldName =
+                field.getFieldName()
+                        .toLowerCase();
+
+        /*
+         * Kontextfelder wie IDs und Offsets bleiben erhalten.
+         * Nur eigentliche Werte werden auf den gültigen
+         * Wertebereich geprüft.
+         */
+        if (!fieldName.endsWith("value")) {
+            return true;
+        }
+
+        String value =
+                field.getValue().asText();
+
+        try {
+
+            double number =
+                    Double.parseDouble(
+                            value.trim()
+                    );
+
+            return number >= 0
+                    && number <= 10;
+
+        } catch (NumberFormatException exception) {
+
+            return false;
+        }
     }
 
     private boolean isAllergyRule(

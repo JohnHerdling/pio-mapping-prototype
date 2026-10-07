@@ -12,7 +12,14 @@ public class JsonFieldCollector {
 
         List<JsonField> fields = new ArrayList<>();
 
-        collect(node, "", "", fields);
+        collect(
+                node,
+                "",
+                "",
+                null,
+                false,
+                fields
+        );
 
         return fields;
     }
@@ -21,47 +28,78 @@ public class JsonFieldCollector {
             JsonNode node,
             String path,
             String context,
+            Long temporalOrder,
+            boolean arrayElement,
             List<JsonField> fields
     ) {
 
         if (node.isObject()) {
 
-            String localContext = buildContext(node);
+            String localContext =
+                    buildContext(node);
 
-            String objectContext;
+            String objectContext =
+                    localContext.isEmpty()
+                            ? context
+                            : localContext;
 
-            if (localContext.isEmpty()) {
-                objectContext = context;
-            } else {
-                objectContext = localContext;
+            /*
+             * Zeitliche Ordnungsinformationen werden nur
+             * innerhalb einzelner Elemente einer Liste
+             * berücksichtigt.
+             *
+             * Dadurch erhalten beispielsweise wiederholte
+             * Beobachtungen einen Offset, während allgemeine
+             * Objekte wie "patient" nicht anhand irgendeines
+             * enthaltenen Offset-Feldes zeitlich eingeordnet
+             * werden.
+             */
+            Long objectTemporalOrder =
+                    temporalOrder;
+
+            if (arrayElement) {
+
+                Long localTemporalOrder =
+                        findTemporalOrder(node);
+
+                if (localTemporalOrder != null) {
+                    objectTemporalOrder =
+                            localTemporalOrder;
+                }
             }
 
-            for (Map.Entry<String, JsonNode> field : node.properties()) {
+            for (Map.Entry<String, JsonNode> field
+                    : node.properties()) {
 
-                String fieldName = field.getKey();
-                JsonNode childNode = field.getValue();
+                String fieldName =
+                        field.getKey();
 
-                String childPath;
+                JsonNode childNode =
+                        field.getValue();
 
-                if (path.isEmpty()) {
-                    childPath = fieldName;
-                } else {
-                    childPath = path + "." + fieldName;
-                }
+                String childPath =
+                        path.isEmpty()
+                                ? fieldName
+                                : path + "." + fieldName;
 
                 collect(
                         childNode,
                         childPath,
                         objectContext,
+                        objectTemporalOrder,
+                        arrayElement,
                         fields
                 );
             }
 
         } else if (node.isArray()) {
 
-            for (int i = 0; i < node.size(); i++) {
+            for (int i = 0;
+                 i < node.size();
+                 i++) {
 
-                JsonNode childNode = node.get(i);
+                JsonNode childNode =
+                        node.get(i);
 
                 String childPath =
                         path + "[" + i + "]";
@@ -70,6 +108,8 @@ public class JsonFieldCollector {
                         childNode,
                         childPath,
                         "",
+                        temporalOrder,
+                        true,
                         fields
                 );
             }
@@ -82,16 +122,16 @@ public class JsonFieldCollector {
             JsonFieldType dataType =
                     determineDataType(node);
 
-            JsonField field =
+            fields.add(
                     new JsonField(
                             fieldName,
                             path,
                             node,
                             dataType,
-                            context
-                    );
-
-            fields.add(field);
+                            context,
+                            temporalOrder
+                    )
+            );
         }
     }
 
@@ -119,9 +159,7 @@ public class JsonFieldCollector {
         return context.toString().trim();
     }
 
-    private boolean isContextField(
-            String fieldName
-    ) {
+    private boolean isContextField(String fieldName) {
 
         if (fieldName == null) {
             return false;
@@ -138,6 +176,37 @@ public class JsonFieldCollector {
                 || normalized.endsWith("name")
                 || normalized.endsWith("description")
                 || normalized.endsWith("label");
+    }
+
+    private Long findTemporalOrder(JsonNode node) {
+
+        for (Map.Entry<String, JsonNode> field
+                : node.properties()) {
+
+            String fieldName =
+                    field.getKey().toLowerCase();
+
+            if (!fieldName.contains("offset")) {
+                continue;
+            }
+
+            JsonNode value =
+                    field.getValue();
+
+            if (value == null) {
+                continue;
+            }
+
+            try {
+                return Long.parseLong(
+                        value.asText().trim()
+                );
+            } catch (NumberFormatException ignored) {
+                // Kein numerischer Offset.
+            }
+        }
+
+        return null;
     }
 
     private void appendTextValue(
@@ -167,21 +236,15 @@ public class JsonFieldCollector {
                 .append(text);
     }
 
-    private String getFieldNameFromPath(
-            String path
-    ) {
+    private String getFieldNameFromPath(String path) {
 
         int lastDot =
                 path.lastIndexOf(".");
 
-        String fieldName;
-
-        if (lastDot == -1) {
-            fieldName = path;
-        } else {
-            fieldName =
-                    path.substring(lastDot + 1);
-        }
+        String fieldName =
+                lastDot == -1
+                        ? path
+                        : path.substring(lastDot + 1);
 
         int arrayStart =
                 fieldName.indexOf("[");
