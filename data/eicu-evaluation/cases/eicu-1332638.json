@@ -1,0 +1,3380 @@
+{
+  "patient" : {
+    "patientunitstayid" : "1332638",
+    "patienthealthsystemstayid" : "1013984",
+    "gender" : "Female",
+    "age" : "74",
+    "ethnicity" : "Caucasian",
+    "hospitalid" : "227",
+    "wardid" : "561",
+    "apacheadmissiondx" : "Sepsis, renal/UTI (including bladder)",
+    "admissionheight" : "156.20",
+    "hospitaladmittime24" : "16:25:45",
+    "hospitaladmitoffset" : "-410",
+    "hospitaladmitsource" : "Emergency Department",
+    "hospitaldischargeyear" : "2014",
+    "hospitaldischargetime24" : "20:12:00",
+    "hospitaldischargeoffset" : "4137",
+    "hospitaldischargelocation" : "Home",
+    "hospitaldischargestatus" : "Alive",
+    "unittype" : "Med-Surg ICU",
+    "unitadmittime24" : "23:15:00",
+    "unitadmitsource" : "Emergency Department",
+    "unitvisitnumber" : "1",
+    "unitstaytype" : "admit",
+    "admissionweight" : "85.40",
+    "dischargeweight" : "36.90",
+    "unitdischargetime24" : "17:59:00",
+    "unitdischargeoffset" : "1124",
+    "unitdischargelocation" : "Floor",
+    "unitdischargestatus" : "Alive",
+    "uniquepid" : "013-10174"
+  },
+  "medication" : [ {
+    "medicationid" : "48634987",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "2561",
+    "drugstartoffset" : "2565",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "ipratropium-albuterol",
+    "drughiclseqno" : "9040",
+    "dosage" : "3 mL",
+    "routeadmin" : "Nebulization",
+    "frequency" : "Every 4 hours PRN",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "14"
+  }, {
+    "medicationid" : "48558592",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "40",
+    "drugstartoffset" : "0",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "ondansetron",
+    "drughiclseqno" : "33598",
+    "dosage" : "4 mg",
+    "routeadmin" : "Intravenous",
+    "frequency" : "Every 4 hours PRN",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "65"
+  }, {
+    "medicationid" : "47417965",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "28",
+    "drugstartoffset" : "45",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "diltiazem",
+    "drughiclseqno" : "182",
+    "dosage" : "300 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "Daily",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "38"
+  }, {
+    "medicationid" : "46662638",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "25",
+    "drugstartoffset" : "15",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "pantoprazole",
+    "drughiclseqno" : "22008",
+    "dosage" : "40 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "Daily",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "65"
+  }, {
+    "medicationid" : "48535495",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "373",
+    "drugstartoffset" : "435",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "ipratropium-albuterol",
+    "drughiclseqno" : "9040",
+    "dosage" : "3 mL",
+    "routeadmin" : "Nebulization",
+    "frequency" : "",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "2544",
+    "gtc" : "14"
+  }, {
+    "medicationid" : "46010558",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "1",
+    "drugstartoffset" : "-54",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "",
+    "drughiclseqno" : "4868",
+    "dosage" : "100 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "Daily",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "2623",
+    "gtc" : "22"
+  }, {
+    "medicationid" : "47320327",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "2717",
+    "drugstartoffset" : "2655",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "",
+    "drughiclseqno" : "",
+    "dosage" : "",
+    "routeadmin" : "Swish",
+    "frequency" : "",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "0"
+  }, {
+    "medicationid" : "48060936",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "2629",
+    "drugstartoffset" : "2625",
+    "drugivadmixture" : "Yes",
+    "drugordercancelled" : "No",
+    "drugname" : "",
+    "drughiclseqno" : "3996",
+    "dosage" : "1 g",
+    "routeadmin" : "Intravenous",
+    "frequency" : "Every 24 hours",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "19"
+  }, {
+    "medicationid" : "47655086",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "31",
+    "drugstartoffset" : "105",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "digoxin",
+    "drughiclseqno" : "4",
+    "dosage" : "250 mcg",
+    "routeadmin" : "Oral",
+    "frequency" : "Daily",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "38"
+  }, {
+    "medicationid" : "46923296",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "40",
+    "drugstartoffset" : "0",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "amiodarone",
+    "drughiclseqno" : "83",
+    "dosage" : "150 mg",
+    "routeadmin" : "Intravenous",
+    "frequency" : "As needed",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "38"
+  }, {
+    "medicationid" : "47769740",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "1",
+    "drugstartoffset" : "-230",
+    "drugivadmixture" : "Yes",
+    "drugordercancelled" : "No",
+    "drugname" : "",
+    "drughiclseqno" : "3996",
+    "dosage" : "1 g",
+    "routeadmin" : "Intravenous",
+    "frequency" : "Once",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "-165",
+    "gtc" : "19"
+  }, {
+    "medicationid" : "46434953",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "47",
+    "drugstartoffset" : "0",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "",
+    "drughiclseqno" : "19078",
+    "dosage" : "1 mg",
+    "routeadmin" : "Intramuscular",
+    "frequency" : "As needed",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "59"
+  }, {
+    "medicationid" : "48023446",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "57",
+    "drugstartoffset" : "0",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "DOPamine",
+    "drughiclseqno" : "2059",
+    "dosage" : "5-20 mcg/kg/min",
+    "routeadmin" : "Intravenous",
+    "frequency" : "As needed",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "32"
+  }, {
+    "medicationid" : "47725518",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "31",
+    "drugstartoffset" : "285",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "",
+    "drughiclseqno" : "6227",
+    "dosage" : "40 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "Nightly",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "1325",
+    "gtc" : "41"
+  }, {
+    "medicationid" : "45894258",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "31",
+    "drugstartoffset" : "15",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "gabapentin",
+    "drughiclseqno" : "8831",
+    "dosage" : "200 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "3 times daily",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "44"
+  }, {
+    "medicationid" : "46123741",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "2579",
+    "drugstartoffset" : "2564",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "potassium chloride",
+    "drughiclseqno" : "549",
+    "dosage" : "10 mEq",
+    "routeadmin" : "Intravenous",
+    "frequency" : "As needed",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "59"
+  }, {
+    "medicationid" : "47871223",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "2579",
+    "drugstartoffset" : "2564",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "potassium chloride",
+    "drughiclseqno" : "549",
+    "dosage" : "20 mEq",
+    "routeadmin" : "Oral",
+    "frequency" : "As needed",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "59"
+  }, {
+    "medicationid" : "48510825",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "47",
+    "drugstartoffset" : "0",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "",
+    "drughiclseqno" : "19078",
+    "dosage" : "1 mg",
+    "routeadmin" : "Subcutaneous",
+    "frequency" : "As needed",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "59"
+  }, {
+    "medicationid" : "47569708",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "2581",
+    "drugstartoffset" : "2564",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "magnesium sulfate",
+    "drughiclseqno" : "610",
+    "dosage" : "2 g",
+    "routeadmin" : "Intravenous",
+    "frequency" : "As needed",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "59"
+  }, {
+    "medicationid" : "46250771",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "39",
+    "drugstartoffset" : "0",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "EPINEPHrine",
+    "drughiclseqno" : "2050",
+    "dosage" : "1 mg",
+    "routeadmin" : "Intravenous",
+    "frequency" : "As needed",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "32"
+  }, {
+    "medicationid" : "47135526",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "38",
+    "drugstartoffset" : "45",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "folic acid",
+    "drughiclseqno" : "1062",
+    "dosage" : "1 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "95"
+  }, {
+    "medicationid" : "47181110",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "41",
+    "drugstartoffset" : "0",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "acetaminophen",
+    "drughiclseqno" : "1866",
+    "dosage" : "650 mg",
+    "routeadmin" : "Feeding Tube",
+    "frequency" : "Every 4 hours PRN",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "1219",
+    "gtc" : "2"
+  }, {
+    "medicationid" : "46307520",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "41",
+    "drugstartoffset" : "0",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "acetaminophen",
+    "drughiclseqno" : "1866",
+    "dosage" : "650 mg",
+    "routeadmin" : "Rectal",
+    "frequency" : "Every 4 hours PRN",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "1219",
+    "gtc" : "2"
+  }, {
+    "medicationid" : "47476616",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "29",
+    "drugstartoffset" : "15",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "",
+    "drughiclseqno" : "26521",
+    "dosage" : "30 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "Daily",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "80"
+  }, {
+    "medicationid" : "46446749",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "1217",
+    "drugstartoffset" : "1169",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "acetaminophen",
+    "drughiclseqno" : "1866",
+    "dosage" : "650 mg",
+    "routeadmin" : "Feeding Tube",
+    "frequency" : "Every 4 hours PRN",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "2"
+  }, {
+    "medicationid" : "47310259",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "1217",
+    "drugstartoffset" : "1169",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "acetaminophen",
+    "drughiclseqno" : "1866",
+    "dosage" : "650 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "Every 4 hours PRN",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "2"
+  }, {
+    "medicationid" : "48315279",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "1217",
+    "drugstartoffset" : "1169",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "acetaminophen",
+    "drughiclseqno" : "1866",
+    "dosage" : "650 mg",
+    "routeadmin" : "Rectal",
+    "frequency" : "Every 4 hours PRN",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "2"
+  }, {
+    "medicationid" : "48361587",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "41",
+    "drugstartoffset" : "0",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "acetaminophen",
+    "drughiclseqno" : "1866",
+    "dosage" : "650 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "Every 4 hours PRN",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "1219",
+    "gtc" : "2"
+  }, {
+    "medicationid" : "46239768",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "1",
+    "drugstartoffset" : "1005",
+    "drugivadmixture" : "Yes",
+    "drugordercancelled" : "No",
+    "drugname" : "vancomycin",
+    "drughiclseqno" : "4042",
+    "dosage" : "1250 MG",
+    "routeadmin" : "Intravenous",
+    "frequency" : "Daily",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "2468",
+    "gtc" : "19"
+  }, {
+    "medicationid" : "46228647",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "2562",
+    "drugstartoffset" : "2565",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "lisinopril",
+    "drughiclseqno" : "132",
+    "dosage" : "10 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "Daily",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "41"
+  }, {
+    "medicationid" : "48514423",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "58",
+    "drugstartoffset" : "39",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "HYDROcodone-acetaminophen",
+    "drughiclseqno" : "1730",
+    "dosage" : "1 tablet",
+    "routeadmin" : "Oral",
+    "frequency" : "Every 4 hours PRN",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "2"
+  }, {
+    "medicationid" : "45995478",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "36",
+    "drugstartoffset" : "285",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "warfarin",
+    "drughiclseqno" : "2812",
+    "dosage" : "4 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "Daily",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "36"
+  }, {
+    "medicationid" : "47355378",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "29",
+    "drugstartoffset" : "285",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "",
+    "drughiclseqno" : "26407",
+    "dosage" : "10 Units",
+    "routeadmin" : "Subcutaneous",
+    "frequency" : "Nightly",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "71"
+  }, {
+    "medicationid" : "47399930",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "1",
+    "drugstartoffset" : "-90",
+    "drugivadmixture" : "Yes",
+    "drugordercancelled" : "No",
+    "drugname" : "",
+    "drughiclseqno" : "10093",
+    "dosage" : "1 g",
+    "routeadmin" : "Intravenous",
+    "frequency" : "Once",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "31",
+    "gtc" : "19"
+  }, {
+    "medicationid" : "47697525",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "2581",
+    "drugstartoffset" : "2564",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "magnesium chloride",
+    "drughiclseqno" : "607",
+    "dosage" : "192 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "As needed",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "59"
+  }, {
+    "medicationid" : "46153534",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "46",
+    "drugstartoffset" : "0",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "dextrose 50% in water",
+    "drughiclseqno" : "926",
+    "dosage" : "12.5 g",
+    "routeadmin" : "Intravenous",
+    "frequency" : "As needed",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "59"
+  }, {
+    "medicationid" : "48112192",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "1",
+    "drugstartoffset" : "-317",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "acetaminophen",
+    "drughiclseqno" : "1866",
+    "dosage" : "650 mg",
+    "routeadmin" : "Oral",
+    "frequency" : "Once",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "-300",
+    "gtc" : "2"
+  }, {
+    "medicationid" : "46727114",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "46",
+    "drugstartoffset" : "15",
+    "drugivadmixture" : "Yes",
+    "drugordercancelled" : "No",
+    "drugname" : "piperacillin-tazobactam",
+    "drughiclseqno" : "8738",
+    "dosage" : "3.375 g",
+    "routeadmin" : "Intravenous",
+    "frequency" : "Every 6 hours",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "2615",
+    "gtc" : "19"
+  }, {
+    "medicationid" : "45949936",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "1256",
+    "drugstartoffset" : "1275",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "metroNIDAZOLE",
+    "drughiclseqno" : "8259",
+    "dosage" : "500 mg",
+    "routeadmin" : "Intravenous",
+    "frequency" : "Every 6 hours",
+    "loadingdose" : "",
+    "prn" : "No",
+    "drugstopoffset" : "4257",
+    "gtc" : "19"
+  }, {
+    "medicationid" : "47626032",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "40",
+    "drugstartoffset" : "0",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "atropine",
+    "drughiclseqno" : "2004",
+    "dosage" : "0.5 mg",
+    "routeadmin" : "Intravenous",
+    "frequency" : "As needed",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "65"
+  }, {
+    "medicationid" : "46996465",
+    "patientunitstayid" : "1332638",
+    "drugorderoffset" : "1217",
+    "drugstartoffset" : "1169",
+    "drugivadmixture" : "No",
+    "drugordercancelled" : "No",
+    "drugname" : "",
+    "drughiclseqno" : "1168",
+    "dosage" : "30 mL",
+    "routeadmin" : "Oral",
+    "frequency" : "",
+    "loadingdose" : "",
+    "prn" : "Yes",
+    "drugstopoffset" : "4257",
+    "gtc" : "65"
+  } ],
+  "nurseCharting" : [ {
+    "nursingchartid" : "848371726",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1418",
+    "nursingchartentryoffset" : "1418",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "94"
+  }, {
+    "nursingchartid" : "867647756",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2322",
+    "nursingchartentryoffset" : "2322",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "98"
+  }, {
+    "nursingchartid" : "847501204",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "941",
+    "nursingchartentryoffset" : "941",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "6"
+  }, {
+    "nursingchartid" : "841527643",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1902",
+    "nursingchartentryoffset" : "1902",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "66"
+  }, {
+    "nursingchartid" : "836748294",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "225",
+    "nursingchartentryoffset" : "225",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "80"
+  }, {
+    "nursingchartid" : "824230976",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-253",
+    "nursingchartentryoffset" : "-253",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "840878801",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "465",
+    "nursingchartentryoffset" : "465",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "2"
+  }, {
+    "nursingchartid" : "848371727",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1418",
+    "nursingchartentryoffset" : "1418",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "54"
+  }, {
+    "nursingchartid" : "828256864",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "225",
+    "nursingchartentryoffset" : "225",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "176"
+  }, {
+    "nursingchartid" : "821209025",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "705",
+    "nursingchartentryoffset" : "705",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "68"
+  }, {
+    "nursingchartid" : "842586009",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "465",
+    "nursingchartentryoffset" : "465",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "837596781",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "135",
+    "nursingchartentryoffset" : "135",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "92"
+  }, {
+    "nursingchartid" : "824956764",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "465",
+    "nursingchartentryoffset" : "465",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "51"
+  }, {
+    "nursingchartid" : "815016588",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1047",
+    "nursingchartentryoffset" : "1047",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "113"
+  }, {
+    "nursingchartid" : "854461042",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "448",
+    "nursingchartentryoffset" : "448",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "3"
+  }, {
+    "nursingchartid" : "845375774",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "60",
+    "nursingchartentryoffset" : "60",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "93"
+  }, {
+    "nursingchartid" : "828840374",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "645",
+    "nursingchartentryoffset" : "645",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "98"
+  }, {
+    "nursingchartid" : "833750423",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2660",
+    "nursingchartentryoffset" : "2660",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "842586010",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "465",
+    "nursingchartentryoffset" : "465",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "98.6"
+  }, {
+    "nursingchartid" : "858263942",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-357",
+    "nursingchartentryoffset" : "-357",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "67"
+  }, {
+    "nursingchartid" : "817477701",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "465",
+    "nursingchartentryoffset" : "465",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "99"
+  }, {
+    "nursingchartid" : "815016590",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1047",
+    "nursingchartentryoffset" : "1047",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "83"
+  }, {
+    "nursingchartid" : "842586008",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "465",
+    "nursingchartentryoffset" : "465",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "37"
+  }, {
+    "nursingchartid" : "814692707",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2923",
+    "nursingchartentryoffset" : "2923",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "6"
+  }, {
+    "nursingchartid" : "864821924",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "525",
+    "nursingchartentryoffset" : "525",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "2"
+  }, {
+    "nursingchartid" : "842219071",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "645",
+    "nursingchartentryoffset" : "645",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "2"
+  }, {
+    "nursingchartid" : "835519825",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1155",
+    "nursingchartentryoffset" : "1155",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "62"
+  }, {
+    "nursingchartid" : "815016589",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1047",
+    "nursingchartentryoffset" : "1047",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "68"
+  }, {
+    "nursingchartid" : "824956763",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "465",
+    "nursingchartentryoffset" : "465",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "141"
+  }, {
+    "nursingchartid" : "850865292",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1065",
+    "nursingchartentryoffset" : "1065",
+    "nursingchartcelltypecat" : "Other Vital Signs and Infusions",
+    "nursingchartcelltypevallabel" : "P.O.",
+    "nursingchartcelltypevalname" : "Value",
+    "nursingchartvalue" : "230"
+  }, {
+    "nursingchartid" : "866147179",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2340",
+    "nursingchartentryoffset" : "2340",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "98.2"
+  }, {
+    "nursingchartid" : "822821590",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1308",
+    "nursingchartentryoffset" : "1308",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "7"
+  }, {
+    "nursingchartid" : "865063313",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "705",
+    "nursingchartentryoffset" : "705",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "2"
+  }, {
+    "nursingchartid" : "858133529",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "135",
+    "nursingchartentryoffset" : "135",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "94"
+  }, {
+    "nursingchartid" : "849946475",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "195",
+    "nursingchartentryoffset" : "195",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "84"
+  }, {
+    "nursingchartid" : "853060763",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "825",
+    "nursingchartentryoffset" : "825",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "2"
+  }, {
+    "nursingchartid" : "866276055",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "945",
+    "nursingchartentryoffset" : "945",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "855550072",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "285",
+    "nursingchartentryoffset" : "285",
+    "nursingchartcelltypecat" : "Other Vital Signs and Infusions",
+    "nursingchartcelltypevallabel" : "P.O.",
+    "nursingchartcelltypevalname" : "Value",
+    "nursingchartvalue" : "60"
+  }, {
+    "nursingchartid" : "829952527",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "180",
+    "nursingchartentryoffset" : "180",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "92"
+  }, {
+    "nursingchartid" : "865048280",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "525",
+    "nursingchartentryoffset" : "525",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "129"
+  }, {
+    "nursingchartid" : "824956765",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "465",
+    "nursingchartentryoffset" : "465",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "71"
+  }, {
+    "nursingchartid" : "857510924",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-253",
+    "nursingchartentryoffset" : "-253",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "144"
+  }, {
+    "nursingchartid" : "866147178",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2340",
+    "nursingchartentryoffset" : "2340",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "865048281",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "525",
+    "nursingchartentryoffset" : "525",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "48"
+  }, {
+    "nursingchartid" : "814773022",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "65",
+    "nursingchartentryoffset" : "65",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "5"
+  }, {
+    "nursingchartid" : "815518854",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2591",
+    "nursingchartentryoffset" : "2591",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "148"
+  }, {
+    "nursingchartid" : "866147177",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2340",
+    "nursingchartentryoffset" : "2340",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "36.8"
+  }, {
+    "nursingchartid" : "865048282",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "525",
+    "nursingchartentryoffset" : "525",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "74"
+  }, {
+    "nursingchartid" : "816202174",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "65",
+    "nursingchartentryoffset" : "65",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "95"
+  }, {
+    "nursingchartid" : "856283925",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2745",
+    "nursingchartentryoffset" : "2745",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "816627147",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1440",
+    "nursingchartentryoffset" : "1440",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "96"
+  }, {
+    "nursingchartid" : "846618214",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2745",
+    "nursingchartentryoffset" : "2745",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "817250502",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "165",
+    "nursingchartentryoffset" : "165",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "94"
+  }, {
+    "nursingchartid" : "829705329",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "885",
+    "nursingchartentryoffset" : "885",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "62"
+  }, {
+    "nursingchartid" : "816561938",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2599",
+    "nursingchartentryoffset" : "2599",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "95"
+  }, {
+    "nursingchartid" : "838018173",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "75",
+    "nursingchartentryoffset" : "75",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "94"
+  }, {
+    "nursingchartid" : "850939293",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2145",
+    "nursingchartentryoffset" : "2145",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "814158852",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1923",
+    "nursingchartentryoffset" : "1923",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "36.8"
+  }, {
+    "nursingchartid" : "868581635",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-405",
+    "nursingchartentryoffset" : "-405",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "8"
+  }, {
+    "nursingchartid" : "828256866",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "225",
+    "nursingchartentryoffset" : "225",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "106"
+  }, {
+    "nursingchartid" : "815518855",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2591",
+    "nursingchartentryoffset" : "2591",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "86"
+  }, {
+    "nursingchartid" : "865212361",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-15",
+    "nursingchartentryoffset" : "-15",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "98.6"
+  }, {
+    "nursingchartid" : "863957876",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1440",
+    "nursingchartentryoffset" : "1440",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "60"
+  }, {
+    "nursingchartid" : "814800063",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "15",
+    "nursingchartentryoffset" : "15",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "80"
+  }, {
+    "nursingchartid" : "838993826",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-405",
+    "nursingchartentryoffset" : "-405",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "99"
+  }, {
+    "nursingchartid" : "814158853",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1923",
+    "nursingchartentryoffset" : "1923",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "825287263",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "120",
+    "nursingchartentryoffset" : "120",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "86"
+  }, {
+    "nursingchartid" : "828256865",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "225",
+    "nursingchartentryoffset" : "225",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "73"
+  }, {
+    "nursingchartid" : "816627293",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2805",
+    "nursingchartentryoffset" : "2805",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "65"
+  }, {
+    "nursingchartid" : "865212360",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-15",
+    "nursingchartentryoffset" : "-15",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "37"
+  }, {
+    "nursingchartid" : "830672480",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1065",
+    "nursingchartentryoffset" : "1065",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "838088816",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "30",
+    "nursingchartentryoffset" : "30",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "93"
+  }, {
+    "nursingchartid" : "858263941",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-357",
+    "nursingchartentryoffset" : "-357",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "158"
+  }, {
+    "nursingchartid" : "814158854",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1923",
+    "nursingchartentryoffset" : "1923",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "98.2"
+  }, {
+    "nursingchartid" : "841818286",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1065",
+    "nursingchartentryoffset" : "1065",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "95"
+  }, {
+    "nursingchartid" : "853988218",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1540",
+    "nursingchartentryoffset" : "1540",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "64"
+  }, {
+    "nursingchartid" : "867312842",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3840",
+    "nursingchartentryoffset" : "3840",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "97.9"
+  }, {
+    "nursingchartid" : "837755042",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "150",
+    "nursingchartentryoffset" : "150",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "163"
+  }, {
+    "nursingchartid" : "825276106",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2973",
+    "nursingchartentryoffset" : "2973",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "61"
+  }, {
+    "nursingchartid" : "837755044",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "150",
+    "nursingchartentryoffset" : "150",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "123"
+  }, {
+    "nursingchartid" : "837755043",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "150",
+    "nursingchartentryoffset" : "150",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "98"
+  }, {
+    "nursingchartid" : "841476023",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-357",
+    "nursingchartentryoffset" : "-357",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "100.2"
+  }, {
+    "nursingchartid" : "857510925",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-253",
+    "nursingchartentryoffset" : "-253",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "66"
+  }, {
+    "nursingchartid" : "837791409",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "225",
+    "nursingchartentryoffset" : "225",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "99"
+  }, {
+    "nursingchartid" : "863600950",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "60",
+    "nursingchartentryoffset" : "60",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "79"
+  }, {
+    "nursingchartid" : "832199817",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2805",
+    "nursingchartentryoffset" : "2805",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "816091673",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "150",
+    "nursingchartentryoffset" : "150",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "89"
+  }, {
+    "nursingchartid" : "859880715",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "285",
+    "nursingchartentryoffset" : "285",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "99"
+  }, {
+    "nursingchartid" : "861108214",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "825",
+    "nursingchartentryoffset" : "825",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "68"
+  }, {
+    "nursingchartid" : "826453358",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "285",
+    "nursingchartentryoffset" : "285",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "63"
+  }, {
+    "nursingchartid" : "866792465",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3345",
+    "nursingchartentryoffset" : "3345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "826808142",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3345",
+    "nursingchartentryoffset" : "3345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "138"
+  }, {
+    "nursingchartid" : "835108740",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "90",
+    "nursingchartentryoffset" : "90",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "96"
+  }, {
+    "nursingchartid" : "859603230",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2745",
+    "nursingchartentryoffset" : "2745",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "66"
+  }, {
+    "nursingchartid" : "816500985",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1905",
+    "nursingchartentryoffset" : "1905",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Glasgow coma score",
+    "nursingchartcelltypevalname" : "GCS Total",
+    "nursingchartvalue" : "15"
+  }, {
+    "nursingchartid" : "817257379",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "765",
+    "nursingchartentryoffset" : "765",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "2"
+  }, {
+    "nursingchartid" : "867312840",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3840",
+    "nursingchartentryoffset" : "3840",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "36.6"
+  }, {
+    "nursingchartid" : "852639567",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1047",
+    "nursingchartentryoffset" : "1047",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "80"
+  }, {
+    "nursingchartid" : "825167640",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1634",
+    "nursingchartentryoffset" : "1634",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "818964791",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "825",
+    "nursingchartentryoffset" : "825",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "74"
+  }, {
+    "nursingchartid" : "835890076",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2745",
+    "nursingchartentryoffset" : "2745",
+    "nursingchartcelltypecat" : "Other Vital Signs and Infusions",
+    "nursingchartcelltypevallabel" : "P.O.",
+    "nursingchartcelltypevalname" : "Value",
+    "nursingchartvalue" : "540"
+  }, {
+    "nursingchartid" : "817375814",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "945",
+    "nursingchartentryoffset" : "945",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "105"
+  }, {
+    "nursingchartid" : "815844249",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3345",
+    "nursingchartentryoffset" : "3345",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "826453357",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "285",
+    "nursingchartentryoffset" : "285",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "166"
+  }, {
+    "nursingchartid" : "867312841",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3840",
+    "nursingchartentryoffset" : "3840",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "826808143",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3345",
+    "nursingchartentryoffset" : "3345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "82"
+  }, {
+    "nursingchartid" : "823044834",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1047",
+    "nursingchartentryoffset" : "1047",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "95"
+  }, {
+    "nursingchartid" : "824469547",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2340",
+    "nursingchartentryoffset" : "2340",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "8"
+  }, {
+    "nursingchartid" : "839588389",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-300",
+    "nursingchartentryoffset" : "-300",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "817375813",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "945",
+    "nursingchartentryoffset" : "945",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "68"
+  }, {
+    "nursingchartid" : "826453359",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "285",
+    "nursingchartentryoffset" : "285",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "91"
+  }, {
+    "nursingchartid" : "826172947",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1605",
+    "nursingchartentryoffset" : "1605",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "817375812",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "945",
+    "nursingchartentryoffset" : "945",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "143"
+  }, {
+    "nursingchartid" : "867908709",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "4099",
+    "nursingchartentryoffset" : "4099",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "4"
+  }, {
+    "nursingchartid" : "835961123",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "585",
+    "nursingchartentryoffset" : "585",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "127"
+  }, {
+    "nursingchartid" : "857929074",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2920",
+    "nursingchartentryoffset" : "2920",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "6"
+  }, {
+    "nursingchartid" : "818964790",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "825",
+    "nursingchartentryoffset" : "825",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "57"
+  }, {
+    "nursingchartid" : "839321554",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-90",
+    "nursingchartentryoffset" : "-90",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "76"
+  }, {
+    "nursingchartid" : "835961124",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "585",
+    "nursingchartentryoffset" : "585",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "54"
+  }, {
+    "nursingchartid" : "866884138",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "705",
+    "nursingchartentryoffset" : "705",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "63"
+  }, {
+    "nursingchartid" : "818964789",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "825",
+    "nursingchartentryoffset" : "825",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "135"
+  }, {
+    "nursingchartid" : "865988616",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "585",
+    "nursingchartentryoffset" : "585",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "72"
+  }, {
+    "nursingchartid" : "835961125",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "585",
+    "nursingchartentryoffset" : "585",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "77"
+  }, {
+    "nursingchartid" : "819243166",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2745",
+    "nursingchartentryoffset" : "2745",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "68"
+  }, {
+    "nursingchartid" : "839321553",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-90",
+    "nursingchartentryoffset" : "-90",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "173"
+  }, {
+    "nursingchartid" : "817129862",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "885",
+    "nursingchartentryoffset" : "885",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "83"
+  }, {
+    "nursingchartid" : "825562561",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-195",
+    "nursingchartentryoffset" : "-195",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "819243165",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2745",
+    "nursingchartentryoffset" : "2745",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "129"
+  }, {
+    "nursingchartid" : "840496304",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-90",
+    "nursingchartentryoffset" : "-90",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "7"
+  }, {
+    "nursingchartid" : "817129860",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "885",
+    "nursingchartentryoffset" : "885",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "123"
+  }, {
+    "nursingchartid" : "817129861",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "885",
+    "nursingchartentryoffset" : "885",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "56"
+  }, {
+    "nursingchartid" : "845009599",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3276",
+    "nursingchartentryoffset" : "3276",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "10"
+  }, {
+    "nursingchartid" : "850917503",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2340",
+    "nursingchartentryoffset" : "2340",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "86"
+  }, {
+    "nursingchartid" : "845073210",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1418",
+    "nursingchartentryoffset" : "1418",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "96"
+  }, {
+    "nursingchartid" : "825659684",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "225",
+    "nursingchartentryoffset" : "225",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "832875103",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-405",
+    "nursingchartentryoffset" : "-405",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "93"
+  }, {
+    "nursingchartid" : "847061902",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-253",
+    "nursingchartentryoffset" : "-253",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "99.1"
+  }, {
+    "nursingchartid" : "863317945",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "525",
+    "nursingchartentryoffset" : "525",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "76"
+  }, {
+    "nursingchartid" : "846322744",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "825",
+    "nursingchartentryoffset" : "825",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "850700043",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3829",
+    "nursingchartentryoffset" : "3829",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "9"
+  }, {
+    "nursingchartid" : "863240186",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3885",
+    "nursingchartentryoffset" : "3885",
+    "nursingchartcelltypecat" : "Other Vital Signs and Infusions",
+    "nursingchartcelltypevallabel" : "P.O.",
+    "nursingchartcelltypevalname" : "Value",
+    "nursingchartvalue" : "240"
+  }, {
+    "nursingchartid" : "867442471",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "585",
+    "nursingchartentryoffset" : "585",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "853932633",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1923",
+    "nursingchartentryoffset" : "1923",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "68"
+  }, {
+    "nursingchartid" : "866884137",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "705",
+    "nursingchartentryoffset" : "705",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "125"
+  }, {
+    "nursingchartid" : "852258040",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3840",
+    "nursingchartentryoffset" : "3840",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "171"
+  }, {
+    "nursingchartid" : "825486706",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1335",
+    "nursingchartentryoffset" : "1335",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "5"
+  }, {
+    "nursingchartid" : "844662167",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1864",
+    "nursingchartentryoffset" : "1864",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "7"
+  }, {
+    "nursingchartid" : "864703180",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1923",
+    "nursingchartentryoffset" : "1923",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "61"
+  }, {
+    "nursingchartid" : "852240980",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2805",
+    "nursingchartentryoffset" : "2805",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "37"
+  }, {
+    "nursingchartid" : "841335970",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1923",
+    "nursingchartentryoffset" : "1923",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "829853460",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-357",
+    "nursingchartentryoffset" : "-357",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "95"
+  }, {
+    "nursingchartid" : "833283569",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1621",
+    "nursingchartentryoffset" : "1621",
+    "nursingchartcelltypecat" : "Other Vital Signs and Infusions",
+    "nursingchartcelltypevallabel" : "P.O.",
+    "nursingchartcelltypevalname" : "Value",
+    "nursingchartvalue" : "240"
+  }, {
+    "nursingchartid" : "841583357",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "765",
+    "nursingchartentryoffset" : "765",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "848847092",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2322",
+    "nursingchartentryoffset" : "2322",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "70"
+  }, {
+    "nursingchartid" : "840766062",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "525",
+    "nursingchartentryoffset" : "525",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "827526648",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-354",
+    "nursingchartentryoffset" : "-354",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Glasgow coma score",
+    "nursingchartcelltypevalname" : "GCS Total",
+    "nursingchartvalue" : "14"
+  }, {
+    "nursingchartid" : "864001572",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2599",
+    "nursingchartentryoffset" : "2599",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "7"
+  }, {
+    "nursingchartid" : "857486651",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3840",
+    "nursingchartentryoffset" : "3840",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "99"
+  }, {
+    "nursingchartid" : "856704114",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "765",
+    "nursingchartentryoffset" : "765",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "110"
+  }, {
+    "nursingchartid" : "817968720",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-401",
+    "nursingchartentryoffset" : "-401",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Glasgow coma score",
+    "nursingchartcelltypevalname" : "GCS Total",
+    "nursingchartvalue" : "14"
+  }, {
+    "nursingchartid" : "846109718",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "105",
+    "nursingchartentryoffset" : "105",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "96"
+  }, {
+    "nursingchartid" : "852258041",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3840",
+    "nursingchartentryoffset" : "3840",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "90"
+  }, {
+    "nursingchartid" : "828125003",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2340",
+    "nursingchartentryoffset" : "2340",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "98"
+  }, {
+    "nursingchartid" : "845121687",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "405",
+    "nursingchartentryoffset" : "405",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "98"
+  }, {
+    "nursingchartid" : "856704115",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "765",
+    "nursingchartentryoffset" : "765",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "57"
+  }, {
+    "nursingchartid" : "852240981",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2805",
+    "nursingchartentryoffset" : "2805",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "835407819",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "15",
+    "nursingchartentryoffset" : "15",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "95"
+  }, {
+    "nursingchartid" : "829269238",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-357",
+    "nursingchartentryoffset" : "-357",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "100"
+  }, {
+    "nursingchartid" : "854464617",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "75",
+    "nursingchartentryoffset" : "75",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "90"
+  }, {
+    "nursingchartid" : "839128038",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2445",
+    "nursingchartentryoffset" : "2445",
+    "nursingchartcelltypecat" : "Other Vital Signs and Infusions",
+    "nursingchartcelltypevallabel" : "P.O.",
+    "nursingchartcelltypevalname" : "Value",
+    "nursingchartvalue" : "240"
+  }, {
+    "nursingchartid" : "856704116",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "765",
+    "nursingchartentryoffset" : "765",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "75"
+  }, {
+    "nursingchartid" : "815376905",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-15",
+    "nursingchartentryoffset" : "-15",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "86"
+  }, {
+    "nursingchartid" : "829334798",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-253",
+    "nursingchartentryoffset" : "-253",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "853600775",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "645",
+    "nursingchartentryoffset" : "645",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "76"
+  }, {
+    "nursingchartid" : "866331874",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1155",
+    "nursingchartentryoffset" : "1155",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "97.9"
+  }, {
+    "nursingchartid" : "853932632",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1923",
+    "nursingchartentryoffset" : "1923",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "150"
+  }, {
+    "nursingchartid" : "866884139",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "705",
+    "nursingchartentryoffset" : "705",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "92"
+  }, {
+    "nursingchartid" : "867536990",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "165",
+    "nursingchartentryoffset" : "165",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "86"
+  }, {
+    "nursingchartid" : "852240982",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2805",
+    "nursingchartentryoffset" : "2805",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "98.6"
+  }, {
+    "nursingchartid" : "833794475",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1155",
+    "nursingchartentryoffset" : "1155",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "98"
+  }, {
+    "nursingchartid" : "863033850",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1902",
+    "nursingchartentryoffset" : "1902",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "98"
+  }, {
+    "nursingchartid" : "830998397",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "705",
+    "nursingchartentryoffset" : "705",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "837482212",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-253",
+    "nursingchartentryoffset" : "-253",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "80"
+  }, {
+    "nursingchartid" : "832474485",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "941",
+    "nursingchartentryoffset" : "941",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "98"
+  }, {
+    "nursingchartid" : "821210989",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "180",
+    "nursingchartentryoffset" : "180",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "86"
+  }, {
+    "nursingchartid" : "820496598",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "345",
+    "nursingchartentryoffset" : "345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "74"
+  }, {
+    "nursingchartid" : "836174901",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-90",
+    "nursingchartentryoffset" : "-90",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "99"
+  }, {
+    "nursingchartid" : "864649953",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1155",
+    "nursingchartentryoffset" : "1155",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "58"
+  }, {
+    "nursingchartid" : "850500479",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3345",
+    "nursingchartentryoffset" : "3345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "78"
+  }, {
+    "nursingchartid" : "862140917",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "945",
+    "nursingchartentryoffset" : "945",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "74"
+  }, {
+    "nursingchartid" : "832875102",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-405",
+    "nursingchartentryoffset" : "-405",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "169"
+  }, {
+    "nursingchartid" : "847061901",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-253",
+    "nursingchartentryoffset" : "-253",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "820078923",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-357",
+    "nursingchartentryoffset" : "-357",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "867972332",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "30",
+    "nursingchartentryoffset" : "30",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "82"
+  }, {
+    "nursingchartid" : "860874805",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3829",
+    "nursingchartentryoffset" : "3829",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "842989627",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "195",
+    "nursingchartentryoffset" : "195",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "155"
+  }, {
+    "nursingchartid" : "850807025",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "285",
+    "nursingchartentryoffset" : "285",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "3"
+  }, {
+    "nursingchartid" : "866894107",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "225",
+    "nursingchartentryoffset" : "225",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "3"
+  }, {
+    "nursingchartid" : "843409561",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1065",
+    "nursingchartentryoffset" : "1065",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "76"
+  }, {
+    "nursingchartid" : "830672478",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1065",
+    "nursingchartentryoffset" : "1065",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "134"
+  }, {
+    "nursingchartid" : "856577713",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-90",
+    "nursingchartentryoffset" : "-90",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "70"
+  }, {
+    "nursingchartid" : "841522438",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "195",
+    "nursingchartentryoffset" : "195",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "95"
+  }, {
+    "nursingchartid" : "820881729",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "285",
+    "nursingchartentryoffset" : "285",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "66"
+  }, {
+    "nursingchartid" : "841923047",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "585",
+    "nursingchartentryoffset" : "585",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "2"
+  }, {
+    "nursingchartid" : "847061900",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-253",
+    "nursingchartentryoffset" : "-253",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "37.3"
+  }, {
+    "nursingchartid" : "843145555",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2805",
+    "nursingchartentryoffset" : "2805",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "131"
+  }, {
+    "nursingchartid" : "822363902",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "705",
+    "nursingchartentryoffset" : "705",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "98"
+  }, {
+    "nursingchartid" : "865896434",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "765",
+    "nursingchartentryoffset" : "765",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "74"
+  }, {
+    "nursingchartid" : "856288448",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2340",
+    "nursingchartentryoffset" : "2340",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "77"
+  }, {
+    "nursingchartid" : "849794413",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3345",
+    "nursingchartentryoffset" : "3345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "36.6"
+  }, {
+    "nursingchartid" : "825659683",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "225",
+    "nursingchartentryoffset" : "225",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "37.5"
+  }, {
+    "nursingchartid" : "853669434",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-15",
+    "nursingchartentryoffset" : "-15",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "830998396",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "705",
+    "nursingchartentryoffset" : "705",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "37.1"
+  }, {
+    "nursingchartid" : "843913570",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "0",
+    "nursingchartentryoffset" : "0",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "857485440",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-195",
+    "nursingchartentryoffset" : "-195",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "864649952",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1155",
+    "nursingchartentryoffset" : "1155",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "139"
+  }, {
+    "nursingchartid" : "824008277",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "4099",
+    "nursingchartentryoffset" : "4099",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "99"
+  }, {
+    "nursingchartid" : "843145556",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2805",
+    "nursingchartentryoffset" : "2805",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "57"
+  }, {
+    "nursingchartid" : "830414991",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "885",
+    "nursingchartentryoffset" : "885",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "2"
+  }, {
+    "nursingchartid" : "830998398",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "705",
+    "nursingchartentryoffset" : "705",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "98.8"
+  }, {
+    "nursingchartid" : "861789687",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "405",
+    "nursingchartentryoffset" : "405",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "50"
+  }, {
+    "nursingchartid" : "830672479",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1065",
+    "nursingchartentryoffset" : "1065",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "64"
+  }, {
+    "nursingchartid" : "853183826",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "90",
+    "nursingchartentryoffset" : "90",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "94"
+  }, {
+    "nursingchartid" : "866331873",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1155",
+    "nursingchartentryoffset" : "1155",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "845566785",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "945",
+    "nursingchartentryoffset" : "945",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "36.9"
+  }, {
+    "nursingchartid" : "829354614",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3345",
+    "nursingchartentryoffset" : "3345",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Glasgow coma score",
+    "nursingchartcelltypevalname" : "GCS Total",
+    "nursingchartvalue" : "15"
+  }, {
+    "nursingchartid" : "849794414",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3345",
+    "nursingchartentryoffset" : "3345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "841476021",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-357",
+    "nursingchartentryoffset" : "-357",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "37.9"
+  }, {
+    "nursingchartid" : "818741066",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "345",
+    "nursingchartentryoffset" : "345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 L/%",
+    "nursingchartcelltypevalname" : "O2 L/%",
+    "nursingchartvalue" : "3"
+  }, {
+    "nursingchartid" : "851878496",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "345",
+    "nursingchartentryoffset" : "345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "90"
+  }, {
+    "nursingchartid" : "825659685",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "225",
+    "nursingchartentryoffset" : "225",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "99.5"
+  }, {
+    "nursingchartid" : "861789688",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "405",
+    "nursingchartentryoffset" : "405",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "66"
+  }, {
+    "nursingchartid" : "826260973",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1410",
+    "nursingchartentryoffset" : "1410",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "5"
+  }, {
+    "nursingchartid" : "835410450",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1634",
+    "nursingchartentryoffset" : "1634",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "78"
+  }, {
+    "nursingchartid" : "848769532",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-195",
+    "nursingchartentryoffset" : "-195",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "158"
+  }, {
+    "nursingchartid" : "851354919",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1275",
+    "nursingchartentryoffset" : "1275",
+    "nursingchartcelltypecat" : "Other Vital Signs and Infusions",
+    "nursingchartcelltypevallabel" : "P.O.",
+    "nursingchartcelltypevalname" : "Value",
+    "nursingchartvalue" : "120"
+  }, {
+    "nursingchartid" : "849794415",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3345",
+    "nursingchartentryoffset" : "3345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "97.9"
+  }, {
+    "nursingchartid" : "845566787",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "945",
+    "nursingchartentryoffset" : "945",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "98.4"
+  }, {
+    "nursingchartid" : "842496147",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "105",
+    "nursingchartentryoffset" : "105",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "92"
+  }, {
+    "nursingchartid" : "849563585",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "645",
+    "nursingchartentryoffset" : "645",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "61"
+  }, {
+    "nursingchartid" : "841476022",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-357",
+    "nursingchartentryoffset" : "-357",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "3"
+  }, {
+    "nursingchartid" : "861789686",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "405",
+    "nursingchartentryoffset" : "405",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "115"
+  }, {
+    "nursingchartid" : "866331872",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1155",
+    "nursingchartentryoffset" : "1155",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "36.6"
+  }, {
+    "nursingchartid" : "854967336",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "165",
+    "nursingchartentryoffset" : "165",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "100"
+  }, {
+    "nursingchartid" : "845566786",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "945",
+    "nursingchartentryoffset" : "945",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "839234868",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1135",
+    "nursingchartentryoffset" : "1135",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "854967335",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "165",
+    "nursingchartentryoffset" : "165",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "75"
+  }, {
+    "nursingchartid" : "848769533",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-195",
+    "nursingchartentryoffset" : "-195",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "63"
+  }, {
+    "nursingchartid" : "820340606",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1539",
+    "nursingchartentryoffset" : "1539",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "3"
+  }, {
+    "nursingchartid" : "854967334",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "165",
+    "nursingchartentryoffset" : "165",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "180"
+  }, {
+    "nursingchartid" : "819921257",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1418",
+    "nursingchartentryoffset" : "1418",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "62"
+  }, {
+    "nursingchartid" : "856288447",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2340",
+    "nursingchartentryoffset" : "2340",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "148"
+  }, {
+    "nursingchartid" : "851878495",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "345",
+    "nursingchartentryoffset" : "345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "59"
+  }, {
+    "nursingchartid" : "830033830",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "45",
+    "nursingchartentryoffset" : "45",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "80"
+  }, {
+    "nursingchartid" : "855302747",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "120",
+    "nursingchartentryoffset" : "120",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "95"
+  }, {
+    "nursingchartid" : "840321816",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-195",
+    "nursingchartentryoffset" : "-195",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "74"
+  }, {
+    "nursingchartid" : "864244790",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "45",
+    "nursingchartentryoffset" : "45",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "94"
+  }, {
+    "nursingchartid" : "819312224",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1418",
+    "nursingchartentryoffset" : "1418",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "36.3"
+  }, {
+    "nursingchartid" : "854129494",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "345",
+    "nursingchartentryoffset" : "345",
+    "nursingchartcelltypecat" : "Other Vital Signs and Infusions",
+    "nursingchartcelltypevallabel" : "P.O.",
+    "nursingchartcelltypevalname" : "Value",
+    "nursingchartvalue" : "30"
+  }, {
+    "nursingchartid" : "842989628",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "195",
+    "nursingchartentryoffset" : "195",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "98"
+  }, {
+    "nursingchartid" : "820184062",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "45",
+    "nursingchartentryoffset" : "45",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "102"
+  }, {
+    "nursingchartid" : "835495593",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1923",
+    "nursingchartentryoffset" : "1923",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "99"
+  }, {
+    "nursingchartid" : "821808593",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "0",
+    "nursingchartentryoffset" : "0",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "82"
+  }, {
+    "nursingchartid" : "842989629",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "195",
+    "nursingchartentryoffset" : "195",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "131"
+  }, {
+    "nursingchartid" : "820073902",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-405",
+    "nursingchartentryoffset" : "-405",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (C)",
+    "nursingchartvalue" : "37.7"
+  }, {
+    "nursingchartid" : "819312226",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1418",
+    "nursingchartentryoffset" : "1418",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "97.3"
+  }, {
+    "nursingchartid" : "820184061",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "45",
+    "nursingchartentryoffset" : "45",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "68"
+  }, {
+    "nursingchartid" : "865097620",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "345",
+    "nursingchartentryoffset" : "345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "99"
+  }, {
+    "nursingchartid" : "864454500",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "0",
+    "nursingchartentryoffset" : "0",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "106"
+  }, {
+    "nursingchartid" : "821013661",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "150",
+    "nursingchartentryoffset" : "150",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "92"
+  }, {
+    "nursingchartid" : "851878494",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "345",
+    "nursingchartentryoffset" : "345",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "154"
+  }, {
+    "nursingchartid" : "849563584",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "645",
+    "nursingchartentryoffset" : "645",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "140"
+  }, {
+    "nursingchartid" : "820184060",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "45",
+    "nursingchartentryoffset" : "45",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Systolic",
+    "nursingchartvalue" : "168"
+  }, {
+    "nursingchartid" : "830011515",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "465",
+    "nursingchartentryoffset" : "465",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "72"
+  }, {
+    "nursingchartid" : "841872263",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "2375",
+    "nursingchartentryoffset" : "2375",
+    "nursingchartcelltypecat" : "Scores",
+    "nursingchartcelltypevallabel" : "Pain Score/Goal",
+    "nursingchartcelltypevalname" : "Pain Score",
+    "nursingchartvalue" : "0"
+  }, {
+    "nursingchartid" : "819312225",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "1418",
+    "nursingchartentryoffset" : "1418",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  }, {
+    "nursingchartid" : "820073904",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-405",
+    "nursingchartentryoffset" : "-405",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature (F)",
+    "nursingchartvalue" : "99.9"
+  }, {
+    "nursingchartid" : "835750305",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "405",
+    "nursingchartentryoffset" : "405",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "70"
+  }, {
+    "nursingchartid" : "864454501",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "0",
+    "nursingchartentryoffset" : "0",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Diastolic",
+    "nursingchartvalue" : "59"
+  }, {
+    "nursingchartid" : "822604719",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "885",
+    "nursingchartentryoffset" : "885",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "O2 Saturation",
+    "nursingchartcelltypevalname" : "O2 Saturation",
+    "nursingchartvalue" : "97"
+  }, {
+    "nursingchartid" : "851725094",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3165",
+    "nursingchartentryoffset" : "3165",
+    "nursingchartcelltypecat" : "Other Vital Signs and Infusions",
+    "nursingchartcelltypevallabel" : "P.O.",
+    "nursingchartcelltypevalname" : "Value",
+    "nursingchartvalue" : "240"
+  }, {
+    "nursingchartid" : "859187719",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "3840",
+    "nursingchartentryoffset" : "3840",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Heart Rate",
+    "nursingchartcelltypevalname" : "Heart Rate",
+    "nursingchartvalue" : "71"
+  }, {
+    "nursingchartid" : "864454502",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "0",
+    "nursingchartentryoffset" : "0",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "78"
+  }, {
+    "nursingchartid" : "849563586",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "645",
+    "nursingchartentryoffset" : "645",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Non-Invasive BP",
+    "nursingchartcelltypevalname" : "Non-Invasive BP Mean",
+    "nursingchartvalue" : "91"
+  }, {
+    "nursingchartid" : "820073903",
+    "patientunitstayid" : "1332638",
+    "nursingchartoffset" : "-405",
+    "nursingchartentryoffset" : "-405",
+    "nursingchartcelltypecat" : "Vital Signs",
+    "nursingchartcelltypevallabel" : "Temperature",
+    "nursingchartcelltypevalname" : "Temperature Location",
+    "nursingchartvalue" : "1"
+  } ],
+  "allergy" : [ {
+    "allergyid" : "1317302",
+    "patientunitstayid" : "1332638",
+    "allergyoffset" : "11",
+    "allergyenteredoffset" : "67",
+    "allergynotetype" : "Admission",
+    "specialtytype" : "eCM Primary",
+    "usertype" : "Nurse",
+    "rxincluded" : "False",
+    "writtenineicu" : "True",
+    "drugname" : "CODEINE PHOSPHATE",
+    "allergytype" : "Drug",
+    "allergyname" : "CODEINE PHOSPHATE",
+    "drughiclseqno" : "1721"
+  }, {
+    "allergyid" : "1317300",
+    "patientunitstayid" : "1332638",
+    "allergyoffset" : "11",
+    "allergyenteredoffset" : "67",
+    "allergynotetype" : "Admission",
+    "specialtytype" : "eCM Primary",
+    "usertype" : "Nurse",
+    "rxincluded" : "False",
+    "writtenineicu" : "True",
+    "drugname" : "ASPIRIN",
+    "allergytype" : "Drug",
+    "allergyname" : "ASPIRIN",
+    "drughiclseqno" : "1820"
+  }, {
+    "allergyid" : "1317301",
+    "patientunitstayid" : "1332638",
+    "allergyoffset" : "11",
+    "allergyenteredoffset" : "67",
+    "allergynotetype" : "Admission",
+    "specialtytype" : "eCM Primary",
+    "usertype" : "Nurse",
+    "rxincluded" : "False",
+    "writtenineicu" : "True",
+    "drugname" : "CAFFEINE",
+    "allergytype" : "Drug",
+    "allergyname" : "CAFFEINE",
+    "drughiclseqno" : "12"
+  } ],
+  "diagnosis" : [ {
+    "diagnosisid" : "18123212",
+    "patientunitstayid" : "1332638",
+    "activeupondischarge" : "True",
+    "diagnosisoffset" : "731",
+    "diagnosisstring" : "endocrine|glucose metabolism|diabetes mellitus",
+    "icd9code" : "",
+    "diagnosispriority" : "Other"
+  }, {
+    "diagnosisid" : "18707521",
+    "patientunitstayid" : "1332638",
+    "activeupondischarge" : "True",
+    "diagnosisoffset" : "731",
+    "diagnosisstring" : "cardiovascular|arrhythmias|atrial fibrillation|with controlled ventricular response",
+    "icd9code" : "427.31, I48.0",
+    "diagnosispriority" : "Other"
+  }, {
+    "diagnosisid" : "17664301",
+    "patientunitstayid" : "1332638",
+    "activeupondischarge" : "False",
+    "diagnosisoffset" : "67",
+    "diagnosisstring" : "cardiovascular|arrhythmias|atrial fibrillation|with controlled ventricular response",
+    "icd9code" : "427.31, I48.0",
+    "diagnosispriority" : "Other"
+  }, {
+    "diagnosisid" : "18115016",
+    "patientunitstayid" : "1332638",
+    "activeupondischarge" : "True",
+    "diagnosisoffset" : "731",
+    "diagnosisstring" : "cardiovascular|shock / hypotension|signs and symptoms of sepsis (SIRS)",
+    "icd9code" : "995.90",
+    "diagnosispriority" : "Other"
+  }, {
+    "diagnosisid" : "17367440",
+    "patientunitstayid" : "1332638",
+    "activeupondischarge" : "False",
+    "diagnosisoffset" : "67",
+    "diagnosisstring" : "neurologic|altered mental status / pain|pain",
+    "icd9code" : "",
+    "diagnosispriority" : "Other"
+  }, {
+    "diagnosisid" : "17966076",
+    "patientunitstayid" : "1332638",
+    "activeupondischarge" : "False",
+    "diagnosisoffset" : "67",
+    "diagnosisstring" : "neurologic|altered mental status / pain|change in mental status",
+    "icd9code" : "780.09, R41.82",
+    "diagnosispriority" : "Other"
+  }, {
+    "diagnosisid" : "16954574",
+    "patientunitstayid" : "1332638",
+    "activeupondischarge" : "True",
+    "diagnosisoffset" : "731",
+    "diagnosisstring" : "neurologic|altered mental status / pain|pain",
+    "icd9code" : "",
+    "diagnosispriority" : "Other"
+  }, {
+    "diagnosisid" : "18208089",
+    "patientunitstayid" : "1332638",
+    "activeupondischarge" : "False",
+    "diagnosisoffset" : "67",
+    "diagnosisstring" : "cardiovascular|shock / hypotension|signs and symptoms of sepsis (SIRS)",
+    "icd9code" : "995.90",
+    "diagnosispriority" : "Other"
+  }, {
+    "diagnosisid" : "17185354",
+    "patientunitstayid" : "1332638",
+    "activeupondischarge" : "True",
+    "diagnosisoffset" : "731",
+    "diagnosisstring" : "neurologic|altered mental status / pain|change in mental status",
+    "icd9code" : "780.09, R41.82",
+    "diagnosispriority" : "Other"
+  }, {
+    "diagnosisid" : "18698541",
+    "patientunitstayid" : "1332638",
+    "activeupondischarge" : "False",
+    "diagnosisoffset" : "67",
+    "diagnosisstring" : "endocrine|glucose metabolism|diabetes mellitus",
+    "icd9code" : "",
+    "diagnosispriority" : "Other"
+  } ]
+}
