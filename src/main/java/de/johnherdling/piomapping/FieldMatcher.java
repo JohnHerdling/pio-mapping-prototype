@@ -1,7 +1,11 @@
+
 package de.johnherdling.piomapping;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class FieldMatcher {
 
@@ -20,11 +24,9 @@ public class FieldMatcher {
             JsonFieldType expectedType
     ) {
 
-        List<JsonField> matches =
-                new ArrayList<>();
+        List<JsonField> matches = new ArrayList<>();
 
-        String normalizedSearchTerm =
-                normalize(searchTerm);
+        String normalizedSearchTerm = normalize(searchTerm);
 
         for (JsonField field : fields) {
 
@@ -42,10 +44,7 @@ public class FieldMatcher {
                     normalize(field.getContext());
 
             boolean typeMatches =
-                    matchesExpectedType(
-                            field,
-                            expectedType
-                    );
+                    matchesExpectedType(field, expectedType);
 
             boolean nameMatches =
                     containsConcept(
@@ -82,16 +81,8 @@ public class FieldMatcher {
                     continue;
                 }
 
-                /*
-                 * Bei Schmerz werden Ziel-/Sollwerte
-                 * ausgeschlossen. Ein "goal" beschreibt
-                 * keinen tatsächlich beobachteten
-                 * Schmerzwert.
-                 */
                 if (normalizedSearchTerm.equals("pain")
-                        && isPainGoal(
-                                normalizedContext
-                        )) {
+                        && isPainGoal(field.getContext())) {
                     continue;
                 }
 
@@ -102,12 +93,47 @@ public class FieldMatcher {
         return matches;
     }
 
-    private boolean isAllergyValueField(
-            JsonField field
-    ) {
+    private boolean isPainGoal(String context) {
 
-        String fieldName =
-                normalize(field.getFieldName());
+        if (context == null || context.isBlank()) {
+            return false;
+        }
+
+        /*
+         * Die spezifische Name-Angabe hat Vorrang
+         * vor einer allgemeineren Label-Angabe.
+         *
+         * Beispiel:
+         * Label = Pain Score/Goal
+         * Name  = Pain Goal
+         */
+        Pattern pattern = Pattern.compile(
+                "(?i)(?:^|\\s)"
+                        + "[a-z0-9_]*name\\s+"
+                        + "(pain\\s+(?:score|goal))"
+                        + "(?=\\s|$)"
+        );
+
+        Matcher matcher = pattern.matcher(context);
+
+        String specificName = null;
+
+        while (matcher.find()) {
+            specificName = matcher.group(1);
+        }
+
+        if (specificName != null) {
+            return specificName
+                    .trim()
+                    .equalsIgnoreCase("pain goal");
+        }
+
+        return false;
+    }
+
+    private boolean isAllergyValueField(JsonField field) {
+
+        String fieldName = normalize(field.getFieldName());
 
         boolean directValueName =
                 fieldName.equals("description")
@@ -123,21 +149,7 @@ public class FieldMatcher {
                         || fieldName.contains("display")
                         || fieldName.contains("allergen"));
 
-        return directValueName
-                || compoundValueName;
-    }
-
-    private boolean isPainGoal(
-            String context
-    ) {
-
-        if (context == null
-                || context.isBlank()) {
-            return false;
-        }
-
-        return context.contains("pain goal")
-                && !context.contains("pain score");
+        return directValueName || compoundValueName;
     }
 
     private boolean containsConcept(
@@ -149,7 +161,6 @@ public class FieldMatcher {
                 || concept == null
                 || text.isBlank()
                 || concept.isBlank()) {
-
             return false;
         }
 
@@ -171,12 +182,9 @@ public class FieldMatcher {
 
     private String normalize(String text) {
 
-        String normalized =
-                normalizer.normalize(text);
+        String normalized = normalizer.normalize(text);
 
-        return conceptNormalizer.normalize(
-                normalized
-        );
+        return conceptNormalizer.normalize(normalized);
     }
 
     private boolean matchesExpectedType(
@@ -192,9 +200,7 @@ public class FieldMatcher {
                 && field.getDataType()
                 == JsonFieldType.TEXT) {
 
-            return isNumeric(
-                    field.getValue().asText()
-            );
+            return isNumeric(field.getValue().asText());
         }
 
         if (expectedType == JsonFieldType.BOOLEAN) {
@@ -224,21 +230,14 @@ public class FieldMatcher {
 
     private boolean isNumeric(String value) {
 
-        if (value == null
-                || value.isBlank()) {
+        if (value == null || value.isBlank()) {
             return false;
         }
 
         try {
-
-            Double.parseDouble(
-                    value.trim()
-            );
-
+            Double.parseDouble(value.trim());
             return true;
-
         } catch (NumberFormatException exception) {
-
             return false;
         }
     }

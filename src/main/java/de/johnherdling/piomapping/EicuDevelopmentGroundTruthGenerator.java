@@ -1,3 +1,4 @@
+
 package de.johnherdling.piomapping;
 
 import com.fasterxml.jackson.databind.JsonNode;
@@ -35,12 +36,9 @@ public class EicuDevelopmentGroundTruthGenerator {
         List<Path> caseFiles;
 
         try (var stream = Files.list(DEVELOPMENT_DIR)) {
-
             caseFiles = stream
-                    .filter(path ->
-                            path.getFileName()
-                                    .toString()
-                                    .endsWith(".json"))
+                    .filter(path -> path.getFileName()
+                            .toString().endsWith(".json"))
                     .sorted()
                     .toList();
         }
@@ -48,12 +46,13 @@ public class EicuDevelopmentGroundTruthGenerator {
         List<Map<String, Object>> groundTruth =
                 new ArrayList<>();
 
+        int dischargeWeightCount = 0;
+        int admissionFallbackCount = 0;
+
         for (Path caseFile : caseFiles) {
 
             JsonNode source =
-                    OBJECT_MAPPER.readTree(
-                            caseFile.toFile()
-                    );
+                    OBJECT_MAPPER.readTree(caseFile.toFile());
 
             Map<String, Object> expected =
                     new LinkedHashMap<>();
@@ -63,48 +62,34 @@ public class EicuDevelopmentGroundTruthGenerator {
                             .path("patientunitstayid")
                             .asText();
 
-            expected.put(
-                    "patientUnitStayID",
-                    stayId
-            );
+            expected.put("patientUnitStayID", stayId);
 
-            /*
-             * M1 – Körpergewicht
-             */
-            JsonNode admissionWeight =
-                    source.path("patient")
-                            .path("admissionweight");
+            // M1: Entlassungsgewicht bevorzugen.
+            // Falls nicht vorhanden: Aufnahmegewicht.
+            JsonNode patient = source.path("patient");
 
-            if (!admissionWeight.isMissingNode()
-                    && !admissionWeight.asText().isBlank()) {
+            Double dischargeWeight =
+                    parseWeight(patient.path("dischargeweight"));
 
-                expected.put(
-                        "M1",
-                        Double.parseDouble(
-                                admissionWeight.asText()
-                        )
-                );
+            Double admissionWeight =
+                    parseWeight(patient.path("admissionweight"));
 
+            if (dischargeWeight != null) {
+                expected.put("M1", dischargeWeight);
+                dischargeWeightCount++;
             } else {
+                expected.put("M1", admissionWeight);
 
-                expected.put("M1", null);
+                if (admissionWeight != null) {
+                    admissionFallbackCount++;
+                }
             }
 
-            /*
-             * M2 – Diagnose
-             *
-             * Für eICU nicht bewertet, da die notwendige
-             * Terminologieumwandlung außerhalb des
-             * Untersuchungsumfangs liegt.
-             */
-            expected.put(
-                    "M2",
-                    "NOT_EVALUABLE"
-            );
+            // M2: Terminologieabbildung nicht Gegenstand
+            // der quantitativen eICU-Evaluation.
+            expected.put("M2", "NOT_EVALUABLE");
 
-            /*
-             * M3 – Medikationsinformation
-             */
+            // M3: Medikationsinformation.
             boolean medicationPresent = false;
 
             for (JsonNode medication :
@@ -128,12 +113,7 @@ public class EicuDevelopmentGroundTruthGenerator {
                             : null
             );
 
-            /*
-             * M4 – Schmerzsymptomatik
-             *
-             * Verwendet wird der zeitlich letzte
-             * gültige Pain Score.
-             */
+            // M4: Letzter gültiger Pain Score.
             JsonNode lastPainScore = null;
             int greatestOffset = Integer.MIN_VALUE;
 
@@ -142,14 +122,11 @@ public class EicuDevelopmentGroundTruthGenerator {
 
                 String name =
                         chartEntry
-                                .path(
-                                        "nursingchartcelltypevalname"
-                                )
+                                .path("nursingchartcelltypevalname")
                                 .asText()
                                 .trim();
 
-                if (!"Pain Score"
-                        .equalsIgnoreCase(name)) {
+                if (!"Pain Score".equalsIgnoreCase(name)) {
                     continue;
                 }
 
@@ -166,14 +143,11 @@ public class EicuDevelopmentGroundTruthGenerator {
                 int offset =
                         parseInteger(
                                 chartEntry
-                                        .path(
-                                                "nursingchartoffset"
-                                        )
+                                        .path("nursingchartoffset")
                                         .asText()
                         );
 
                 if (offset > greatestOffset) {
-
                     greatestOffset = offset;
                     lastPainScore = chartEntry;
                 }
@@ -184,27 +158,20 @@ public class EicuDevelopmentGroundTruthGenerator {
                 double painValue =
                         Double.parseDouble(
                                 lastPainScore
-                                        .path(
-                                                "nursingchartvalue"
-                                        )
+                                        .path("nursingchartvalue")
                                         .asText()
                         );
 
                 expected.put(
                         "M4",
-                        painValue > 0
-                                ? "22253000"
-                                : null
+                        painValue > 0 ? "22253000" : null
                 );
 
             } else {
-
                 expected.put("M4", null);
             }
 
-            /*
-             * M5 – Allergien
-             */
+            // M5: Allergien.
             LinkedHashSet<String> allergyNames =
                     new LinkedHashSet<>();
 
@@ -231,12 +198,9 @@ public class EicuDevelopmentGroundTruthGenerator {
 
         groundTruth.sort(
                 Comparator.comparingLong(
-                        row ->
-                                Long.parseLong(
-                                        row.get(
-                                                "patientUnitStayID"
-                                        ).toString()
-                                )
+                        row -> Long.parseLong(
+                                row.get("patientUnitStayID").toString()
+                        )
                 )
         );
 
@@ -245,53 +209,51 @@ public class EicuDevelopmentGroundTruthGenerator {
                 groundTruth
         );
 
-        System.out.println();
-        System.out.println(
-                "Entwicklungsfälle: "
-                        + groundTruth.size()
-        );
+        System.out.println("Entwicklungsfälle: "
+                + groundTruth.size());
 
-        System.out.println(
-                "Bewertbare Mappingfälle: "
-                        + (groundTruth.size() * 4)
-        );
+        System.out.println("Entlassungsgewicht verwendet: "
+                + dischargeWeightCount);
 
-        System.out.println(
-                "Ground Truth: "
-                        + OUTPUT_FILE.toAbsolutePath()
-        );
+        System.out.println("Aufnahmegewicht als Ersatz: "
+                + admissionFallbackCount);
+
+        System.out.println("Bewertbare Mappingfälle: "
+                + (groundTruth.size() * 4));
     }
 
-    private static boolean isPainScore(
-            String value
-    ) {
+    private static Double parseWeight(JsonNode node) {
+
+        if (node.isMissingNode()
+                || node.isNull()
+                || node.asText().isBlank()) {
+            return null;
+        }
 
         try {
+            return Double.parseDouble(
+                    node.asText().trim()
+            );
+        } catch (NumberFormatException exception) {
+            return null;
+        }
+    }
 
-            double number =
-                    Double.parseDouble(value);
+    private static boolean isPainScore(String value) {
 
-            return number >= 0
-                    && number <= 10;
-
-        } catch (NumberFormatException e) {
-
+        try {
+            double number = Double.parseDouble(value);
+            return number >= 0 && number <= 10;
+        } catch (NumberFormatException exception) {
             return false;
         }
     }
 
-    private static int parseInteger(
-            String value
-    ) {
+    private static int parseInteger(String value) {
 
         try {
-
-            return Integer.parseInt(
-                    value.trim()
-            );
-
-        } catch (NumberFormatException e) {
-
+            return Integer.parseInt(value.trim());
+        } catch (NumberFormatException exception) {
             return Integer.MIN_VALUE;
         }
     }
